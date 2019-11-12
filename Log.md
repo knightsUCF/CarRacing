@@ -1,3 +1,12 @@
+# An Even Simpler Way to Procedurally Generate Terrain
+
+- create larger tiles (50 x 2, or more)
+
+- create an array of a bunch of variations, generate 4 of those variation per biodome
+
+- then after 4 generate the next 4 tiles belong to the next biodome
+
+
 # A Simple Way to Procedurally Generate Terrain
 
 We can use that for loop code while picking out of a random array of gameobjects. Look this code up if we have to do too much refactoring.
