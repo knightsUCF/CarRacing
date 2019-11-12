@@ -1,3 +1,8 @@
+# Part 2 of the Infinite Runner Tutorial - Level Generation on the Fly
+
+"Recall that Max runs from path to path. As we are not generating all paths at the beginning of the game (because we want to save on memory and mainly because we do not know how far in the game the player will proceed, i.e. how many paths to generate), we need a mechanism to generate the N+1 path, where N is the path that Max currently steps on. We’ve used a simple trigger BoxCollider to implement this. When Max collides with it, a new path is generated via the PathSpawnCollider script (described in a while). In the straight paths level, the new path is instantiated in the “NewPathSpawn” position, which conveniently happens to be positioned at the far end of the current path."
+
+
 # Went through Part 1 of the Infinite Runner Tutorial
 
 So we just went through part of the infinite runner tutorial.
