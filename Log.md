@@ -1,3 +1,12 @@
+# Procedural Level Generation
+
+We would like to use procedural level generation on such things as even the trees, and the pens for the hens, and etc. That way the game will look different everytime. And also the player will not be able to memorize the obstacle course.
+
+# Obstacles
+
+There are plenty of obstacles we can use. One cool one would be to have a side road like in the Voxel pack, and then the player has to dodge not only their single lane traffic but also traffic coming on the sides. As the difficulty of the game progresses in a rogue style, there will be more side streets we turn on.
+
+
 # Car Movement - Turning
 
 Here is adding turning to our PlayerControls.cs. 
