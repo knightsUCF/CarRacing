@@ -14,6 +14,9 @@ Then biome 2 chunks let's say are farmland. Then we can take trees from 1, since
 
 Then if we are driving through the country the procedural generated could do all the biomes that fit into the larger parent class, "the great outdoors" or something. So then the procedurul parent would do: biome 2, biome 1, biome 2, biome 2, etc...  more random biomes in the division, "the great outdoors."
 
+And then with the biomes organized, we could do custom iterations.
+
+We also want to be able to take all the levels and throw them into one giant procedurally generated level. So we will have grasslands, going into desert, going into cities, going into cities at night with neon lighting, etc. So a big giant loop like Crossy Road. And also something which maintains flow for the player. Always be consious of the flow created by the game for the player.
 
 
 # Setting Up the Car AI
