@@ -2,7 +2,9 @@
 
 Completing the main tasks below will get us close to a vertical slice MVP. 
 
-Then we will continue the other tasks. 
+Then we will continue the other tasks. There are no major blockers at this time, which is a relief.
+
+Making this game for mobile will be great for getting good experience, a better resume, and having something finally completed and out there. REAL ARTISTS SHIP.
 
 
 # Next Main Task - Long Road
