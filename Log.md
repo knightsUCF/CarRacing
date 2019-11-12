@@ -1,3 +1,54 @@
+# Went through Part 1 of the Infinite Runner Tutorial
+
+So we just went through part of the infinite runner tutorial.
+
+There were lots of helpful stuff there, which we implemented.
+
+One of the cool things is we found out we could simply declare our State.cs without a class:
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+
+
+
+        public enum GameState
+        {
+            Start,
+            Playing,
+            Dead
+        }
+
+
+That's all! We might not even need the includes up on top.
+
+Then in Game.cs (GameManager.cs from the tutorial) we can reference the enum with:
+
+        GameState = GameState.Start;
+        
+That's all! That easy.
+
+
+So we also implemented UI, just like the author, since the UI implementation is rather easy.
+
+Then there is a Gold.cs script, which is the transformation of the author's Candy.cs script. This will take care of the spinning gold points, and collection functionality. Not sure yet if we will have pickable gold coins in the level. Maybe powerups instead, a combination of both or neither.
+
+Then there is an Obstacle.cs script, which will handle any collisions which trigger the end of the game. In our case an obstacle will be a car, and later we can expand this out to the side of the road also, which ends the game.
+
+There is also a GarbageCollection.cs script, which the author originally named Destroyer or something. This script will destroy objects when after some time. So we will have to make sure we are destroying things correctly. Also we need to eventually implement object pooling. #TODO
+
+So that's pretty much all for part 1 of the tutorial. In part 2 we begin to generate the infinite runner.
+
+Read over this, and then in order to get ready, download ProGrids, and come up with the tile chunks we will be using for the infinite runner. We also want to have four lanes of traffic to start, since this is a much better experience. Perhaps even more lanes as the player advances through the levels, which should not be hard to implement. So perhaps each level has a beginning easy mode, and then a harder mode as the lanes move wider, or perhaps the lane width varies.
+
+The author shows also how to do corners, which detect and attach at the specific end of the next segment. This specific attachment functionality we could apply to having the highway diverge into more lanes. This might be too much for MVP. We might just keep this to 4 lanes for now.
+
+Okay so that's all for part 1. We will download ProGrids, do the stuff above, and then be ready to create the procedural levels. At least now we have our game instance and data instances set up, along with our obstacles script.
+
+
+
+
 # Going through the Infinite Runner 3D Codebase tutorial
 
 https://github.com/dgkanatsios/InfiniteRunner3D
