@@ -1,3 +1,34 @@
+# Scoring
+
+Here is how we did scrolling. We put an is trigger collider wall on the car. Then on the same parent game object we put this code:
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+
+
+public class Score : MonoBehaviour
+{
+
+    float reward;
+
+
+    // for some reason on trigger enter works better than on exit
+
+    private void OnTriggerEnter(Collider c)
+    {
+        if (c.gameObject.tag == "AI")
+        {
+            reward = UI.Instance.GetScore() + 100.0f;
+            UI.Instance.SetScore(reward);
+        }
+    }
+}
+
+
+
 # Rebuilding Colliders
 
 Make sure that when you are rebuilding the tiles to do a solid job on rebuilding the colliders, so we can package them away like a black box with no errors or hassle.
