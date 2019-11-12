@@ -5,8 +5,15 @@ using UnityEngine.UI;
 
 
 
+
 public class UI : MonoBehaviour
 {
+
+    public Text ScoreText, StatusText;
+
+
+
+
     void Awake()
     {
         if (instance == null)
@@ -65,7 +72,5 @@ public class UI : MonoBehaviour
     {
         StatusText.text = text;
     }
-
-    public Text ScoreText, StatusText;
 
 }
