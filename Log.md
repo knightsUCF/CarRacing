@@ -1,3 +1,15 @@
+# Set Up for the Player
+
+To set up the player:
+
+- create parent player prefab, position this where the player will start
+
+- create a "Car" prefab right under the player. Attach a "Controls" script and set the speed and acceleration and other controls
+
+- Under the Car prefab have the Model prefab which contains the mesh renderer and box collider for the car, this is the car object form the asset pack.
+
+- drag the camera under the Car prefab. Having the camera here will will follow the car around
+
 # Driving at Night
 
 Driving at night we want to go for lots of neon colors, futurewave.
