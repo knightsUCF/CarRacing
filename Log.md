@@ -1,6 +1,9 @@
 # Car Movement - Turning
 
-Here is adding turning to our PlayerControls.cs:
+Here is adding turning to our PlayerControls.cs. 
+
+Of course this just works at higher speeds. At lower speeds, when the player turns, we want to turn the wheels, and below a certain threshold, also turn the car.
+
 
         using System.Collections;
         using System.Collections.Generic;
