@@ -41,7 +41,7 @@ using UnityEngine;
 
 
 
-        void Move()
+      void Move()
       {
         if ((Input.GetKey(KeyCode.S)) && (speed < maxSpeed)) speed = speed - acceleration * Time.deltaTime;
         else if ((Input.GetKey(KeyCode.W)) && (speed > -maxSpeed)) speed = speed + acceleration * Time.deltaTime;
