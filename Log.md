@@ -30,6 +30,8 @@ And after that we want to establish physics collisions. We will need to play aro
 
 Once the player colliders with a car, restart the game, to begin to give the player a sense of gameplay. Also save the high score so the player can test their high score against others.
 
+Also add some screeshake on collision from the Moenen pack.
+
 We also want to add some basic sounds here.
 
 This actually is all we need to do for now. Once this becomes part of a solid prototype, we will want to also introduce some sort of powerups coming down the street for us to catch.
