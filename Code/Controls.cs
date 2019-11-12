@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+/*
+ *
+ * We need something that checks whether the rotation got out of whack with the camera.
+ *
+ * Then rotate the car with a sine lerp slowly back to the center position.
+ *
+ * 
+ */
+
 
 
 
@@ -79,9 +88,31 @@ public class Controls : MonoBehaviour
 	}
 
 
+    // UI ////////////////////////////////////////////////////////////
+
+    void CheckForClose()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+    }
+
+
+    //////////////////////////////////////////////////////////////////
+    
+
+
+
 	void Update()
 	{
 		RunMovementRoutines();
+
+        CheckForClose();
+
+
+        UI.Instance.SetStatus(speed.ToString());
+
 	}
 
 }
