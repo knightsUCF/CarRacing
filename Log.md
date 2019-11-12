@@ -36,7 +36,13 @@ Here are some major things to do from here:
 
 - edit miles per hour display, perhaps convert to a meter to show a visual display, or just have the double digit number rounded in nice big letters. Make that look aesthetic.
 
+- make sure camera always returns to the cars center position, so the car through physics can't be knocked off the center of the screen
 
+- add the VoxelPlay clouds, some skies will have clouds, some will not, we can also color code the clouds, especially in neon glow futurewave settings
+
+- adding voxel style buildings, and lights to light them up in the darkness
+
+- add sounds of cows mooing when we drive past them
 
 
 # Cars Coming from Back of Player
