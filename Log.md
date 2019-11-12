@@ -1,3 +1,24 @@
+# Some Major Things to Do from Now
+
+Here are some major things to do from here:
+
+- create scoring system, if we run past the collider we get 100 points for passing the car
+
+- add different types of cars
+
+- add different speeds to the cars
+
+- generate cars from further away, perahps fixed with simply making the tile larger
+
+- add object pooling system for efficiency
+
+- create four lane high way
+
+- create biomes
+
+- create procedural generation for those biomes
+
+
 # Cars Coming from Back of Player
 
 If the player slows down, we want cars to come from the back, especially on a four lane road.
