@@ -1,3 +1,14 @@
+# Setting Up the Car AI
+
+Setting up the Car AI was a little tricky but we figured out a clean and elegant way.
+
+The main point is: we want to create an individual prefab for both the "Left Lane AI Car", and the "Right Lane AI Car". Later these can be more specific, but we just want a single prefab that will work, a black box we don't have to worry about.
+
+So when creating these for the first time, set the forward bool to true on the Left Lane AI Car, and set the forward bool to false on the Right Lane AI car.
+
+
+
+
 # Variable Reward Saves the Day Roguelite Style
 
 We want the player to experience that RNG moment, where they are hoping they get the variable reward to help them carry on through. So one of the main ones will be "potions". Like the items in Mario Kart.
