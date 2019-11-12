@@ -1,3 +1,13 @@
+# Box Collider on the AI Cars for Score Tracking
+
+This is the easiest and most elegant method. We are making a "wall" box collider on the car, perpendicular to the player. So if the player passes an AI car, they will pass through this "wall" and collect points. For the code implementation we will use OnExitCollider(<AI car wall collider>)
+    
+
+
+# Car Controls
+
+We can always try to get car controls off the asset store. Or study other car controls for code. This will take a few tries.
+
 # Forcing the Player to Play More Defensively like Dark Souls
 
 We want to create the type of gameplay that if the player is greedy they are punished. In our case, since we are offering points for passing cars, if the player gets greedy they will begin to go really fast to get more points, but then if there is a congestion or more traffic, then the player will lose. The thing is experienced players will learn to take advantage of the system (we gently want to teach them), and they will go fast when they can to get the most points, and then detect a wave of traffic and slow down. To be fair we will not have random traffic. We will have a random chance of a traffic wave. So the action is atomic.
