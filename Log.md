@@ -1,3 +1,7 @@
+# Road Boundaries
+
+Perhaps we can have a simple road boundary like a sidewalk which naturally will collide and flip the car at high speeds. At lower speeds the player might get some leeway, so they can ride over the sidewalk, but not much further, or out of bounds.
+
 # Next Steps
 
 So we have some basic movement on the car, a world, and incoming vehicles. So we are getting the basics down.
