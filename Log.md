@@ -1,3 +1,14 @@
+# Breaking
+
+We want to have some sort of more sensitive breaking. For now we want to separate out deceleartion into breaking.
+
+So we do not want to mess with the general deceleration built into the code because there are lots of if else bad code. We will separate this into a state machine later. We will definitely have to seperate out the Control.cs of the car into a state machine, because all sorts of complex things could happen concurrently.
+
+So for now to fix breaking, we will create a new breaking variable: public float breakDeceleration = <something higher than the regular deceleration>
+ 
+ And then we will have our own method, Break(), which will apply the breaks.
+
+
 # Cars Stop Coming when Player Stops Driving
 
 Since when the player stops driving there are no more new procedural tiles generating with incoming traffic. In this case we will need to manually keep spawning cars in the direction of the player. Then up to a few cars, because if the player just sits there they will create a traffic jam. If you create a traffic jam for too long you lose the game, and get the game over screen. We can do a holographic albedo flash on the car with an increasing frequency and sound to alert the player something is wrong, in this case they are blocking up the traffic.
