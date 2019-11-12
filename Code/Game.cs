@@ -34,6 +34,10 @@ public class Game : MonoBehaviour
         }
     }
 
+
+
+    // game initialization
+
     protected Game()
     {
         GameState = GameState.Start;
@@ -44,10 +48,14 @@ public class Game : MonoBehaviour
 
     public bool CanSwipe { get; set; }
 
+
+
+    // methods
+
+
     public void Die()
     {
-        // UIManager.Instance.SetStatus(Constants.StatusDeadTapToStart);
-
+        UI.Instance.SetStatus(Constants.StatusDeadTapToStart);
         this.GameState = GameState.Dead;
     }
 
