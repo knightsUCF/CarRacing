@@ -2,6 +2,7 @@
 
 This is the easiest and most elegant method. We are making a "wall" box collider on the car, perpendicular to the player. So if the player passes an AI car, they will pass through this "wall" and collect points. For the code implementation we will use OnExitCollider(<AI car wall collider>)
     
+We might have a potential problem with zeroing out the model... Always zero out the transforms on both the parent and child prefabs...
 
 
 # Car Controls
