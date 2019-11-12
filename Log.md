@@ -1,3 +1,7 @@
+# Bug
+
+We might have some weird bug to do with Garbage.cs (can turn off to test) and the cars are stoppig to spawn after a few tiles.
+
 # Scoring
 
 Here is how we did scoring. We put an is trigger collider wall on the car. Then on the same parent game object we put this code:
