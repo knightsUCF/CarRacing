@@ -1,3 +1,9 @@
+# Random Stretches of Traffic and Congestion
+
+We want to have random stretches (waves) of traffic so the player has to slow down. But the traffic feels like a wave to the player so they can then speed up and take over the road for another atomic block of slower traffic.
+
+
+
 # Setting a Cruise Speed
 
 Here we are setting a cruise speed at the maximum acceleration. We don't have the break accounting for this yet.
