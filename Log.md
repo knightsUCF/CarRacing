@@ -1,6 +1,6 @@
 # Fixing the "Don't Destroy Tile that the Player is Resting On"
 
-So we fixed the problem where we were destroying the tile the player was resting on. However if the player comes to a stop the tile in front of them gets destroyed after ten seconds. So we want to add an extra check to if (playerOnTile && DontDestroyTileInFront)
+So we fixed the problem where we were destroying the tile the player was resting on. However if the player comes to a stop the tile in front of them gets destroyed after ten seconds. So we want to add an extra check to if (!playerOnTile && DontDestroyTileInFront)
 
     using System.Collections;
     using System.Collections.Generic;
