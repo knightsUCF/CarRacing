@@ -44,6 +44,9 @@ Here are some major things to do from here:
 
 - add sounds of cows mooing when we drive past them
 
+- randomize the frequency of traffic, allow some wide open stretches of road, especially in the country
+
+- create a central AI.cs which will handle the generation of cars, and their frequency, and any other patternsw
 
 # Cars Coming from Back of Player
 
