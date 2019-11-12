@@ -1,3 +1,16 @@
+# Next Up
+
+So we will save the below extra check to not destroy the last tile placed. There are a number of brute force way to do this, so we will just save this for later.
+
+Now next up is adding the car AI. We will want the car AI to be spawned on top of the tiles, and give them an initial velocity.
+
+We could attach a script to each of them that simply says, "Car", and of course this will not be applied to the player.
+
+So then the car will start moving right away in a straight line, which really helps us to narrow down any complexity.
+
+
+
+
 # Fixing the "Don't Destroy Tile that the Player is Resting On"
 
 So we fixed the problem where we were destroying the tile the player was resting on. However if the player comes to a stop the tile in front of them gets destroyed after ten seconds. So we want to add an extra check to if (!playerOnTile && DontDestroyTileInFront)
