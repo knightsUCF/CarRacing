@@ -2,6 +2,7 @@
 
 Leveraging the physics engine comes to great effect, since we can get a real world type simulation without doing any extra work. This works particularly well for the collisions. To note, if the player flips and lands then they keep on playing, which also provides for plenty of streamable moments.
 
+When the car crashes we will want to apply more friction, so we slow down faster than through regular deceleration.
 
 # Procedural Level Generation
 
