@@ -1,3 +1,8 @@
+# Variable Reward Saves the Day Roguelite Style
+
+We want the player to experience that RNG moment, where they are hoping they get the variable reward to help them carry on through. So one of the main ones will be "potions". Like the items in Mario Kart.
+
+
 # Next Up
 
 So we will save the below extra check to not destroy the last tile placed. There are a number of brute force ways to do this, so we will just save this for later.
