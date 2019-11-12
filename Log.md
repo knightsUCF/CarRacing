@@ -1,3 +1,18 @@
+# Rewriting the N + 1 Code
+
+The N + 1 code is very good, but we can rewrite this just to fit our needs since we will not need multiple path spawn points for the different turns, at least for now.
+
+// https://github.com/dgkanatsios/InfiniteRunner3D/blob/master/Assets/Scripts/PathSpawnCollider.cs
+
+
+        using UnityEngine;
+        using System.Collections;
+
+        public class PathSpawnCollider : MonoBehaviour {
+        
+        
+
+
 # N + 1 Level Generation
 
 So we are generating one level ahead of the player, and this is very simple to do since we are only moving forward. This is good practice also for creating a procedurally generated explorable 360 universe, such as a space sim. The nice thing about procedural generation is that we can truly generate infinite worlds, which is something very attractive to the player. And the process is not especially difficult, just figuring out how to do things for the first time.
