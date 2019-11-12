@@ -13,6 +13,14 @@ III. UI
 
 The UI will be designed for a touch screen, so we will need some keyboard shortcuts while we are testing on desktop. For the touch screen interface we will need a way to move left to right and also accelerate and deccelerate.
 
+For the keyboard we will want to be able to:
+
+Move the car side to side - left and right arrows
+
+Accelerate / Deccelerate - up and down arrow
+
+We will want smooth continuous movement so we will be using GetKey instead of GetKeyDown, (GetKeyDown just gets us the first press of the player continuously holding the key down.)
+
 IV. Gameplay
 
 We will take elements from rogue like gameplay and also Crossy Road.
