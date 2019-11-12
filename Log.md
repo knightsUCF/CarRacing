@@ -1,4 +1,4 @@
-# Making the Game Addictive
+# Making the Gameplay Addictive
 
 I remember wondering a while ago what made a game addicting, and researching online did not help much. But now we have a much clearer idea of what makes a game addictive:
 
