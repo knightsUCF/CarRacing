@@ -56,8 +56,14 @@ The key is this script, "PathSpawnCollider", which is used in both the straight 
             }
 
         }
-
-
+        
+        
+        /*
+        – PositionY is used to properly place the redBorder on the Y axis
+        – The PathSpawnPoints array is used to host the locations that the next path and borders will be instantiated. In the “straight paths” level the array will have only one member (since we’ll only instantiate the next path) whereas in the “rotated paths” level the array will hold three locations, in one of which there will be the new path and in the rest two there will be the red borders that will kill Max upon collision
+        – The Path object holds the path prefab
+        – The DangerousBorder array holds the RedBorder prefab in the “rotated paths” level whereas it is null in the “straight path” level (where we do not need it)
+        */
 
 
 
