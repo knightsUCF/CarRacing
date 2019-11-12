@@ -8,6 +8,22 @@ We could attach a script to each of them that simply says, "Car", and of course 
 
 So then the car will start moving right away in a straight line, which really helps us to narrow down any complexity.
 
+At first we just want to spawn a car. Do everything step by step like John Romero.
+
+So after we spawn the cars we will want to move them, and then after that add colliders for detecting collisions, and implement game over state. Also we want to implement the scoring system. The way we can do this is to put a narrow thin long collider, once the player passes this collider on any of the cars they get awarded 100 points for passing them.
+
+So in order:
+
+- spawn cars on tiles
+
+- assign cars initial velocity
+
+- add colliders for detecting collisions
+
+- implement game over state
+
+- score
+
 
 
 
