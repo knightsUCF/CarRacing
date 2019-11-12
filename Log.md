@@ -1,3 +1,22 @@
+# A Simple Way to Procedurally Generate Terrain
+
+We can use that for loop code while picking out of a random array of gameobjects. Look this code up if we have to do too much refactoring.
+
+So we then have let's say 4 chunks in a big, each with their own predesigned prefab decorations. Then every four blocks we will be randomly a different one in the series. That will add a lot of variety to start, and starts developing our code for more procedural generation.
+
+In the future we will have a for loop inside a for loop to go through the biomes likes this:
+
+
+for(<pick random biome>)
+        for (<pick random tile from biome>)
+        
+Or we could do something like:
+
+variable array = <pick random biome>
+        
+out of that variable go through and for (<pick random tile from biome>)
+
+
 # Bug
 
 We might have some weird bug to do with Garbage.cs (can turn off to test) and the cars are stoppig to spawn after a few tiles.
