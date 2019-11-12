@@ -1,3 +1,8 @@
+# Do 3 Lanes Like Real Traffic
+
+Do 3 lanes like real traffic, and have the cars drive slower in the slow lanes, average in the medium lane, and generally fast in the left lane, but vary. Plan this well on the AI cars so this is not a hassle.
+
+
 # An Even Simpler Way to Procedurally Generate Terrain
 
 - create larger tiles (50 x 2, or more)
