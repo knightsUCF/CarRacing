@@ -1,3 +1,12 @@
+# Car Turning - Controller from Scratch
+
+We want to see if we can make the controller from scratch. So let's see if adding gentle turning, and other mechanisms, perhaps ones we study from the Internet, can make our own car controller to give us full control, and give the player maximum comfort.
+
+
+# Button for Cruise Control
+
+Let's have a dedicated button that when toggled activates cruise control mode for the player. So we can do both the tapping acceleration and the cruise control mode.
+
 # End Sequence
 
 At the end do a replay of the final action scene, or a zoom out, panning the camera around. Use cinemachine to do this.
