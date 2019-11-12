@@ -61,6 +61,8 @@ We want to apply some dust as to when the player breaks. Perahps this is not too
 
 We want to have some sort of more sensitive breaking. For now we want to separate out deceleartion into breaking.
 
+(Later: we will also want to have some more sensitive system which breaks quicker (decreases the acceleration quicker) at high speeds, because at high speeds takes us much longer to slow down than at lower speeds.
+
 So we do not want to mess with the general deceleration built into the code because there are lots of if else bad code. We will separate this into a state machine later. We will definitely have to seperate out the Control.cs of the car into a state machine, because all sorts of complex things could happen concurrently.
 
 So for now to fix breaking, we will create a new breaking variable: public float breakDeceleration = <something higher than the regular deceleration>
