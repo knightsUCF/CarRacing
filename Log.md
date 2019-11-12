@@ -1,3 +1,11 @@
+# Monetization
+
+The monetization might slip 50 / 50, with 50 for rewarded video ads, (give in game reward of some sort like Crossy Road, just use their formula)
+
+And also have the cars be unlockable like the characters from Crossy Road. Make them the models feel very appealing and hipster, spinning against a background, everything color themed for effect.
+
+
+
 # Making the Gameplay Addictive
 
 I remember wondering a while ago what made a game addicting, and researching online did not help much. But now we have a much clearer idea of what makes a game addictive:
