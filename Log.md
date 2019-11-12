@@ -28,6 +28,12 @@ Here is how we did scoring. We put an is trigger collider wall on the car. Then 
         }
 
 
+We made a new method in UI to allow for this:
+
+        public float GetScore()
+            {
+                return score;
+            }
 
 # Rebuilding Colliders
 
