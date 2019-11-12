@@ -2,16 +2,16 @@
 
 Here is adding turning to our PlayerControls.cs:
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
 
 
 
 
 
-public class PlayerControls : MonoBehaviour
-{
+        public class PlayerControls : MonoBehaviour
+        {
 
         // acceleration
 
