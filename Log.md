@@ -6,6 +6,7 @@ The main point is: we want to create an individual prefab for both the "Left Lan
 
 So when creating these for the first time, set the forward bool to true on the Left Lane AI Car, and set the forward bool to false on the Right Lane AI car.
 
+Then drag these to the purely visual game object "Spawn Spot" into the spawn slot. The Spawn Spot prefab will have the "Spawn" script attached, which provides the slot.
 
 
 
