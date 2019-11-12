@@ -6,7 +6,7 @@ Now the movement controls will require some great deal of fine tuning, but there
 
 So now what we want to do is actually having a few minutes of gameplay. This will require:
 
-- along enough street
+- a long enough street
 
 - incoming cars with an AI car controller
 
@@ -15,6 +15,72 @@ So now what we want to do is actually having a few minutes of gameplay. This wil
 - a way to detect whether we crashed into another collider, and restart
 
 - a way to give us points for every car that we pass
+
+The game over state will naturally require our Data.cs state machine.
+
+So then that should not be a problem.
+
+For now we don't want to focus on the procedural generation, since that is something completely removed from core mechanics. And procedural generation can have a level of complexity we don't want to get stuck in yet.
+
+Also the procedural generation will have to work along with some of the infinite runner tutorials. So we will leave that.
+
+But for now we want to have a long stretch of road on which to begin testing. We will assemble this stretch of the road manually for now.
+
+Once we have a long enough road we will want to start working on AI.cs
+
+AI.cs will have public slots for each of the cars.
+
+Then the AI.cs will go through these gameobjects and have them coming at the player.
+
+A general AI class like this should scale well with a procedural infinite runner down the line.
+
+Okay, so at this point we want to have a long stretch of the road to playtest on, and incoming cars.
+
+We want to start off by simply having a game over state once we crash into any car collider.
+
+Also we want to record a score. 100 points for each car that we pass.
+
+So once all that is done, we can begin to fine tune the controls.
+
+If we have the car movement controls fine tuned, and the passing cars on the highway gameplay polished, then we can actually begin to work on the procedural level generation. But definitely save the procedural stuff until the end.
+
+So after we get into the procedural level generation stuff, we will want to study the infinite runner tutorials.
+
+At this point we can have at least 3 levels. The green grass level, the desert level, and the snow level. Perhaps the snow level will be the trickiest because of the slipperiness of the road. 
+
+Now we want to make the gameplay long enough with just 3 levels. So each of the levels will have plenty of procedural generation. After that 3 levels are definitely enough to launch with.
+
+So after that we will be in very good shape, having:
+
+1. playable game
+
+2. incoming AI traffic
+
+3. scoring system
+
+4. fine tuned player controls
+
+5. a procedurally generated world
+
+
+So after all this is done we can move on to the menu screen and settings.
+
+Once that is done we can begin to port the game and playtest on mobile devices.
+
+After that is done we will need to work on the sound effects and the score.
+
+After that the local leaderboard. This is actually kind of important, even if a nuissance, to draw the players into the game.
+
+And after all that is done, perhaps we can work on the bonus upgrades, although we might not need those, like Crossy Road.
+
+Another thing to be done would be to expand the highway, but we might not do that. Although we might want to start with a four lane highway to add much more variety and skill to the gameplay. With four lanes there will be a lot more turning.
+
+Okay, so we have all the major bases covered in terms of planning. We can rest easy and just work through these points. At the end we should have a pretty good prototype. Try to finish this in under a week. 
+
+Then after all that is done we will need to address monetization the Crossy Road way, and marketing.
+
+In Crossy Road there are two main types of monetization, rewarded video ads, and unlocking new characters. Go over the Crossy Road case study again. But the major takeaway is that in Crossy Road the player tries to unlock new characters, in our game we can have the player unlock new cars.
+
 
 
 # Leveraging the Physics Engine
