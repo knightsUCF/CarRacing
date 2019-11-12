@@ -4,6 +4,12 @@ Now after getting the first draft of the procedural system working, the immediat
 
 We will be using time based garbage collection.
 
+So simply drag this script onto our "Chunk" object, which also contains "Procedural.cs"
+
+After the x LifeTime in seconds, the chunk will auto clean up.
+
+
+
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
