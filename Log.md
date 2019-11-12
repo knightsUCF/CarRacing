@@ -1,3 +1,7 @@
+# Going through the Infinite Runner 3D Codebase tutorial
+
+https://github.com/dgkanatsios/InfiniteRunner3D
+
 # Infinite Runner 3D Codebase
 
 So going through infinite runners we found a very simple and elegant tutorial: https://github.com/dgkanatsios/InfiniteRunner3D
