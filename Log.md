@@ -1,3 +1,10 @@
+# Completing Main Tasks - Getting Closer to a Vertical Slice
+
+Completing the main tasks below will get us close to a vertical slice MVP. 
+
+Then we will continue the other tasks. 
+
+
 # Next Main Task - Long Road
 
 So our next main task is to create a long road. Let's not worry too much about aesthetics at this point and just get the road down.
