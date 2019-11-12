@@ -1,3 +1,7 @@
+# Perhaps use Pyramids
+
+Perhaps use those desert pyramids, or probably not. Too out there.
+
 # Show a Dragon or some other Fantastical Creature once in a Long Time
 
 Like Sim City, who showed the Loch Ness if you played a lot, do that also. Show some kind of creature if the player plays for a very long time. A type of Easter Egg.
