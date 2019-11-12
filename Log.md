@@ -1,3 +1,12 @@
+# Cars Coming from Back of Player
+
+If the player slows down, we want cars to come from the back, especially on a four lane road.
+
+
+# Breaking Visuals
+
+We want to apply some dust as to when the player breaks. Perahps this is not too visually intensive on mobile.
+
 # Breaking
 
 We want to have some sort of more sensitive breaking. For now we want to separate out deceleartion into breaking.
