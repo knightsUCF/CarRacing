@@ -1,3 +1,7 @@
+# A Natural Barrier
+
+Maybe instead of the concrete fasad for the barrier of the sides the road, we can instead use the natural response of traction of riding on grass / dirt. So we would apply some force where the car is more likely to slip out of control, and then flash the car if they venture out into the terrain.
+
 # A Local Leaderboard
 
 A local leaderboard is very important.
