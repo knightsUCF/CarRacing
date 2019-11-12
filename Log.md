@@ -32,6 +32,9 @@ V. Code
 We want to keep our code in a data oriented design, so we will be using the code from our platformer, to keep all of our data in a centralized file, Data.cs
 
 
+Are there any other elements we're missing? There is of course monetization, and advertising, but we will address those later. For now we will build out the stuff that is least likely to get disrupted by any future changes to not waste any time or work.
+
+
 # Gameplay
 
 So the gameplay is an "infinite runner" type game. We should investigate assets and also tutorials to check how infinite runners are done, so we don't reinvent the wheel and save us some time.
