@@ -8,6 +8,13 @@ For now a faster acceleration works well with a slower deceleration, since we ca
 
 if (breakPressed) speed = speed + breakDeceleration * Time.deltaTime;
 
+So that works well. 
+
+The other thing we want to implement now is moving side to side. At slower speeds we might need a custom routine which turns the wheels, or makes the car turn more in a circular fashion, but at high speeds just moving side to side is what we want.
+
+After we implement turning side to side, we want to implement colliders.
+
+Now at high speeds turning side to side will probably a constant value. But then at slower speeds we will detect the speed of the car, and if below the speed threshold we will need to apply a different turning mechanism, since we cannot turn side to side while remaining in a fixed position.
 
 # Infinite Runner
 
