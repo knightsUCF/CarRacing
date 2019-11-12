@@ -1,3 +1,7 @@
+# Show a Dragon or some other Fantastical Creature once in a Long Time
+
+Like Sim City, who showed the Loch Ness if you played a lot, do that also. Show some kind of creature if the player plays for a very long time. A type of Easter Egg.
+
 # Car Turning - Controller from Scratch
 
 We want to see if we can make the controller from scratch. So let's see if adding gentle turning, and other mechanisms, perhaps ones we study from the Internet, can make our own car controller to give us full control, and give the player maximum comfort.
