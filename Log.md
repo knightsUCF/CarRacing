@@ -4,9 +4,9 @@ Now after getting the first draft of the procedural system working, the immediat
 
 We will be using time based garbage collection.
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
 
 
 
