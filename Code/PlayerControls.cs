@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 
-public class PlayerControls : MonoBehaviour
+public class Controls : MonoBehaviour
 {
 
     // acceleration
@@ -31,8 +31,17 @@ public class PlayerControls : MonoBehaviour
 
 
 
+	void CheckForClose()
+	{
+		if (Input.GetKey("escape"))
+		{
+			Application.Quit();
+		}
+	}
 
-    void Move()
+
+
+	void Move()
 	{
 		if ((Input.GetKey(KeyCode.S)) && (speed < maxSpeed)) speed = speed - acceleration * Time.deltaTime;
 		else if ((Input.GetKey(KeyCode.W)) && (speed > -maxSpeed)) speed = speed + acceleration * Time.deltaTime;
@@ -82,6 +91,7 @@ public class PlayerControls : MonoBehaviour
 	void Update()
 	{
 		RunMovementRoutines();
+		CheckForClose();
 	}
 
 }
