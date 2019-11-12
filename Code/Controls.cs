@@ -31,17 +31,8 @@ public class Controls : MonoBehaviour
 
 
 
-	void CheckForClose()
-	{
-		if (Input.GetKey("escape"))
-		{
-			Application.Quit();
-		}
-	}
 
-
-
-	void Move()
+    void Move()
 	{
 		if ((Input.GetKey(KeyCode.S)) && (speed < maxSpeed)) speed = speed - acceleration * Time.deltaTime;
 		else if ((Input.GetKey(KeyCode.W)) && (speed > -maxSpeed)) speed = speed + acceleration * Time.deltaTime;
@@ -91,7 +82,6 @@ public class Controls : MonoBehaviour
 	void Update()
 	{
 		RunMovementRoutines();
-		CheckForClose();
 	}
 
 }
