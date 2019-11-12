@@ -18,6 +18,12 @@ Here are some major things to do from here:
 
 - create procedural generation for those biomes
 
+- work on smoothing out the controls
+
+- add menu screen, and mock monitazation screen like Crossy Road
+
+- also add please rate us type thing like Crossy Road, so we amass much more reviews, and as a result, traffic
+
 
 # Cars Coming from Back of Player
 
