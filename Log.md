@@ -1,6 +1,6 @@
 # Scoring
 
-Here is how we did scrolling. We put an is trigger collider wall on the car. Then on the same parent game object we put this code:
+Here is how we did scoring. We put an is trigger collider wall on the car. Then on the same parent game object we put this code:
 
         using System.Collections;
         using System.Collections.Generic;
