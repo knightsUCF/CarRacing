@@ -2,6 +2,25 @@
 
 So the gameplay is an "infinite runner" type game. We should investigate assets and also tutorials to check how infinite runners are done, so we don't reinvent the wheel and save us some time.
 
+We will essentially move the transform of the car in two directions:
+
+1) Moving
+
+2) Accelerating
+
+
+Perhaps we should even design much of the game on paper so the process goes smoothly. Although we are very tempted just to jump in and go with the John Romero method of no prototypes. Either this really is not a complex project.
+
+So then we will have two lanes of traffic. The traffic comes and goes in randomized intervals. Perhaps every car that you skip the player gets point, (which they are used to wanting to do in real life.)
+
+So perhaps our first game loop will be skipping cars, and getting a point for every car that we pass.
+
+Also if we go to fast then we are stopped, and perhaps we can get away if we drive fast enough.
+
+The other thing on the highway will be bonus points we can simply move over to unlock. These will be randomized in a roguelike fashion, so sometimes this will be a health power up, or a bonus points power, whatever.
+
+
+
 
 
 # 11 / 12 / 2019 - Getting Started
