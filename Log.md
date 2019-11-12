@@ -1,3 +1,14 @@
+# Two Things
+
+So we actually had a hidden bug in the below code with this.transform.
+
+Since everything was getting put onto the parent game object with this.transform, we were deleting the entire parent and hence all the generated chunks. Taking out this.transform fixed this.
+
+So the code is now working with garbage collection, which is really good.
+
+However we have one bug. At the end of the procedural generation if we remain on the tile, then the current tile will get destroyed. We need to fix this and somehow detect that the player is still there, so don't destroy until the player leaves the chunk tile.
+
+
 # Garbage Collection
 
 Now after getting the first draft of the procedural system working, the immediate next step is to employ garbage collection.
