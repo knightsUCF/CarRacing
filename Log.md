@@ -1,4 +1,4 @@
-# Set Up for the Player
+# Set Up the Player
 
 To set up the player:
 
