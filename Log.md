@@ -1,3 +1,22 @@
+# Next Steps
+
+So we have some basic movement on the car, a world, and incoming vehicles. So we are getting the basics down.
+
+Now the movement controls will require some great deal of fine tuning, but there are other more important things to do, and we can always fine tune that later.
+
+So now what we want to do is actually having a few minutes of gameplay. This will require:
+
+- along enough street
+
+- incoming cars with an AI car controller
+
+- colliders on the cars
+
+- a way to detect whether we crashed into another collider, and restart
+
+- a way to give us points for every car that we pass
+
+
 # Leveraging the Physics Engine
 
 Leveraging the physics engine comes to great effect, since we can get a real world type simulation without doing any extra work. This works particularly well for the collisions. To note, if the player flips and lands then they keep on playing, which also provides for plenty of streamable moments.
