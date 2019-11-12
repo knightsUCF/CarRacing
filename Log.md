@@ -1,3 +1,20 @@
+# Infinite Runner 3D Codebase
+
+So going through infinite runners we found a very simple and elegant tutorial: https://github.com/dgkanatsios/InfiniteRunner3D
+
+So before going through our regular steps, we should probably go through this code first, since there are a lot of helpful things in here, including setting up our Game Manager, and our State.
+
+We will do this as: Game.cs, and State.cs (changed from data), since that just seems to flow better.
+
+So let's go through this tutorial and jot down all the important stuff.
+
+At the end we should have an infinite procedurally generated level.
+
+Of course we want to still go through other tutorials, but this will take some time. While we go through the other infinite runner tutorials we will want to take notes of the implementation, and specifially the implementation of procedurally generating levels.
+
+As a side note, the author of the above tutorial mentions some things, which can be improved, and one of them is an object pooler. This is something we should implement to keep the game running optimized on mobile devices.
+
+
 # Completing Main Tasks - Getting Closer to a Vertical Slice
 
 Completing the main tasks below will get us close to a vertical slice MVP. 
