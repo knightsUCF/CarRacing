@@ -1,3 +1,49 @@
+# First Draft of Procedural Code Working!
+
+  
+
+        using UnityEngine;
+        using System.Collections;
+
+        /*
+
+        Attach to chunk object, this will talk to the collider that is attached.
+        When the player enters the collider this spawns another object.
+
+        */
+
+
+
+        public class Procedural : MonoBehaviour
+        {
+
+
+            public GameObject chunk; // randomized chunks: public GameObject[] chunks
+
+            public float offset = 250.0f;
+
+            Vector3 pos;
+
+            Vector3 rotation; // we don't really need this, but our tiles are rotated 90, and we might have to rewrite Controls.cs because the car goes the other way
+
+
+
+            private void OnTriggerEnter(Collider c)
+            {
+                if (c.gameObject.tag == Constants.PlayerTag)
+                {
+                    Debug.Log("Entered collider area");
+
+                    pos = transform.position;
+                    pos.x = transform.position.x + offset;
+
+
+                    Instantiate(chunk, pos, Quaternion.Euler(new Vector3(0, 90, 0)), this.transform);
+                }
+            }
+        }
+
+
 # Rewriting the N + 1 Code
 
 The N + 1 code is very good, but we can rewrite this just to fit our needs since we will not need multiple path spawn points for the different turns, at least for now.
