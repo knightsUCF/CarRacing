@@ -1,3 +1,74 @@
+# Fixing the "Don't Destroy Tile that the Player is Resting On"
+
+So we fixed the problem where we were destroying the tile the player was resting on. However if the player comes to a stop the tile in front of them gets destroyed after ten seconds. So we want to add an extra check to if (playerOnTile && DontDestroyTileInFront)
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+
+
+    public class Garbage : MonoBehaviour
+    {
+
+
+        public float LifeTime = 10f;
+
+
+        bool playerOnTile;
+
+
+
+
+
+        void Start()
+        {
+            Invoke("DestroyObject", LifeTime);
+        }
+
+
+
+        void DestroyObject()
+        {
+            if (Game.Instance.GameState != GameState.Dead)
+            {
+                if (!playerOnTile) 
+                {
+                    Debug.Log("Destroying game object");
+                    Destroy(gameObject);
+                }
+            }
+        }
+
+
+
+        // detect whether the player is in the collider so we don't destroy the tile the player is resting on
+
+        private void OnTriggerEnter(Collider c)
+        {
+            if (c.gameObject.tag == Constants.PlayerTag)
+            {
+                playerOnTile = true;
+            }
+        }
+
+
+
+        private void OnTriggerExit(Collider c)
+        {
+            if (c.gameObject.tag == Constants.PlayerTag)
+            {
+                playerOnTile = false;
+            }
+
+        }
+
+
+
+    }
+
+
 # Two Things
 
 So we actually had a hidden bug in the below code with this.transform.
