@@ -1,3 +1,9 @@
+# Variety in Gameplay
+
+So one of the ways we want to accomplish variety in the gameplay is to change the environments the player is going through. Kind of like Crossy Road changes the types of barriers we have to cross.
+
+We want to come up with all sorts of "easy wins" in variety, where we don't have to do too much extra work.
+
 # "Least Risk" Elements
 
 We want to start with the least risk elements, so that we don't have to redo any work. We will just go down the below list to go through these.
