@@ -1,3 +1,36 @@
+# Garbage Collection
+
+Now after getting the first draft of the procedural system working, the immediate next step is to employ garbage collection.
+
+We will be using time based garbage collection.
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+
+
+    public class Garbage : MonoBehaviour
+    {
+
+      public float LifeTime = 10f;
+
+      void Start()
+      {
+        Invoke("DestroyObject", LifeTime);
+      }
+
+      void DestroyObject()
+      {
+        if (Game.Instance.GameState != GameState.Dead)
+          Destroy(gameObject);
+      }
+
+
+    }
+
+
 # First Draft of Procedural Code Working!
 
   
