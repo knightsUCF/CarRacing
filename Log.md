@@ -1,3 +1,12 @@
+# Chunks
+
+We want to do a few things with chunk. We want to first off make chunk two times bigger if not more, so things appear farther in the horizon. Also we want to decrease the garbage collection time to at least 20 secondds.
+
+There are two ways of solving the garbage collection issue, either time or colliders on the player. We have a separate is trigger collider, so if we are within the players very large is trigger collider then don't destroy. Yes, this solution is better than the timed one, and works very well.
+
+Perhaps later we will want to have some "emergency" script which checks if the player's position fell below the floor and then instantiate them on top of the world again. Only in rare cases this might happen, but I think the 30 second time limit solved the disappearing floor bug, but further the is trigger collider check in the if (!playerOnGround) should solve this bug.
+
+
 # Setting Up the Car AI
 
 Setting up the Car AI was a little tricky but we figured out a clean and elegant way.
@@ -7,6 +16,9 @@ The main point is: we want to create an individual prefab for both the "Left Lan
 So when creating these for the first time, set the forward bool to true on the Left Lane AI Car, and set the forward bool to false on the Right Lane AI car.
 
 Then drag these to the purely visual game object "Spawn Spot" into the spawn slot. The Spawn Spot prefab will have the "Spawn" script attached, which provides the slot.
+
+All of the Spawn Spots are equal child members of "Chunk", which is the main grass big tile.
+
 
 
 
