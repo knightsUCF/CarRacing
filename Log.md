@@ -4,6 +4,8 @@
 
 - create an array of a bunch of variations per one of the 4 biodomes (1. grasslands 2. desert 3. snow 4. city), generate 4 of those variation per biodome
 
+- keep things in multiples of 64, the tiles came pregenerated at a 50 snap resoultion. So that's fine. We can use a system of 10s and 50s instead of multioples of 4 for this one. But generating the next biodomes we can still subdivide into 4 segments per each atomic biome generation
+
 - then after 4 generate the next 4 tiles belong to the next biodome
 
 
