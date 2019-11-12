@@ -46,7 +46,11 @@ Here are some major things to do from here:
 
 - randomize the frequency of traffic, allow some wide open stretches of road, especially in the country
 
-- create a central AI.cs which will handle the generation of cars, and their frequency, and any other patternsw
+- create a central AI.cs which will handle the generation of cars, and their frequency, and any other patterns
+
+- test and build out mobile controls
+
+- review the Crossy Road GDC 
 
 # Cars Coming from Back of Player
 
