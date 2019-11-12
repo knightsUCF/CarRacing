@@ -63,6 +63,10 @@ The key is this script, "PathSpawnCollider", which is used in both the straight 
         – The PathSpawnPoints array is used to host the locations that the next path and borders will be instantiated. In the “straight paths” level the array will have only one member (since we’ll only instantiate the next path) whereas in the “rotated paths” level the array will hold three locations, in one of which there will be the new path and in the rest two there will be the red borders that will kill Max upon collision
         – The Path object holds the path prefab
         – The DangerousBorder array holds the RedBorder prefab in the “rotated paths” level whereas it is null in the “straight path” level (where we do not need it)
+        
+        When Max collides with the PathSpawnCollider game object, game engine randomly chooses whether the next path will be straight, left or right. In the case of the “straight paths” level, we have only one entry in the PathSpawnPoints array (which corresponds to the straight location), so randomSpawnPoint will be 0 and the next path will be instatiated at the straight location. In the “rotated paths” level, we instatiate the next path on the chosen location and we also instantiate the RedBorder prefabs on the other two locations, while we are rotating them by 90 degrees to make them fit properly.
+        
+        
         */
 
 
