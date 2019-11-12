@@ -1,3 +1,25 @@
+# Basic Starting Game Objects
+
+
+I. World
+
+So we will want a street view with the camera pointing up ahead. We will also like to have the voxel clouds found in the VoxelPlay app. We also want trees on the side to hover by, as a way of decoration but also a way of guaging speed.
+
+II. Player
+
+The player is a car. They can move the car left to right, and also accelerate and deccelerate.
+
+III. UI
+
+The UI will be designed for a touch screen, so we will need some keyboard shortcuts while we are testing on desktop. For the touch screen interface we will need a way to move left to right and also accelerate and deccelerate.
+
+IV. Gameplay
+
+We will take elements from rogue like gameplay and also Crossy Road.
+
+We will have random cars in front of us, and random cars on the left lane. We have the choice to use the left lane to pass the cars, but as we do so we risk colliding with oncoming traffic. Once we collide with oncoming traffic we lose the game, like in Crossy Road and start over. Focus on making an enjoyable simple core loop, where the player can die and goes back to the beginning, but still enjoys replaying the game.
+
+
 # Gameplay
 
 So the gameplay is an "infinite runner" type game. We should investigate assets and also tutorials to check how infinite runners are done, so we don't reinvent the wheel and save us some time.
