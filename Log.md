@@ -14,6 +14,10 @@ Of course we want to still go through other tutorials, but this will take some t
 
 As a side note, the author of the above tutorial mentions some things, which can be improved, and one of them is an object pooler. This is something we should implement to keep the game running optimized on mobile devices.
 
+So with this we are going to be getting even closer to the vertical slice.
+
+The next steps ahead is to go through all the tutorials, make comments here, and then post the code here and make comments on the code, beginning to rewrite and customize the code for our game.
+
 
 # Completing Main Tasks - Getting Closer to a Vertical Slice
 
