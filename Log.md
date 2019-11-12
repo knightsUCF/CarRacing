@@ -1,3 +1,22 @@
+# Next Main Task - Long Road
+
+So our next main task is to create a long road. Let's not worry too much about aesthetics at this point and just get the road down.
+
+So we will want to install ProGrids, and then make the highway patch into a nice even 1:1 tile, so that we can then snap to grid over a long course.
+
+After this we should be able to drive down a long street to achieve longer gameplay.
+
+Next up will be creating the AI system, and having the cars go in both direction on the road. We are going to start by having the cars going at constant speed. (Later the cars can use their blinkers to give a heads up to the player when they will be turning.)
+
+So once the AI system is in place we would like to be able to tell when we collide with the AI.
+
+If we collide let's get a game over state, and reset our position to the beginning, perhaps with something that requires the player to press a button to restart.
+
+Let's also keep the cars spaced far enough apart where we can go through some of the gameplay without crashing right away.
+
+Also, let's implement then the scoring system. One way to do this would be to have a separate trigger for detecting the player. So if the player enters the trigger, and then their x position is greater then the car, then add 100 points to their score. Also have to have some way of preventing cheating the system.
+
+
 # Road Boundaries
 
 Perhaps we can have a simple road boundary like a sidewalk which naturally will collide and flip the car at high speeds. At lower speeds the player might get some leeway, so they can ride over the sidewalk, but not much further, or out of bounds.
