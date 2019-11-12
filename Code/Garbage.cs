@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 
-public class GarbageCollection : MonoBehaviour
+public class Garbage : MonoBehaviour
 {
 
 	void Start()
