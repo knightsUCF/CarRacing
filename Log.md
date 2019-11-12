@@ -24,6 +24,20 @@ Here are some major things to do from here:
 
 - also add please rate us type thing like Crossy Road, so we amass much more reviews, and as a result, traffic
 
+- straighten out help with a lerp function if the car moves out of view
+
+- add some camera spring
+
+- add glowing lights in the dark at nighttime
+
+- add headlights to the cars to light up the darkness
+
+- darkness can fall over farmfields also, then we have to rely on our flashlight
+
+- edit miles per hour display, perhaps convert to a meter to show a visual display, or just have the double digit number rounded in nice big letters. Make that look aesthetic.
+
+
+
 
 # Cars Coming from Back of Player
 
