@@ -56,6 +56,8 @@ Here are some major things to do from here:
 
 - put curbs on the side to punish the player for going out of bounds, they can slow down and then ride over the curb to go explore, but then flash the car, and reset their position, (game over)
 
+- detect if we are upside down, and then end the game, and flash the car
+
 # Cars Coming from Back of Player
 
 If the player slows down, we want cars to come from the back, especially on a four lane road.
