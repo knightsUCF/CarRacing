@@ -4,6 +4,8 @@ So one of the ways we want to accomplish variety in the gameplay is to change th
 
 We want to come up with all sorts of "easy wins" in variety, where we don't have to do too much extra work.
 
+The "Voxel World Pack" does just that. We have three environments we can use. Grass, snow, and desert. How we arrange them into ascending orders of level difficulty remains to be seen.
+
 # "Least Risk" Elements
 
 We want to start with the least risk elements, so that we don't have to redo any work. We will just go down the below list to go through these.
