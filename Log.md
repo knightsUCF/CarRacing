@@ -16,6 +16,27 @@ Then at some part of the process we will need to start testing early on mobile, 
 
 Another thing we will want to do for the player right away is detect collisions. So we will use the unity physics engine, and we will give the player a few seconds to witness the physics collisions, but then we will reset the game to the beginning (with the state machine found in Data.cs)
 
+III. UI
+
+So we will want a score view, so we can keep track of points. Again this is something that can easily be customized later, so we can rest easy implementing the score view, without fearing we will be redoing our work later.
+
+We also want some simple stuff to orient the player like, "Start Game", "Game Over", some simple state stuff to orient us.
+
+IV. Gameplay
+
+This will be the meat of the project. We will want to start by having a lane of random traffic moving in front of us. We can begin to start playing around with this prototype. Next would be to establish the traffic coming on down the left side.
+
+And after that we want to establish physics collisions. We will need to play around with the mass physics properties of the rigid body, since this can only be set through experimentation.
+
+Once the player colliders with a car, restart the game, to begin to give the player a sense of gameplay. Also save the high score so the player can test their high score against others.
+
+We also want to add some basic sounds here.
+
+This actually is all we need to do for now. Once this becomes part of a solid prototype, we will want to also introduce some sort of powerups coming down the street for us to catch.
+
+V. Code
+
+Of course we want to keep code as simple as possible. Beginning right away the game as a state machine in Data.cs will make our lives much easier.
 
 
 # Basic Starting Game Objects
