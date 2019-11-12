@@ -58,6 +58,8 @@ Here are some major things to do from here:
 
 - detect if we are upside down, flash the car, then end the game, same goes for AI
 
+- add random breaking to AI cars, and also have the taillights signal on, that would look cool in the darkness, perhaps even increase the frequency in the darkness
+
 # Cars Coming from Back of Player
 
 If the player slows down, we want cars to come from the back, especially on a four lane road.
