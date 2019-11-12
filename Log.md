@@ -1,3 +1,8 @@
+# End Sequence
+
+At the end do a replay of the final action scene, or a zoom out, panning the camera around. Use cinemachine to do this.
+
+
 # Do 3 Lanes Like Real Traffic
 
 Do 3 lanes like real traffic, and have the cars drive slower in the slow lanes, average in the medium lane, and generally fast in the left lane, but vary. Plan this well on the AI cars so this is not a hassle.
