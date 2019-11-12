@@ -2,6 +2,9 @@
 
 https://github.com/dgkanatsios/InfiniteRunner3D
 
+Part 1: https://dgkanatsios.com/2016/03/07/creating-an-infinite-3d-runner-game-in-unity-like-temple-run-subway-surfers-part-1/
+
+
 # Infinite Runner 3D Codebase
 
 So going through infinite runners we found a very simple and elegant tutorial: https://github.com/dgkanatsios/InfiniteRunner3D
