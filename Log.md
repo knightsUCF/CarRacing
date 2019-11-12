@@ -1,3 +1,7 @@
+# Forcing the Player to Play More Defensively like Dark Souls
+
+We want to create the type of gameplay that if the player is greedy they are punished. In our case, since we are offering points for passing cars, if the player gets greedy they will begin to go really fast to get more points, but then if there is a congestion or more traffic, then the player will lose. The thing is experienced players will learn to take advantage of the system (we gently want to teach them), and they will go fast when they can to get the most points, and then detect a wave of traffic and slow down. To be fair we will not have random traffic. We will have a random chance of a traffic wave. So the action is atomic.
+
 # Random Stretches of Traffic and Congestion
 
 We want to have random stretches (waves) of traffic so the player has to slow down. But the traffic feels like a wave to the player so they can then speed up and take over the road for another atomic block of slower traffic.
