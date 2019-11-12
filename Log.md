@@ -2,30 +2,30 @@
 
 Here is how we did scrolling. We put an is trigger collider wall on the car. Then on the same parent game object we put this code:
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
 
 
 
 
-public class Score : MonoBehaviour
-{
-
-    float reward;
-
-
-    // for some reason on trigger enter works better than on exit
-
-    private void OnTriggerEnter(Collider c)
-    {
-        if (c.gameObject.tag == "AI")
+        public class Score : MonoBehaviour
         {
-            reward = UI.Instance.GetScore() + 100.0f;
-            UI.Instance.SetScore(reward);
+
+            float reward;
+
+
+            // for some reason on trigger enter works better than on exit
+
+            private void OnTriggerEnter(Collider c)
+            {
+                if (c.gameObject.tag == "AI")
+                {
+                    reward = UI.Instance.GetScore() + 100.0f;
+                    UI.Instance.SetScore(reward);
+                }
+            }
         }
-    }
-}
 
 
 
