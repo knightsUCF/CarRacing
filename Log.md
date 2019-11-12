@@ -1,3 +1,6 @@
+
+
+
 # Set Up the Player
 
 To set up the player:
@@ -43,6 +46,7 @@ The main point is: we want to create an individual prefab for both the "Left Lan
 
 So when creating these for the first time (Attach CarAI.cs to both the Left Lane and Right Lane AI car objects), set the forward bool to true on the Left Lane AI Car, and set the forward bool to false on the Right Lane AI car.
 
+Don't forget to put the garbage collector on the AI cars also to prevent memory leaks.
  
 
 Then drag these to the purely visual game object "Spawn Spot" into the spawn slot. The Spawn Spot prefab will have the "Spawn" script attached, which provides the slot.
