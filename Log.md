@@ -6,6 +6,15 @@ There are two ways of solving the garbage collection issue, either time or colli
 
 Perhaps later we will want to have some "emergency" script which checks if the player's position fell below the floor and then instantiate them on top of the world again. Only in rare cases this might happen, but I think the 30 second time limit solved the disappearing floor bug, but further the is trigger collider check in the if (!playerOnGround) should solve this bug.
 
+We will also want different styled chunks. Almost like a "megafauna" of chunks. We want to do this the simplest, most elegant, and least hassle way. One way of doing this would be to organize chunks by biome.
+
+So biome 1 chunks are the green grasslands. Then these chunks get the associated "random" elements, such as trees, and bushes etc.
+
+Then biome 2 chunks let's say are farmland. Then we can take trees from 1, since those will be common, bushes, but then also animals, and fences.
+
+Then if we are driving through the country the procedural generated could do all the biomes that fit into the larger parent class, "the great outdoors" or something. So then the procedurul parent would do: biome 2, biome 1, biome 2, biome 2, etc...  more random biomes in the division, "the great outdoors."
+
+
 
 # Setting Up the Car AI
 
