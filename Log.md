@@ -16,6 +16,123 @@ After we implement turning side to side, we want to implement colliders.
 
 Now at high speeds turning side to side will probably a constant value. But then at slower speeds we will detect the speed of the car, and if below the speed threshold we will need to apply a different turning mechanism, since we cannot turn side to side while remaining in a fixed position.
 
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+
+
+
+    public class PlayerControls : MonoBehaviour
+    {
+
+      // https://answers.unity.com/questions/29751/gradually-moving-an-object-up-to-speed-rather-then.html
+
+      public float speed = 0.0f;
+      public float maxSpeed = 10.0f; 
+      public float acceleration = 30.0f;
+      public float deceleration = 10.0f;
+
+      Vector3 pos;
+
+
+
+
+
+        void Move()
+      {
+        if ((Input.GetKey(KeyCode.S)) && (speed < maxSpeed)) speed = speed - acceleration * Time.deltaTime;
+        else if ((Input.GetKey(KeyCode.W)) && (speed > -maxSpeed)) speed = speed + acceleration * Time.deltaTime;
+
+        else
+        {
+          if (speed > deceleration * Time.deltaTime) speed = speed - deceleration * Time.deltaTime;
+                else if (speed < -deceleration * Time.deltaTime) speed = speed + deceleration * Time.deltaTime;
+                else speed = 0;
+        }
+
+        // transform.position.x = transform.position.x + speed * Time.deltaTime;
+        pos = transform.position;
+        pos.x = transform.position.x + speed * Time.deltaTime;
+        transform.position = pos;
+
+      }
+
+
+      void RunMovementRoutines()
+      {
+        Move();
+      }
+
+
+      void Update()
+      {
+        RunMovementRoutines();
+      }
+
+    }
+
+
+
+
+        /*
+      public float speed = 1.0f;
+
+
+      // acceleration: https://answers.unity.com/questions/769441/how-do-i-make-a-gameobject-accelerate.html
+
+      public float velocity = 0.0f;
+      public float maxVelocity = 1.0f;
+      public float acceleration = 0.0f;
+      public float accelerationSpeed = 0.1f;
+      public float maxAcceleration = 1.0f;
+      public float minAcceleration = -1.0f;
+
+
+
+
+        void Update()
+        {
+        RunMovementRoutines();
+        }
+
+
+
+        void Move()
+      {
+        var move = new Vector3(Input.GetAxis("Vertical"), 0, 0);
+        transform.position += move * velocity * Time.deltaTime;
+      }
+
+
+
+        void SetAcceleration()
+      {
+            if (Input.GetKey(KeyCode.W)) acceleration += accelerationSpeed;
+        if (Input.GetKey(KeyCode.S)) acceleration -= accelerationSpeed;
+        if (acceleration > maxAcceleration) acceleration = maxAcceleration;
+        if (acceleration < minAcceleration) acceleration = minAcceleration;
+
+        velocity += acceleration;
+
+        if (velocity > maxVelocity) velocity = maxVelocity;
+        if (velocity < -maxVelocity) velocity = -maxVelocity;
+      }
+
+
+
+        void RunMovementRoutines()
+      {
+        SetAcceleration();
+        Move();
+      }
+
+
+    }
+    */
+
 # Infinite Runner
 
 So this will become a looming big thing to figure out. For now we want to just get the basic car movement controls. Perhaps we can just stack a number of the same levels in a line to drive over, and then we will need to take a look at all sorts of infinite runner tutorials to pick the best and easiest workflow.
