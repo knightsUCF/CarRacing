@@ -54,6 +54,7 @@ Here are some major things to do from here:
 
 - instead of the 30 second garbage collect on the cars, we need a player vicinity is trigger collider, because for example if we follow the car for longer than 30 seconds, then the car disappears and is garbage collected
 
+- put curbs on the side to punish the player for going out of bounds, they can slow down and then ride over the curb to go explore, but then flash the car, and reset their position, (game over)
 
 # Cars Coming from Back of Player
 
