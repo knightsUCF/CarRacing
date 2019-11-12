@@ -25,7 +25,9 @@ Setting up the Car AI was a little tricky but we figured out a clean and elegant
 
 The main point is: we want to create an individual prefab for both the "Left Lane AI Car", and the "Right Lane AI Car". Later these can be more specific, but we just want a single prefab that will work, a black box we don't have to worry about.
 
-So when creating these for the first time, set the forward bool to true on the Left Lane AI Car, and set the forward bool to false on the Right Lane AI car.
+So when creating these for the first time (Attach CarAI.cs to both the Left Lane and Right Lane AI car objects), set the forward bool to true on the Left Lane AI Car, and set the forward bool to false on the Right Lane AI car.
+
+ 
 
 Then drag these to the purely visual game object "Spawn Spot" into the spawn slot. The Spawn Spot prefab will have the "Spawn" script attached, which provides the slot.
 
