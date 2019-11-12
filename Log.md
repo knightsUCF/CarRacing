@@ -52,6 +52,9 @@ Here are some major things to do from here:
 
 - review the Crossy Road GDC 
 
+- instead of the 30 second garbage collect on the cars, we need a player vicinity is trigger collider, because for example if we follow the car for longer than 30 seconds, then the car disappears and is garbage collected
+
+
 # Cars Coming from Back of Player
 
 If the player slows down, we want cars to come from the back, especially on a four lane road.
