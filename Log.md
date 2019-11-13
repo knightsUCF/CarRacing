@@ -1,3 +1,8 @@
+# Black Lines
+
+The black lines are most likely the result of a shader problem.
+
+
 # Organizing ToDos
 
 Okay, so let's not stress out too much. Everything we work on eventually gets completed with no major issues, so we can just relax.
