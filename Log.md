@@ -2,6 +2,10 @@
 
 The black lines are most likely the result of a shader problem.
 
+"Make sure you're set to Point filtering mode, make sure yo'u using textures with power-of-2 dimensions, and make sure you're only placing them in position that are multiples of 0.02, so set your snap settings for example to 0.16 if you have a 100 pixels to unit ratio. Or set your pixel ration to something like 64 and just move it by single units or half units."
+
+https://forum.unity.com/threads/black-lines-on-the-edges-of-tiled-sprites.226919/
+
 
 # Organizing ToDos
 
