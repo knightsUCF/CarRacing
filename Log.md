@@ -1,3 +1,33 @@
+# Organizing ToDos
+
+Okay, so let's not stress out too much. Everything we work on eventually gets completed with no major issues, so we can just relax.
+
+Also, what we write down here gets done. So just write up the things to get done in the right order.
+
+
+We have a few to do lists here so aggregate them into one master list.
+
+Get them in here, and then rank them afterward.
+
+Todo:
+
+- get game to compile on phone
+
+- set the turn of the car by swiping the screen (invisible controls)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Steve Jobs On the Competitive Advantage in Software vs Hardware
 
 
