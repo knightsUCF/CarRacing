@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=YXUhLbV8Nrg&t=2567s
 
 
 
-We go to these companies  that take 2 years to write apps and they can write their apps in about 90s days. If you can run run create a new product in 90 days versus your competitor in two years. That’s eight new products you can field for their every one. And you can start to see the competitive advantage being created this way. 
+We go to these companies  that take 2 years to write apps and they can write their apps in about 90s days. If you can create a new product in 90 days versus your competitor in two years. That’s eight new products you can field for their every one. And you can start to see the competitive advantage being created this way. 
 
 A lot of times you don’t know what your competitive advantage is when you’re creating a product.
 
