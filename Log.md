@@ -48,7 +48,7 @@ Have you run across the concept of custom operational applications?
 
 Do you have this problem in companies you come from? Pressure to write custom operational applications and very little available. Manufacturing, finance.
 
-Without owning something over an extended period of time, like a few years, where one has a chance where one has a chance to take responsibility for one's recommendations, where one has to see one's recommendations through all action stages and accumulate scar tissue for themistakes and pick oneself off the ground and dust one self of, one learns a fraction of what one can. Not owning the results, not owning the implementation is a fraction of the value and the fraction of the opportunity to learn. 
+Without owning something over an extended period of time, like a few years, where one has a chance where one has a chance to take responsibility for one's recommendations, where one has to see one's recommendations through all action stages and accumulate scar tissue for the mistakes and pick oneself off the ground and dust one self of, one learns a fraction of what one can. Not owning the results, not owning the implementation is a fraction of the value and the fraction of the opportunity to learn. 
 
 
 # Plans
