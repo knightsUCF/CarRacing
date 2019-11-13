@@ -51,6 +51,11 @@ public class UI : MonoBehaviour
         UpdateScoreText();
     }
 
+    public float GetScore()
+    {
+        return score;
+    }
+
     public void SetScore(float value)
     {
         score = value;
