@@ -13,12 +13,10 @@ public class CarAI : MonoBehaviour
     public float zPos = -10.0f;
 
     Vector3 pos;
+
+    public bool forward = true;
     
 
-    private void Start()
-    {
-        SetVelocity();
-    } 
 
 
     private void Update()
@@ -30,10 +28,21 @@ public class CarAI : MonoBehaviour
     private void SetVelocity()
     {
         pos = transform.position;
-        pos.x = transform.position.x - speed * Time.deltaTime;
-    
+
+
+        // cars moving in one lane
+
+        if (forward) pos.x = transform.position.x - speed * Time.deltaTime;
+
+        // cars moving the other direction in the other lane
+
+        if (!forward) pos.x = transform.position.x + speed * Time.deltaTime;
+
+
         transform.position = pos;
     }
+
+
 
 
 }
