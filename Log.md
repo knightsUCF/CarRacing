@@ -1,3 +1,183 @@
+# Plans
+
+
+
+
+
+Make highway lanes narrower
+
+
+Use lots of generic voxel art for decorations, for example, a plane flying overhead
+
+
+
+
+Show final score in large font at the end of a run
+
+
+Add game over state
+
+
+Will look a lot nicer with more variety, chicken pens, etc
+
+Even deserts will totally change up things
+
+
+World still looks a little barren, there is lots we can add
+
+
+Nighttime mode will be great
+
+
+Pressing shift turns up the break lights
+
+Add spring on car BEFORE spending too much time on controls, will change perspective
+
+
+Also put yourself in the mindset of what a player would want
+
+
+Follow John Romero tips:
+
+- encapsulate functionality
+
+- no prototypes
+
+- fix bugs right away
+
+- don’t build on a shaky foundation
+
+
+
+Some immediate things that will make the game better:
+
+- more environments
+
+- game over state
+
+- show score at the end
+
+- have cows mooing 
+
+- have advanced AI with rays on font so they don’t run into the player
+
+- have traffic jams where the player really has to slow down or they lose
+
+- one hit and you have to start over, like Crossy Road
+
+- city blocks
+
+- flying airplane
+
+- overhead pass sign comes up rarer, is more of a spectacle
+
+- detect when we flip over or get hit by a car to end the game run
+
+- flash the car when we go out of bounds
+
+- a sunset
+
+- neon city with a sunset!
+
+
+
+Since this is a semi fantastical game in a very general genre, we can get away with having a synth pop style cyberpunk like city… This would look awesome
+
+
+Don’t take for granted the monetization strategy from Crossy Road, these ideas are like forms, if you use them, they work.
+
+
+
+Getting a high score will feel better when the game is more challenging, when there are more cars you have to watch out for
+
+
+Leave one lane open for testing, so can just drift through the world with no damage, have a testing state for this, but in the normal game you can lose much quicker than this, so perhaps we will open up the grass lane right to the right of the traffic, since the AI traffic will still occupy the right lane and we have to watch for any traffic on the road to make things simple
+
+
+When the time comes to marketing, then reach out to all the admins in discord of the servers of popular streamers, especially of app games, and then they can communicate to the community about the game, and ask them to show the streamer, or send the press kit to an admin
+
+
+Once we narrow down the highway, we should add lanes
+
+We could have a water level, where we take the platform and lower the y coordinate, and then we can have voxel ships down under…
+
+
+If the game is free to play we can get a lot of downloads… That is key. Another form(ula) from Crossy Road.
+
+Especially if we release the game on Android and iOS we will get maximum traction. And then also concurrently releasing on Chinese stores…
+
+Need a clear contract. Refuse to sign any abusive contracts.
+
+
+For Chinese stores, will need to localize. That’s why good to keep all the string stuff in the file Constants.cs, and then even in Localization.cs
+
+Where Localization.cs looks at Settings.cs, and then determines current language. If that language is chosen then all the strings in Localization are chosen from a subset of that language. 
+
+We can name the variables in Localization.cs like: someDialogueEnglish, someDialogueChinese
+
+
+This game is more than long enough to fill a casual gaming spot, and also even more, so we are okay. Let’s just polish the core game loop.
+
+
+Polish as you go!
+
+
+The big overpass sign made a huge difference
+
+
+Having an ocean and seagulls will be amazing… And the sound of the wind…
+
+Sounds can make a huge difference.
+
+Sounds is one of the least effort things to do to get the most effect.
+
+We will want some sound of a machine, not necessarily of an engine, but some hum to represent the car speeding up, might have to take a sound sample and pitch up and down in a sound production software, or even record the exponential pitch up and down to play those when the player steps on the gas, quantize them to have a set we can use in a range of speed.
+
+
+Beating your high score will feel really good for the player. Also have local leaderboards. To show the player how people did in the local area. 
+
+We will need to get data on how all people did and then pool them together and divide evenly by the areas. 
+
+Not sure about the leaderboard thing? Does Crossy Road do that? All we need is what Crossy Road did.
+
+Birds flying by is one of those touches that can really bring out the game, like salt in a dish. This goes for clouds, and aircraft also.
+
+
+
+This is a video game, not business software. We can make the experience really magical for the user.
+
+Like for example the cows mooing. That is priceless. Especially that the effort required to put a sound clip together is minimal.
+
+
+Let’s also have some bird sounds, when different types of birds fly overhead. A few different types of birds is like using sea salt in a dish, combined with other rare salts.
+
+
+
+Determine the time in minutes, because this is very specific, of when we transition into the next level, which will either be desert or the city, perhaps desert, and then after desert grasslands again but with city, and then city in the dark after that, then perhaps grasslands and or desert in the dark
+
+
+
+
+
+Level 1 - Grasslands
+
+Level 2 - Desert
+
+Level 3 - Grasslands city
+
+Level 4 - Neon city
+
+Level 5 - Grasslands in the night
+
+Level 6 - Desert in the dark 
+
+
+Repeat
+
+
+Transition slowly into the game from the menu. So when the player selects continue or next, slowly fade the screen out and fade in, a very pleasant transition
+
+
 # A Natural Barrier
 
 Maybe instead of the concrete fasad for the barrier of the sides the road, we can instead use the natural response of traction of riding on grass / dirt. So we would apply some force where the car is more likely to slip out of control, and then flash the car if they venture out into the terrain.
