@@ -1,3 +1,10 @@
+# Amazing Asset Pack
+
+This asset pack does so much of what we are trying to do in the game. Buy this on Friday ($19)
+
+https://assetstore.unity.com/packages/templates/packs/rushy-racing-119676
+
+
 # Nice Voxel Style Car
 
 https://assetstore.unity.com/?price=0-0&q=mobile%20car&orderBy=0
