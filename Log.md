@@ -1,4 +1,4 @@
-# Steve Jobs Speech About the Competitive Advantage in Software vs Hardware
+# Steve Jobs On the Competitive Advantage in Software vs Hardware
 
 
 
