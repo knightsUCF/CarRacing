@@ -18,7 +18,7 @@ A lot of times you don’t know what your competitive advantage is when you’re
 
 We never anticipated desktop publishing, which turned out to be a competitive advantage. Maybe we weren’t smart enough. But we were smart enough to see that happening 9 - 12 months later.
 
-We changed our entire strategy to focus on desktop publishing. And that became the thing which got the mac into corporate America, where we could show the owners all the other wonderful things.
+We changed our entire strategy to focus on desktop publishing. And that became the thing which got the Mac into corporate America, where we could show the owners all the other wonderful things.
 
 The purpose is to create apps 5 - 10 times faster.
 
