@@ -1,3 +1,50 @@
+# Steve Jobs Speech About the Competitive Advantage in Software vs Hardware
+
+
+
+
+
+“We’re going to knock them out of the box (Sun only people doing this) with Next Step, which lets you build apps 5 times faster. Once you build them they are deployable by mere mortals. 
+
+- Steve Jobs 09:00 
+
+https://www.youtube.com/watch?v=YXUhLbV8Nrg&t=2567s
+
+
+
+We go to these companies  that take 2 years to write apps and they can write their apps in about 90s days. If you can run run create a new product in 90 days versus your competitor in two years. That’s eight new products you can field for their every one. And you can start to see the competitive advantage being created this way. 
+
+A lot of times you don’t know what your competitive advantage is when you’re creating a product.
+
+We never anticipated desktop publishing, which turned out to be a competitive advantage. Maybe we weren’t smart enough. But we were smart enough to see that happening 9 - 12 months later.
+
+We changed our entire strategy to focus on desktop publishing. And that became the thing which got the mac into corporate America, where we could show the owners all the other wonderful things.
+
+The purpose is to create apps 5 - 10 times faster.
+
+The commercial apps also allow you to build your own mission critical apps 5 - 10 times faster.
+ 
+This is the biggest problem for every big company and almost all medium sized companies, and you have have a solution in your hands and you dummies don’t even know.
+
+And we changed our sales and marketing strategy and we grew 4X.
+
+We’re talking to customers we wouldn’t have dreamed of talking to us.
+
+
+Hardware churns every 18 months. Pretty impossible to get a sustained competitive advantage out of hardware. (13:18)
+
+Lucky if you can make something 1.5 or 2 times as much as your competitor, which is not enough to be quite a competitive advantage, and that only lasts for 6 months. But software seems to take a lot longer for people to catch up with. Even 10 years.
+
+
+The soonest we will have a true competitor will be in 4 to 5 years.
+
+
+So we have that amount of time to grow, to compete on scale. Today we cannot compete on scale. We never have as many sales people. We don’t have the ad budgets. So we gotta have a better product. (14:00)
+
+
+
+
+
 # Plans
 
 
