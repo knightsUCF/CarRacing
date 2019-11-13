@@ -2,6 +2,16 @@
 
 So the asset pack has a lot of the stuff done for us, so we will have a little different ToDo list.
 
+The good news is that we have the game running on mobile with swipe controls. Even though the movement is jagged and too quantized, the controls do work for testing the game.
+
+So what should we move on to, knowing the asset pack might have us redo major portions of our game. Like the procedural generation and the car movement controls?
+
+We probably then should not work on procedural generation yet, or the car movement controls, since we will want to check the asswet code first.
+
+The spring camera will be nice. So as the player's car speeds up and turns, we will experiment with a spring on the camera. We will also do this after the asset pack.
+
+We might want to have a speed up meter on the right hand side. Just a narrow thin strip, which we can drag quickly up to set the speed. We want to be able to reach top velocity quickly, and also reach the slow velocity quickly. Even though we might need time to accelerate we want the user to reach these speeds quicker, instead of continous tapping. This will be essentially when the player reaches a traffic jam and wants to slow down.
+
 
 # Amazing Asset Pack
 
