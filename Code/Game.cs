@@ -8,6 +8,10 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
+
+
+    // SINGLETON //////////////////////////////////////////////
+
     void Awake()
     {
         if (instance == null)
@@ -34,6 +38,7 @@ public class Game : MonoBehaviour
         }
     }
 
+    //////////////////////////////////////////////////////////////
 
 
     // game initialization
@@ -44,14 +49,18 @@ public class Game : MonoBehaviour
         CanSwipe = false;
     }
 
+    // allows us to grab the game state struct?
+
     public GameState GameState { get; set; }
+
+
+    // not sure what this is
 
     public bool CanSwipe { get; set; }
 
 
 
     // methods
-
 
     public void Die()
     {
