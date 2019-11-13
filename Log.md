@@ -1,3 +1,8 @@
+# ToDo List until Friday in Light of the Asset Pack
+
+So the asset pack has a lot of the stuff done for us, so we will have a little different ToDo list.
+
+
 # Amazing Asset Pack
 
 This asset pack does so much of what we are trying to do in the game. Buy this on Friday ($19)
