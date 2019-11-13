@@ -34,6 +34,8 @@ public class Controls : MonoBehaviour
 	public float turnLeftBoundary = 0.0f;
 	public float turnRightBoundary = 0.0f;
 
+    private float maxCruiseSpeed = 20.0f;// should be zero
+
 
 	Vector3 pos;
 
@@ -46,17 +48,38 @@ public class Controls : MonoBehaviour
 		if ((Input.GetKey(KeyCode.S)) && (speed < maxSpeed)) speed = speed - acceleration * Time.deltaTime;
 		else if ((Input.GetKey(KeyCode.W)) && (speed > -maxSpeed)) speed = speed + acceleration * Time.deltaTime;
 
+
+        // the else deceleration loop is interfering with staying at cruise speed
+
 		else
 		{
-			if (speed > deceleration * Time.deltaTime) speed = speed - deceleration * Time.deltaTime;
-            else if (speed < -deceleration * Time.deltaTime) speed = speed + deceleration * Time.deltaTime;
-            else speed = 0;
+			// if (speed > deceleration * Time.deltaTime) speed = speed - deceleration * Time.deltaTime;
+            // else if (speed < -deceleration * Time.deltaTime) speed = speed + deceleration * Time.deltaTime;
+            // else speed = 0;
 		}
+
+        // set the max speed as the minimum cruise speed, but also allow to reset with the break
+
+        // Debug.Log("speed: " + speed);
+        // Debug.Log("maxCruiseSpeed: " + maxCruiseSpeed);
+        if (speed > maxCruiseSpeed) maxCruiseSpeed = speed;
+
+        if (speed > maxSpeed) speed = maxSpeed;
+        
 
 		// transform.position.x = transform.position.x + speed * Time.deltaTime;
 		pos = transform.position;
-		pos.x = transform.position.x + speed * Time.deltaTime;
-		transform.position = pos;
+        // pos.x = transform.position.x + speed * Time.deltaTime;
+
+        // we're taking out cruise for now...
+        // pos.x = transform.position.x + maxCruiseSpeed * Time.deltaTime;
+
+        // really bad way of adding a max speed:
+        pos.x = transform.position.x + maxSpeed * Time.deltaTime;
+
+
+
+        transform.position = pos;
 
 	}
 
@@ -80,11 +103,27 @@ public class Controls : MonoBehaviour
 	}
 
 
+    void Break()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = speed - breakDeceleration * Time.deltaTime;
+        }
+
+        if (speed <= 0) speed = 0; // so we don't go backwards with the break
+
+        pos = transform.position;
+        pos.x = transform.position.x + speed * Time.deltaTime;
+        transform.position = pos;
+    }
+
+
 
 	void RunMovementRoutines()
 	{
 		Move();
 		Turn();
+        Break();
 	}
 
 
