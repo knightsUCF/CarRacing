@@ -42,7 +42,11 @@ The soonest we will have a true competitor will be in 4 to 5 years.
 So we have that amount of time to grow, to compete on scale. Today we cannot compete on scale. We never have as many sales people. We don’t have the ad budgets. So we gotta have a better product. (14:00)
 
 
+So we have the next 3 - 4 years to run really fast where we are at a large enough scale so we can compete. And that's what we are doing with our lives. Spending a lot of time with custmers. Spending a lot of time making Next Step better. That's the strategic basis of what we do. Does that make any sense to you?
 
+Have you run across the concept of custom operational applications? 
+
+Do you have this problem in companies you come from? Pressure to write custom operational applications and very little available. Manufacturing, finance.
 
 
 # Plans
