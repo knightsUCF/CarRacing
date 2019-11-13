@@ -15,6 +15,13 @@ Todo:
 
 - set the turn of the car by swiping the screen (invisible controls)
 
+- dig through this document for todos
+
+- rank the todos
+
+
+So we will copy and paste a bunch of ToDos. But before going there let's just work a little more freer on some stuff.
+
 
 
 
