@@ -16,6 +16,13 @@ Here is a pack for $5 we could use as passenger cars:
 
 https://assetstore.unity.com/detail/3d/vehicles/land/1-free-low-poly-cubic-voxel-cars-model-142626
 
+Here is another one, but not sure if we could mix and match this, since the resolution seems lower. The monster truck is a nice addition though.
+
+https://assetstore.unity.com/detail/3d/twenty-one-voxel-vehicles-67841
+
+But if we were to use this one, we have 33 voxel cars plus 21 here, so we would have 54, so we would be in really good shape.
+
+Then for the cars we could have these custom parameters, top speed, acceleration, turn speed, and handling. That way the player feels like they are expanding their collection with different featured sets. People are hoarders by nature, so having 50 unlockable characters will give them plenty to do.
 
 # Expanding on the Base Gameplay
 
