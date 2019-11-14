@@ -1,3 +1,13 @@
+# Top Speed
+
+Try to gauge the top speed from this game:
+
+https://www.youtube.com/watch?v=NJOJgGRh0hY
+
+
+Seems like 25. We should not be going too much faster than this.
+
+
 # Camera Spring
 
 The camera spring mechanism is here at 18:00
