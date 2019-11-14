@@ -92,7 +92,7 @@ We could also combine ideas from Tamagotchi pets, where if we let our residents 
 
 We could also have the parallax effect from the Thomas Brush tutorial, when the player moves the camera side to side, and we see the foliage and the mountains move in the background with the parallax effect. Perhaps we can use a skeleton model to animate characters.
 
-One way would be to pay an artist. But perhaps instead of this, we should make a voxel game, since we can guarantee all the art and work towards completion in three months.
+One way would be to pay an artist. But perhaps instead of this, we should make a voxel game, since we can guarantee all the art and work towards completion in three months. Plus in 3D we could leverage all of the physics engine. And a game in 3D will generally sell more than a game in 2D.
 
 This seems like a game, which would be bound to do well, especially among the target demographic of middle aged women. They would much rather play a game like this, than a science fiction game, narrowing out much of our competition.
 
