@@ -8,6 +8,10 @@ Here are more voxel cars. Perhaps we could mix and match these two.
 
 https://assetstore.unity.com/detail/3d/vehicles/land/simple-voxel-cars-111905
 
+Here is a free one, we could use as a Ferrari.
+
+https://assetstore.unity.com/detail/3d/vehicles/land/1-free-low-poly-cubic-voxel-cars-model-142626
+
 
 
 # Expanding on the Base Gameplay
