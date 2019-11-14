@@ -1,3 +1,62 @@
+# Camera Spring Code
+
+Okay, so we have something that kind of works. Our main problem is that if we accelerate, then the camera stays in the back for some reason. And then when we decelerate, the camera catches up to the back. So the acceleration and deceleration changes in velocity are not picked as a position by the camera. So we are just forever chasing that one position in the back of the car, which might have to do with the stacked game objects in the hierarchy.
+
+Anyway, the other thing is that we want to place this code on the player, since that's where we will pick up our transform.position code. Also, have the main camera be seperate in the hierarchy and not as a subset of the player.
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+        // starts at 24:00:  https://youtu.be/lCulq9J0Y9E?t=1446
+
+
+        public class CameraSpring : MonoBehaviour
+        {
+            Vector3 moveCamTo;
+            float spring;
+
+            // public GameObject player;
+
+            public float xOffset = 20.0f;
+            float camOffset;
+            Vector3 pos;
+
+
+            private void Update()
+            {
+                spring = 0.96f; // what we will keep for the next frame
+
+
+
+                // moveCamTo = transform.position - transform.forward * 10.0f + Vector3.up * 5.0f; // Vector3.up prevents the camera from getting flipped when player rolls and becomes upside down, instead of doing transform.up
+
+                moveCamTo = transform.position - transform.forward * 1.0f + Vector3.up * 5.0f; // Vector3.up prevents the camera from getting flipped when player rolls and becomes upside down, instead of doing transform.up
+
+                moveCamTo.x += xOffset;
+
+                Camera.main.transform.position = Camera.main.transform.position * spring + moveCamTo * (1.0f - spring); // the spring equation, .5 would be average, explanation at 28:50, works like a spring the further away you are the more force you get
+
+                // camOffset = Camera.main.transform.position.x - xOffset;
+
+                // Camera.main.transform.position.x = camOffset;
+
+                // pos = Camera.main.transform.position;
+                // pos.x = Camera.main.transform.position.x - xOffset;
+                // Camera.main.transform.position = pos;
+
+                // pos = transform.position;
+                // pos.x = transform.position.x + speed * Time.deltaTime;
+                // transform.position = pos;
+
+
+                Camera.main.transform.LookAt(transform.position + transform.forward * 30.0f); // look 30 meters forward, focal point is no longer looking at the car, but where the car is going with this 30 multiplier
+            }
+
+
+        }
+
+
 # Top Speed
 
 Try to gauge the top speed from this game:
