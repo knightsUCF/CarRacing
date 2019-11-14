@@ -4,6 +4,9 @@ Okay, so we have something that kind of works. Our main problem is that if we ac
 
 Anyway, the other thing is that we want to place this code on the player, since that's where we will pick up our transform.position code. Also, have the main camera be seperate in the hierarchy and not as a subset of the player.
 
+We might just have to rebuild the car prefab from scratch, following the spring tutorial.
+
+
         using System.Collections;
         using System.Collections.Generic;
         using UnityEngine;
