@@ -36,6 +36,10 @@ Another thing, if ultimately we are fearful if success is possible, then we shou
 
 Another way to compete is to simply have the best art. Of course this is hard to do, but if we are spending years struggling as an indie, we might as well take the little effor to improve the art style.
 
+There are also pockets of opportunity on the app store, since most quality games are going to Steam, and lots of shovelware is being uploaded to the app store. So a good game has higher chance of standing out the App store than on Steam, where you are faced with truly strong competition. Of course the downside is that there are many more games being released on the App store, but we might still be able to get into those pockets of opportunity, if we create a quality game in 3 months.
+
+If game does relatively well, like 50K, then we might make another small game in 3 months, before embarking on the Trancontinental game.
+
 
 # Interesting Article on Autonomous Agents and Physics Forces Applied to Cars
 
