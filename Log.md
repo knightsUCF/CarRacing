@@ -4,7 +4,7 @@ This way we are rolling very loaded dice, and should be okay in terms of being s
 
 1. Crossy Road Like Car Racer (Mobile)
 
-2. Tenament Building Tamagotchi Simulation (Mobile) (Works on mobile, a simulation you can "take with you")
+2. Tenament Building Tamagotchi Simulation (Mobile) (Works on mobile, a simulation you can "take with you", like a pocket pet)
 
 3. Sim City / Sim Esque simulation (Steam)
 
