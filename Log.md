@@ -1,3 +1,9 @@
+# Solution to Shaky Camera Follow
+
+One solution is to turn off the follow when we are near the player, and just set a constant follow, instead of calculating floating points, where our error might be coming from.
+
+Also we want to redo the spring camera tutorial. And even before that we want to test the car asset, and add the camera to that.
+
 # Bumping Chasis
 
 Another thing we could do to add believability is putting some physics on the car chasis. Perhaps as we swing side to side, the car chasis will move with the vibrations. The spring camera is beginning to feel pretty good. So this would complement the effect even more.
