@@ -10,6 +10,10 @@ https://assetstore.unity.com/packages/templates/packs/hovershift-107789
 
 https://assetstore.unity.com/packages/templates/packs/bridges-79463
 
+https://assetstore.unity.com/packages/templates/packs/sky-hover-ultimate-space-racing-117011 (Nice for space templates)
+
+
+
 #  Spline Train Tracks / Roads Asset
 
 https://assetstore.unity.com/packages/tools/level-design/curvy-splines-7038
