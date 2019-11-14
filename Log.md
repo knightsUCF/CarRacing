@@ -2,6 +2,13 @@
 
 https://assetstore.unity.com/packages/templates/packs/crashy-chasy-152150
 
+https://assetstore.unity.com/packages/templates/packs/crossy-bridge-79760
+
+https://assetstore.unity.com/packages/templates/packs/circle-crash-88702
+
+https://assetstore.unity.com/packages/templates/packs/hovershift-107789
+
+
 #  Spline Train Tracks / Roads Asset
 
 https://assetstore.unity.com/packages/tools/level-design/curvy-splines-7038
