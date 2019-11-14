@@ -1,3 +1,11 @@
+# Car Racing Template
+
+The smooth camera follow made a HUGE difference to the feel of the gameplay. Also, that sets us apart from other "blocky" racing games.
+
+Another thing we could eventually, is study all the different implementation, whether from assets or tutorials, to make our controls feel really good like in Celeste.
+
+https://assetstore.unity.com/packages/templates/traffic-racing-template-26364
+
 # Solution to Shaky Camera Follow
 
 One solution is to turn off the follow when we are near the player, and just set a constant follow, instead of calculating floating points, where our error might be coming from.
