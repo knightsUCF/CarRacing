@@ -1,3 +1,7 @@
+# YouTube Trailer
+
+We will need a YouTube trailer to show people in our press kit. So once we reach out to a YouTuber or Streamer, we want to include the YouTube link to the trailer, so they can immediately check out the gameplay and decide if that's something they are interested in.
+
 # Neon Palmwave Scene
 
 We want to do a scene with palm trees, and then neon lights, like in the synthwave videos.
