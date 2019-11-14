@@ -1,3 +1,9 @@
+# Car Models and Style
+
+The traffic racing complete kit had a very nice Lambourghini looking car. We could offer that to the player to buy for $3.99, or perhaps we could offer regular cars to unlock that much, and the  Lambourghini needs a lot of previous cars to be unlocked to get. So the player spends upwards of $100 to unlock the faster, luxiours cars.
+
+Also this voxel style is very similar to the Lambourghini: https://sketchfab.com/3d-models/car-test-03-e78d694181bd415db00f9c64641dbd48
+
 # Car Racing Template
 
 The smooth camera follow made a HUGE difference to the feel of the gameplay. Also, that sets us apart from other "blocky" racing games.
