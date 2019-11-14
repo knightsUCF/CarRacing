@@ -1,3 +1,17 @@
+# Tomorrow's Work
+
+Tomorrow we should work on things which are independent of the assets. So one of the big ones is environment.
+
+Theoretically we could design the environments quickly before we get the pack.
+
+So spend the whole day on putting the environments together. Once we get the asset pack, if we can change out our environments, (which of course should be easily possible), and add the spring follow to the camera, that should be huge. So theoretically within the next two days we could have the base playable game ready.
+
+We will want to of course add as many of our own custom cars, and probably not reuse any art.
+
+The other thing we can do is search for voxel packs, whether we are using that Unity asset pack, and even consider how we would go about making those. Adding voxel cars might also be doable immediatly post the release.
+
+So let's just go straight to the playable shippable game, and not get stuck in any time sinks.
+
 # Crossy Road Anniversary
 
 The Crossy Road anniversary is coming up on 11 / 20. This is kind of crazy, but let's see if we can finish the game by then. And also release. Because Crossy Road made a lot of money in a very short period of time. Perhaps we can replicate this, and also have a very nice December. Plus we will get more sales. The average time to approve an app is 1 day, so perhaps we will even try to go for 11/19. Not sure if this is possible, but better to release early, and then we can always update the game. 
