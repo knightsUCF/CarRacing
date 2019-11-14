@@ -94,6 +94,8 @@ We could also have the parallax effect from the Thomas Brush tutorial, when the 
 
 One way would be to pay an artist. But perhaps instead of this, we should make a voxel game, since we can guarantee all the art and work towards completion in three months. Plus in 3D we could leverage all of the physics engine. And a game in 3D will generally sell more than a game in 2D.
 
+Also once we get the process down for one building, we can release the game, and then the next game could be a version of the sims in block style, which we could even release on Steam. So something like Factory Town and that other Kuberfactorium game, but with voxels, and very engaging simulation type gameplay.
+
 This seems like a game, which would be bound to do well, especially among the target demographic of middle aged women. They would much rather play a game like this, than a science fiction game, narrowing out much of our competition.
 
 
