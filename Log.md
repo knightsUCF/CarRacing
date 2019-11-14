@@ -22,6 +22,12 @@ Generating universes, planets, and territories, would be a breeze. The combat is
 
 We could also introduce manufacturing and mining, more on the simulation side. Then people could team up and play together. This could even be a game for mobile.
 
+The nice thing about the combat in this game is that we are fighting in a 2D plane, which makes combat easier and much more streamlined than space sims. In a way this solves our problems, since the combat would be much more like League of Legends.
+
+So what if we made a game like Eve meets League of Legends?
+
+That has all the formulas of success. And even though this might seem like a big game, we could finish this in three months.
+
 
 #  Spline Train Tracks / Roads Asset
 
