@@ -1,3 +1,11 @@
+# Monetization can be Highly Effective
+
+Monetization can be highly effective in this game, if we design cool voxel cars. We also want to have many voxel cars available to unlock so the player can keep playing the game and keep watching reward video ads, generating income.
+
+In Crossy Road they have 50 characters to unlock. For us with cars might be easier to create, so we should have as many as possible, although Crossy Road probably launched with far less.
+
+Also study the time the player needs to grind to actually buy a character in Crossy Road. So let's say they get a few gold coins for watching a video. How many of those gold coins are required to unlock a car? Also follow this formula, to give the players plenty of grind, so they watch the most video ads possible without the experience being too grindy, and hence generating the most capital.
+
 # Next Steps
 
 The car camera feels amazing. And this is all because of the spring, since we don't have any turns set on the car. So once we combine this with the turns from the asset pack, that should work great.
