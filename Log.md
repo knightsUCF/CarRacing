@@ -1,3 +1,7 @@
+# Lots of Voxel Art out there to Spice Things Up
+
+There are lots of voxel models out there to spice things up, like for example, windmills in the background. We want to have lots of voxel art to provide variety for the player. Including birds flying overhead.
+
 # Traffic Jams can be Fun
 
 We want to have traffic jams, which is a unique thing not found in many other games. We want the player to experience getting stuck in a traffic jam, and then breaking free on the clear road.
