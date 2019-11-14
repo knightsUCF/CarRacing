@@ -24,6 +24,10 @@ But if we were to use this one, we have 33 voxel cars plus 21 here, so we would 
 
 Then for the cars we could have these custom parameters, top speed, acceleration, turn speed, and handling. That way the player feels like they are expanding their collection with different featured sets. People are hoarders by nature, so having 50 unlockable characters will give them plenty to do.
 
+Don't know how I missed this, but this a really nice low poly city we could use to make a simple mobile Sim City type game.
+
+https://assetstore.unity.com/detail/3d/low-poly-city-with-cars-65935
+
 # Expanding on the Base Gameplay
 
 To expand on the base gameplay and add more variety, we will need different obstacles. One of these obstacles can be construction cones, which if the player knocks over they lose points or have to start over. Another is a train passing, which we already have the assets for.
