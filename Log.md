@@ -10,6 +10,14 @@ Here are some game ideas we could implement which would relatively have low comp
 
 If this game just does moderately well, then perhaps we should follow Steve Jobs' advice, and push out a game in 3 months, while our competitors take 2 years to make a game. This way we can have 8 products for every 1 of theirs.
 
+I really like the grid layout in this game, Parkasaurus: https://store.steampowered.com/app/591460/Parkasaurus/
+
+This would work well for a mall simulator.
+
+But we have to be aware that a huge signficant chunk of gamers are women. The average age of a female gamer is 38. So making a mall sim game is one step in harnessing that audience. Further steps would be to make more "adult" like games for older female gamers.
+
+
+
 
 
 # Interesting Article on Autonomous Agents and Physics Forces Applied to Cars
