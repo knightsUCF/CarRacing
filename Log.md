@@ -88,7 +88,10 @@ If game does relatively well, like 50K, then we might make another small game in
 
 Another way of competing is taking a game that people really want to play, a game which is underserved, and then build a very minimum viable product version of that game. So for example take the Sims, and turn that into a simulation game where you caring for people all in one tenament building. Of course those games have been done, but don't let that prevent a good idea getting off the ground.
 
+We could also combine ideas from Tamagotchi pets, where if we let our residents roam around, then we can come back and check what happened to them. So we would also have Roguelike elements here.
+
 This seems like a game, which would be bound to do well, especially among the target demographic of middle aged women. They would much rather play a game like this, than a science fiction game, narrowing out much of our competition.
+
 
 
 
