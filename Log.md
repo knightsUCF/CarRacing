@@ -1,3 +1,10 @@
+# Voxel Cars
+
+https://assetstore.unity.com/detail/3d/vehicles/land/20-low-poly-ubic-voxel-cars-141966
+
+This is a nice asset pack. Lots of sports cars here, which could be unlockable. The only thing is, the style is very distinct. So hard to mix and match.
+
+
 # Expanding on the Base Gameplay
 
 To expand on the base gameplay and add more variety, we will need different obstacles. One of these obstacles can be construction cones, which if the player knocks over they lose points or have to start over. Another is a train passing, which we already have the assets for.
