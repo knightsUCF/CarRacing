@@ -32,6 +32,10 @@ Instead of letting the player build the ship, we would have preassembled ships, 
 
 Perhaps with so much competition one of the keys to being able to compete is simply offering the base game for free, and then making money with in game content. Since the people who charge for their game will always have a more challenging time of pushing through the inertia of high downloads.
 
+Even if we release this game on Steam, we want to make the base game playable, with some sort of content we can sell through a DLC.
+
+And then perhaps let the DLC people mix in with the regular people, so they get more jealous of their spaceships. Although running a server for free might cost some money. The best way of course is a subscription model like Eve.
+
 
 #  Spline Train Tracks / Roads Asset
 
