@@ -1,3 +1,9 @@
+# Camera Spring
+
+The camera spring mechanism is here at 18:00
+
+https://www.youtube.com/watch?v=lCulq9J0Y9E&t=1740s
+
 # Camera View
 
 So we discovered there is another game, which has a different camera view. We might try to implement that camera view, because then we can see the car blocks better.
