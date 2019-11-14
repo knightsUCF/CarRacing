@@ -12,6 +12,9 @@ Here is a free one, we could use as a Ferrari.
 
 https://assetstore.unity.com/detail/3d/vehicles/land/1-free-low-poly-cubic-voxel-cars-model-142626
 
+Here is a pack for $5 we could use as passenger cars:
+
+https://assetstore.unity.com/detail/3d/vehicles/land/1-free-low-poly-cubic-voxel-cars-model-142626
 
 
 # Expanding on the Base Gameplay
