@@ -14,6 +14,15 @@ https://assetstore.unity.com/packages/templates/packs/sky-hover-ultimate-space-r
 
 https://assetstore.unity.com/packages/templates/packs/snowy-skate-117905 (the score font looks nice)
 
+https://assetstore.unity.com/packages/templates/packs/spacy-hunter-156190
+
+This Spacy Hunter, actually has a very interesting template we could use. This would work for a MMO Space Game like Eve, where players could build and share their ships.
+
+Generating universes, planets, and territories, would be a breeze. The combat is what we're after like Eve, and we have that here.
+
+We could also introduce manufacturing and mining, more on the simulation side. Then people could team up and play together. This could even be a game for mobile.
+
+
 #  Spline Train Tracks / Roads Asset
 
 https://assetstore.unity.com/packages/tools/level-design/curvy-splines-7038
