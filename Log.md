@@ -34,6 +34,8 @@ So if we can get all that done, we will be really close to shipping. At this poi
 
 - diversified traffic, with bonus items dispersed throughout
 
+- game loop
+
 - menus / monetization in place
 
 These 4 things are the pillars to get the game done. We don't have that much work, but we do want to get things to come together smoothly.
