@@ -1,3 +1,7 @@
+# Neon Palmwave Scene
+
+We want to do a scene with palm trees, and then neon lights, like in the synthwave videos.
+
 # Lots of Voxel Art out there to Spice Things Up
 
 There are lots of voxel models out there to spice things up, like for example, windmills in the background. We want to have lots of voxel art to provide variety for the player. Including birds flying overhead.
