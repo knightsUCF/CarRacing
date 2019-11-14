@@ -12,6 +12,8 @@ The spring camera will be nice. So as the player's car speeds up and turns, we w
 
 We might want to have a speed up meter on the right hand side. Just a narrow thin strip, which we can drag quickly up to set the speed. We want to be able to reach top velocity quickly, and also reach the slow velocity quickly. Even though we might need time to accelerate we want the user to reach these speeds quicker, instead of continous tapping. This will be essentially when the player reaches a traffic jam and wants to slow down.
 
+Well, there actually is not much we can do until we get that asset, because so many of the pieces are tied together. So for example if we start working on AI, they might have a totally different AI system. They probably don't have anything fancy which results in congested traffic, but we will want to build that on top of their existing system.
+
 
 # Amazing Asset Pack
 
