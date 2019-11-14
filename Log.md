@@ -14,6 +14,9 @@ We might want to have a speed up meter on the right hand side. Just a narrow thi
 
 Well, there actually is not much we can do until we get that asset, because so many of the pieces are tied together. So for example if we start working on AI, they might have a totally different AI system. They probably don't have anything fancy which results in congested traffic, but we will want to build that on top of their existing system.
 
+One of the things we can do is study the Crossy Road GDC talk, take notes, and take any steps required. 
+
+Also what we might spend our time on then is Game Design. There is lots of design work we can do, of course this might not involve a lot of programming.
 
 # Amazing Asset Pack
 
