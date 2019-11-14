@@ -1,3 +1,21 @@
+# This Solves the Competition Issue
+
+This way we are rolling very loaded dice, and should be okay in terms of being successful.
+
+1. Crossy Road Like Car Racer
+
+2. Tenament Building Tamagotchi Simulation
+
+3. Sim City / Sim Esque simulation
+
+
+The catch is that all of these games are made with voxel art, so we can complete these games within short time scales.
+
+And of course we would rather have "real" art than just voxel art, but with voxel art we can actually ship the game, and still get good sales, because people love voxels.
+
+
+
+
 # Some Other Assets Similar to the Car Assets
 
 https://assetstore.unity.com/packages/templates/packs/blocky-snake-135457 (this game has really smooth turn controls we could use)
