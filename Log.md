@@ -1,3 +1,7 @@
+# Bumping Chasis
+
+Another thing we could do to add believability is putting some physics on the car chasis. Perhaps as we swing side to side, the car chasis will move with the vibrations. The spring camera is beginning to feel pretty good. So this would complement the effect even more.
+
 # Camera Spring Code
 
 Okay, so we have something that kind of works. Our main problem is that if we accelerate, then the camera stays in the back for some reason. And then when we decelerate, the camera catches up to the back. So the acceleration and deceleration changes in velocity are not picked as a position by the camera. So we are just forever chasing that one position in the back of the car, which might have to do with the stacked game objects in the hierarchy, and maybe the camera is following some parent object, which is not changing velocity.
