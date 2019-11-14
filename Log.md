@@ -1,5 +1,7 @@
 # Some Other Assets Similar to the Car Assets
 
+https://assetstore.unity.com/packages/templates/packs/blocky-snake-135457 (this game has really smooth turn controls we could use)
+
 https://assetstore.unity.com/packages/templates/packs/crashy-chasy-152150
 
 https://assetstore.unity.com/packages/templates/packs/crossy-bridge-79760
