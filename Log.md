@@ -4,6 +4,11 @@ https://assetstore.unity.com/detail/3d/vehicles/land/20-low-poly-ubic-voxel-cars
 
 This is a nice asset pack. Lots of sports cars here, which could be unlockable. The only thing is, the style is very distinct. So hard to mix and match.
 
+Here are more voxel cars. Perhaps we could mix and match these two.
+
+https://assetstore.unity.com/detail/3d/vehicles/land/simple-voxel-cars-111905
+
+
 
 # Expanding on the Base Gameplay
 
