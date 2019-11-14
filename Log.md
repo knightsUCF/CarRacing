@@ -28,6 +28,10 @@ So what if we made a game like Eve meets League of Legends?
 
 That has all the formulas of success. And even though this might seem like a big game, we could finish this in three months.
 
+Instead of letting the player build the ship, we would have preassembled ships, we can sell them or have them unlock with in app purchases, or simply a mechanism to unlock those in them.
+
+Perhaps with so much competition one of the keys to being able to compete is simply offering the base game for free, and then making money with in game content. Since the people who charge for their game will always have a more challenging time of pushing through the inertia of high downloads.
+
 
 #  Spline Train Tracks / Roads Asset
 
