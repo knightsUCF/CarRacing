@@ -1,3 +1,17 @@
+# Some Ideas for Next Games
+
+The game markets are becoming much more competitive. So we need to also increase our level of competition.
+
+Here are some game ideas we could implement which would relatively have low competition
+
+- Transcontinental
+
+- Shopping Mall Sim on App store
+
+If this game just does moderately well, then perhaps we should follow Steve Jobs' advice, and push out a game in 3 months, while our competitors take 2 years to make a game. This way we can have 8 products for every 1 of theirs.
+
+
+
 # Interesting Article on Autonomous Agents and Physics Forces Applied to Cars
 
 https://natureofcode.com/book/chapter-6-autonomous-agents/
