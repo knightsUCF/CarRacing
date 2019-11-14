@@ -32,6 +32,9 @@ Another game genre which is hugely viable is anything with city builders or sims
 
 Also, we should not be afraid to "copy" a game. There is a lot of competition, and many developers are disheartened because they want to be truly original. Well, don't let this stop you from making a game. Better to take a good idea, improve upon that, and have a financial success then struggle with qualms of originality, while no one truly cares.
 
+Another thing, if ultimately we are fearful if success is possible, then we should be reminded of what we really love to design -- and that's simulation games. Simulation games will always be a viable genre for an indie game developer. They are the type of games that are too small for a big game company to take a chance on, which starves the market for good content. So if we stick with the simulation genre like Sid Meier we will be alright. And similarly the Transcontinental game is a simulation game.
+
+Another way to compete is to simply have the best art. Of course this is hard to do, but if we are spending years struggling as an indie, we might as well take the little effor to improve the art style.
 
 
 # Interesting Article on Autonomous Agents and Physics Forces Applied to Cars
