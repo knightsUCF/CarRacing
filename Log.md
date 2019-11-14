@@ -24,6 +24,13 @@ But on the other hand if we make a transcontinental railroad genre game, then we
 
 The other thing we can take advantage of with the Transcontinental game is the Unreal engine. Since competition is getting more fierce, we can at least blow all the Unity developers out of the water, by simply using the Unreal engine. Then with the sparse environment of the continental terrain back then, and a properly modeled train, we can have that scene at least look like a triple A game, which is huge. We can also charge more money for that, provided we have enough content. So this is a very viable game venture.
 
+Another potentially viable game idea would be too do a farming sim in the style of Factorio. So you are gathering resources, and growing stuff.
+
+We have to go through all of our game ideas and pick our strongest ideas, and complete a game every 3 months, which is a huge undertaking, but in the end might be the easiest way of finding success.
+
+Another game genre which is hugely viable is anything with city builders or sims. We could make a game focused just on something like the Sims. This would go along well with our simulation tastes.
+
+Also, we should not be afraid to "copy" a game. There is a lot of competition, and many developers are disheartened because they want to be truly original. Well, don't let this stop you from making a game. Better to take a good idea, improve upon that, and have a financial success then struggle with qualms of originality, while no one truly cares.
 
 
 
