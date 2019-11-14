@@ -16,6 +16,13 @@ This would work well for a mall simulator.
 
 But we have to be aware that a huge signficant chunk of gamers are women. The average age of a female gamer is 38. So making a mall sim game is one step in harnessing that audience. Further steps would be to make more "adult" like games for older female gamers.
 
+Another genre of games, which could be viable would be anything VR.
+
+Perhaps we should just focus on the Transcontinental game after this. Because we are working in a very narrowly defined niche genre. For example, if you make a science fiction game (or fantasy), then even though the game might be different from others, the subject matter takes less precedence and is overshaded by the genre, so we are automatically competing with all the other science fiction games.
+
+But on the other hand if we make a transcontinental railroad genre game, then we are only competing with transcontinental rail road games, which are a handful, and we also have security in knowing that the train genre is an evergreen viable genre.
+
+The other thing we can take advantage of with the Transcontinental game is the Unreal engine. Since competition is getting more fierce, we can at least blow all the Unity developers out of the water, by simply using the Unreal engine. Then with the sparse environment of the continental terrain back then, and a properly modeled train, we can have that scene at least look like a triple A game, which is huge. We can also charge more money for that, provided we have enough content. So this is a very viable game venture.
 
 
 
