@@ -1,3 +1,23 @@
+# Camera View
+
+So we discovered there is another game, which has a different camera view. We might try to implement that camera view, because then we can see the car blocks better.
+
+https://www.youtube.com/watch?v=NJOJgGRh0hY
+
+Our original camera settings are:
+
+pos: 
+
+0, 4.75, -11
+
+rotation:
+
+0, -360, 0
+
+scale:
+
+1.25, 1.25, 1.25
+
 # This Solves the Competition Issue
 
 This way we are rolling very loaded dice, and should be okay in terms of being successful.
