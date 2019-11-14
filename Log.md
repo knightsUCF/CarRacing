@@ -44,7 +44,7 @@ And then perhaps let the DLC people mix in with the regular people, so they get 
 https://assetstore.unity.com/packages/tools/level-design/curvy-splines-7038
 
 
-# Some Ideas for Next Games
+# How to Compete in a Crowded Marketplace
 
 The game markets are becoming much more competitive. So we need to also increase our level of competition.
 
@@ -85,6 +85,11 @@ Another way to compete is to simply have the best art. Of course this is hard to
 There are also pockets of opportunity on the app store, since most quality games are going to Steam, and lots of shovelware is being uploaded to the app store. So a good game has higher chance of standing out the App store than on Steam, where you are faced with truly strong competition. Of course the downside is that there are many more games being released on the App store, but we might still be able to get into those pockets of opportunity, if we create a quality game in 3 months.
 
 If game does relatively well, like 50K, then we might make another small game in 3 months, before embarking on the Trancontinental game.
+
+Another way of competing is taking a game that people really want to play, a game which is underserved, and then build a very minimum viable product version of that game. So for example take the Sims, and turn that into a simulation game where you caring for people all in one tenament building. Of course those games have been done, but don't let that prevent a good idea getting off the ground.
+
+This seems like a game, which would be bound to do well, especially among the target demographic of middle aged women. They would much rather play a game like this, than a science fiction game, narrowing out much of our competition.
+
 
 
 # Interesting Article on Autonomous Agents and Physics Forces Applied to Cars
