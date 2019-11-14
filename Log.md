@@ -1,3 +1,51 @@
+# Next Steps
+
+The car camera feels amazing. And this is all because of the spring, since we don't have any turns set on the car. So once we combine this with the turns from the asset pack, that should work great.
+
+So the next obviously include waiting for the two asset packs. We might get the third asset pack, if just for the model, but that might seem a waste. We can also get the moving chases, and the wheels turning from that third asset pack, which would make our controls complete.
+
+So once we get the car controls complete, we are assuming the procedural generation, and the cars AI should work from the asset pack.
+
+Now assuming we can plug everything in and get our code working, we want to complete these things:
+
+Phase 1
+
+- study purchased asset packs
+
+- merge code together, including spring camera follow
+
+So let's say we get through phase 1, and everything is working, then we have two main things to do:
+
+- diversify AI traffic
+
+- test procedural generation with new worlds
+
+If we can get the AI cars and the terrain to procedurally generated, then this is a huge win.
+
+Next up is plugging in the menus and the monetization techniques from the asset. That is a separate series of tasks, that we can accomplish without affecting the rest of the project.
+
+To note on monetization, we want to have cool sports cars, like a lamborghini, and others that can be unlocked through the game. We also want to create different handling conditions, and top speeds for each of the cars. And also note the top speed in the menu unlock screen.
+
+So if we can get all that done, we will be really close to shipping. At this point we want to have:
+
+- a smoothly procedurally generated world
+
+- smooth car controls
+
+- diversified traffic, with bonus items dispersed throughout
+
+- menus / monetization in place
+
+These 4 things are the pillars to get the game done. We don't have that much work, but we do want to get things to come together smoothly.
+
+With those, the rest of the time we can spend on polish:
+
+- create the neon city at dark
+
+- choosing the right sounds and score
+
+
+
 # Realistic Car Controller
 
 https://assetstore.unity.com/packages/tools/physics/realistic-car-controller-16296
