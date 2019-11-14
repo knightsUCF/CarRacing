@@ -10,7 +10,7 @@ This way we are rolling very loaded dice, and should be okay in terms of being s
 
 4. Space Game with the voxel space asset. (Eve meets League of Legends) (Steam or Mobile)
 
-The catch is that all of these games are made with voxel art, so we can complete these games within short time scales.
+The catch is that all of these games are made with voxel art, so we can compete these games within short time scales.
 
 And of course we would rather have "real" art than just voxel art, but with voxel art we can actually ship the game, and still get good sales, because people love voxels.
 
