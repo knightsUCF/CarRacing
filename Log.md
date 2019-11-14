@@ -1,3 +1,9 @@
+# Crossy Road Anniversary
+
+The Crossy Road anniversary is coming up on 11 / 20. This is kind of crazy, but let's see if we can finish the game by then. And also release. Because Crossy Road made a lot of money in a very short period of time. Perhaps we can replicate this, and also have a very nice December. Plus we will get more sales. The average time to approve an app is 1 day, so perhaps we will even try to go for 11/19. Not sure if this is possible, but better to release early, and then we can always update the game. 
+
+If those prototypes of complete games work, which they do, then we really do not have much to go over. Let's keep things as simple as possible and try to meet his release deadline.
+
 # YouTube Trailer
 
 We will need a YouTube trailer to show people in our press kit. So once we reach out to a YouTuber or Streamer, we want to include the YouTube link to the trailer, so they can immediately check out the gameplay and decide if that's something they are interested in.
