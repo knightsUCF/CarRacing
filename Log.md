@@ -8,6 +8,7 @@ This way we are rolling very loaded dice, and should be okay in terms of being s
 
 3. Sim City / Sim Esque simulation
 
+4. Space Game with the voxel space asset. (Eve meets League of Legends)
 
 The catch is that all of these games are made with voxel art, so we can complete these games within short time scales.
 
