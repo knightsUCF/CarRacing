@@ -11,6 +11,9 @@ Very similar to ours:
 
 https://assetstore.unity.com/packages/templates/traffic-racing-complete-kit-62954
 
+This one has a very smooth chasis, we might also get this one on Friday: https://assetstore.unity.com/packages/templates/street-racing-engine-87494
+
+
 
 
 # Solution to Shaky Camera Follow
