@@ -2,13 +2,13 @@
 
 This way we are rolling very loaded dice, and should be okay in terms of being successful.
 
-1. Crossy Road Like Car Racer
+1. Crossy Road Like Car Racer (Mobile)
 
-2. Tenament Building Tamagotchi Simulation
+2. Tenament Building Tamagotchi Simulation (Mobile)
 
-3. Sim City / Sim Esque simulation
+3. Sim City / Sim Esque simulation (Steam)
 
-4. Space Game with the voxel space asset. (Eve meets League of Legends)
+4. Space Game with the voxel space asset. (Eve meets League of Legends) (Steam or Mobile)
 
 The catch is that all of these games are made with voxel art, so we can complete these games within short time scales.
 
