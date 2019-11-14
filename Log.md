@@ -8,6 +8,7 @@ https://assetstore.unity.com/packages/templates/packs/circle-crash-88702
 
 https://assetstore.unity.com/packages/templates/packs/hovershift-107789
 
+https://assetstore.unity.com/packages/templates/packs/bridges-79463
 
 #  Spline Train Tracks / Roads Asset
 
