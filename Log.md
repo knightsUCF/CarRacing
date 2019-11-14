@@ -6,6 +6,13 @@ Another thing we could eventually, is study all the different implementation, wh
 
 https://assetstore.unity.com/packages/templates/traffic-racing-template-26364
 
+
+Very similar to ours:
+
+https://assetstore.unity.com/packages/templates/traffic-racing-complete-kit-62954
+
+
+
 # Solution to Shaky Camera Follow
 
 One solution is to turn off the follow when we are near the player, and just set a constant follow, instead of calculating floating points, where our error might be coming from.
