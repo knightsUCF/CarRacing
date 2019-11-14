@@ -1,3 +1,7 @@
+# Expanding on the Base Gameplay
+
+To expand on the base gameplay and add more variety, we will need different obstacles. One of these obstacles can be construction cones, which if the player knocks over they lose points or have to start over. Another is a train passing, which we already have the assets for.
+
 # Tomorrow's Work
 
 Tomorrow we should work on things which are independent of the assets. So one of the big ones is environment.
