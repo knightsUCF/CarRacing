@@ -18,6 +18,20 @@ scale:
 
 1.25, 1.25, 1.25
 
+The new settings on the camera are:
+
+pos:
+
+-3.7, 33, -10.8
+
+rotation:
+
+36, -360, 0
+
+scale:
+
+1.25, 1.25, 1.25
+
 # This Solves the Competition Issue
 
 This way we are rolling very loaded dice, and should be okay in terms of being successful.
