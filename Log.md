@@ -1,6 +1,6 @@
 # Procedural Code
 
-The procedural code can be found here in line 300 of GameManager.cs:
+The procedural code can be found here in line 300 of GameManager.cs and line 440.
 
 
             //Get left ground
@@ -21,7 +21,40 @@ The procedural code can be found here in line 300 of GameManager.cs:
                 return leftGround;
             }
     
+Line 440:
 
+            //Create left ground, right ground, left lamp and right lamp
+                private IEnumerator CreateGrounds(Vector3 pathPos)
+                {
+                    //Create left ground
+                    yield return null;
+                    GameObject leftGround = GetLeftGround();
+                    leftGround.transform.position = pathPos + Vector3.left * pathXLength;
+                    leftGround.SetActive(true);
+
+                    //Create right ground
+                    yield return null;
+                    GameObject rightGround = GetRightGround();
+                    rightGround.transform.position = pathPos + Vector3.right * pathXLength;
+                    rightGround.SetActive(true);
+
+                    //Create lamp
+                    lampTurn *= -1;
+                    if (lampTurn < 0)//Create on left ground
+                    {
+                        Vector3 lampPos = leftGround.transform.position + Vector3.left;
+                        GameObject leftLamp = GetLeftLamp();
+                        leftLamp.transform.position = lampPos;
+                        leftLamp.SetActive(true);
+                    }
+                    else //Create on right ground
+                    {
+                        Vector3 lampPos = rightGround.transform.position + Vector3.right;
+                        GameObject rightLamp = GetRightLamp();
+                        rightLamp.transform.position = lampPos;
+                        rightLamp.SetActive(true);
+                    }
+                }
 
 # Logo and Menu Screen Font Design
 
