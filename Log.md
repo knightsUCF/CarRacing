@@ -4,7 +4,7 @@ https://www.dreamstime.com/pixel-style-font-pixel-font-d-retro-video-game-style-
 
 Build something like this from scratch, with 3D blocks, where we can use a parallax effect, and move around the background through perspective while we are in the main menu.
 
-We could even drop in the cubes one by one to start off the menu titles screen.
+We could even drop in the cubes one by one to start off the menu titles screen. And also use sound effects to great effect.
 
 # Voxel Cars
 
