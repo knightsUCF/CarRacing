@@ -1,4 +1,4 @@
-# On the Merits of the Rushy Racing Asset Pack
+# On the Merits of the Rushy Racing Asset Pack and Where From Here
 
 This is a great pack, but we need to write our code from scratch, since we can't afford to work with problems from another code base.
 
@@ -14,6 +14,8 @@ There might be some time to figure out the procedural generation. We are interes
 
 
 To observe the next biomes we will need to override the game over state, since we keep losing and restarting the game.
+
+We should build out a solid core engine with just a steady transform moving of a cube, which represents the player object. We don't want to worry about controls yet, just the procedural generation, the graphics, making sure there are no black lines, and then generating the biomes. We should keep that code minimalist and clean, and then only work on the car controls. We already have the game feel set of the car controls with the camera angle, and the acceleration, and the spring camera. So that is something we can work on once we figure out the procedural generation. Then later, things like ads can also be assembled as separate systems so don't mix things up.
 
 # Procedurally Generating on the Fly: IEnumerator CreateGrounds(Vector3 pathPos)
 
