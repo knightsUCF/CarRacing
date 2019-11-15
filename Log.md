@@ -1,3 +1,9 @@
+# Logo and Menu Screen Font Design
+
+https://www.dreamstime.com/pixel-style-font-pixel-font-d-retro-video-game-style-alphabet-letters-numbers-image134691639
+
+Build something like this from scratch, where we can use a parallax effect, and move around the background through perspective while we are in the main menu.
+
 # Voxel Cars
 
 https://assetstore.unity.com/detail/3d/vehicles/land/20-low-poly-ubic-voxel-cars-141966
