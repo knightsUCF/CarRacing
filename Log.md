@@ -2,7 +2,7 @@
 
 https://www.dreamstime.com/pixel-style-font-pixel-font-d-retro-video-game-style-alphabet-letters-numbers-image134691639
 
-Build something like this from scratch, where we can use a parallax effect, and move around the background through perspective while we are in the main menu.
+Build something like this from scratch, with 3D blocks, where we can use a parallax effect, and move around the background through perspective while we are in the main menu.
 
 # Voxel Cars
 
