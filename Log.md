@@ -1,3 +1,26 @@
+# Player Controller
+
+This has the familiar state pattern. We want to implement our own simpler state pattern, however is there any functionality we need that sends out an even when state has changed? Well, if we need events we can implement them ourselves.
+
+PlayerController.cs:
+
+            public PlayerState PlayerState
+                {
+                    get
+                    {
+                        return playerState;
+                    }
+
+                    private set
+                    {
+                        if (value != playerState)
+                        {
+                            value = playerState;
+                            PlayerStateChanged(playerState);
+                        }
+                    }
+                }
+
 # Spawning Cars, Coins, and Health Frequency
 
 The coins are created here in PathController.cs:
