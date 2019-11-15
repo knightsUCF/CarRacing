@@ -1,3 +1,12 @@
+# Procedurally Generating on the Fly: IEnumerator CreateGrounds(Vector3 pathPos)
+
+Does this mean that we have two ways of procedurally generating terrain? 
+
+1) On enter collider
+2) On time change
+
+And also, does this require the player to move at a constant position? Because we have acceleration and that will not be possible.
+
 # Procedural Code
 
 The procedural code can be found here in line 300 of GameManager.cs and line 440.
