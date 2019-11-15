@@ -1,3 +1,28 @@
+# Procedural Code
+
+The procedural code can be found here in line 300 of GameManager.cs:
+
+
+            //Get left ground
+            private GameObject GetLeftGround()
+            {
+                //Find on list
+                foreach (GameObject o in listEnvironment[environmentIndex].listLeftGround)
+                {
+                    if (!o.activeInHierarchy)
+                        return o;
+                }
+
+                //Didn't fine one -> create new one
+                int index = Random.Range(0, listEnvironmentPrefab[environmentIndex].listLeftGround.Count);
+                GameObject leftGround = Instantiate(listEnvironmentPrefab[environmentIndex].listLeftGround[index], Vector3.zero, Quaternion.identity);
+                leftGround.SetActive(false);
+                listEnvironment[environmentIndex].listLeftGround.Add(leftGround);
+                return leftGround;
+            }
+    
+
+
 # Logo and Menu Screen Font Design
 
 https://www.dreamstime.com/pixel-style-font-pixel-font-d-retro-video-game-style-alphabet-letters-numbers-image134691639
