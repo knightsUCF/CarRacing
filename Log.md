@@ -6,6 +6,8 @@ Build something like this from scratch, with 3D blocks, where we can use a paral
 
 We could even drop in the cubes one by one to start off the menu titles screen. And also use sound effects to great effect.
 
+The yellow background color for the menu screen is very lively for a design choice.
+
 # Voxel Cars
 
 https://assetstore.unity.com/detail/3d/vehicles/land/20-low-poly-ubic-voxel-cars-141966
