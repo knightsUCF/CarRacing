@@ -1,3 +1,9 @@
+# On the Merits of the Rushy Racing Asset Pack
+
+This is a great pack, but we need to write our code from scratch, since we can't afford to work with problems from another code base.
+
+So the main things we are interested in is the procedural generation.
+
 # Procedurally Generating on the Fly: IEnumerator CreateGrounds(Vector3 pathPos)
 
 Does this mean that we have two ways of procedurally generating terrain? 
