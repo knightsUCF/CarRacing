@@ -1,3 +1,20 @@
+# Spawning Cars, Coins, and Health Frequency
+
+The coins are created here in PathController.cs:
+
+
+            public void CreateObjects(int carNumber, float coinFrequency, float healthFrequency)
+                {
+                    //Create list position
+                    listPos.Clear();
+                    foreach(Transform o in paths)
+                    {
+                        listPos.Add(o.position);
+                    }
+
+                    StartCoroutine(CreatingObjects(carNumber, coinFrequency, healthFrequency));
+                }
+
 # Sound System
 
 The sound system is something we want to work on extracting separetely since that doesn't affect a lot of moving parts.
