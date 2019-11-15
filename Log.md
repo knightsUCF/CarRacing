@@ -4,7 +4,16 @@ This is a great pack, but we need to write our code from scratch, since we can't
 
 So the main things we are interested in is the procedural generation.
 
-Freeze our current game. Create a new project, and build the systems modularly from scratch clean working.
+Freeze our current game. We have a very good core loop, so let's preserve the feel of that. Create a new project, and build the systems modularly from scratch clean working.
+
+There might be some time to figure out the procedural generation. We are interested in two things here:
+
+1) how to get rid of the black thin lines
+
+2) biome generation
+
+
+To observe the next biomes we will need to override the game over state, since we keep losing and restarting the game.
 
 # Procedurally Generating on the Fly: IEnumerator CreateGrounds(Vector3 pathPos)
 
