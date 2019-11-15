@@ -1,3 +1,52 @@
+# ItemCollector.cs Easy to Extract
+
+This gives us pick up ability of items, and also shows how this calls the sound system.
+
+
+
+            using OnefallGames;
+            using UnityEngine;
+
+            public class ItemController : MonoBehaviour {
+
+                [SerializeField] private ItemType itemType = ItemType.MoneyPack;
+
+                private BoxCollider boxCollider = null;
+
+                private void Start()
+                {
+                    boxCollider = GetComponent<BoxCollider>();
+                }
+
+                private void Update()
+                {
+                    if (GameManager.Instance.GameState == GameState.Playing)
+                    {
+                        transform.eulerAngles += Vector3.up * 150f * Time.deltaTime;
+                    }
+                }
+
+                private void OnTriggerEnter(Collider other)
+                {
+                    if (other.CompareTag("Player"))
+                    {
+                        Vector3 pos = transform.position + Vector3.up * (boxCollider.size.y / 2f);
+                        if (itemType == ItemType.MoneyPack)
+                        {
+                            SoundManager.Instance.PlaySound(SoundManager.Instance.coin);
+                            CoinManager.Instance.AddCoins(10);
+                            GameManager.Instance.PlayMoneyExplodeParticle(pos);
+                        }
+                        else if (itemType == ItemType.HealthPack)
+                        {
+                            PlayerController.Instance.IncreaseHealth();
+                        }
+                        gameObject.SetActive(false);
+                    }
+                }
+            }
+
+
 # On the Merits of the Rushy Racing Asset Pack and Where From Here
 
 This is a great pack, but we need to write our code from scratch, since we can't afford to work with problems from another code base.
