@@ -1,3 +1,9 @@
+# State
+
+I like this simpler way of designating state. Since state really is just a variable, let's just keep this simple for now.
+
+
+
 # Player Controller
 
 This has the familiar state pattern. We want to implement our own simpler state pattern, however is there any functionality we need that sends out an even when state has changed? Well, if we need events we can implement them ourselves.
