@@ -1,6 +1,6 @@
-# ItemCollector.cs Easy to Extract
+# ItemController.cs Easy to Extract
 
-This gives us pick up ability of items, and also shows how this calls the sound system.
+This gives us pick up ability of items, and also shows how this calls the sound system. We can probably just call this Item.cs
 
 
 
