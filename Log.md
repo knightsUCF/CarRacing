@@ -2,7 +2,28 @@
 
 I like this simpler way of designating state. Since state really is just a variable, let's just keep this simple for now.
 
+                using System.Collections;
+                using System.Collections.Generic;
+                using UnityEngine;
 
+
+
+
+                public enum GameState
+                {
+                    Start,
+                    Playing,
+                    Dead
+                }
+
+So here we would add:
+
+                public enum PlayerState
+                {
+                    One,
+                    Two,
+                    Three
+                }
 
 # Player Controller
 
