@@ -4,6 +4,8 @@ This is a great pack, but we need to write our code from scratch, since we can't
 
 So the main things we are interested in is the procedural generation.
 
+Freeze our current game. Create a new project, and build the systems modularly from scratch clean working.
+
 # Procedurally Generating on the Fly: IEnumerator CreateGrounds(Vector3 pathPos)
 
 Does this mean that we have two ways of procedurally generating terrain? 
