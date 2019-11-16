@@ -8,7 +8,9 @@ Let's try to get these important features done in one day as a Ludum Dare MVP:
    
 - game over state
 
-    - 
+    - smooth game over state
+    
+   
 
 # Different Garbage Collection Mechanism for Cars versus Terrain
 
