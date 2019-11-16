@@ -5,7 +5,7 @@ Plug in the monetization engine.
 
 # Day 2 - Arrange World and Nightmode
 
-Arrange world tiles, decorations, and also night mode, setting up the lights.
+Arrange world tiles, decorations, and also night mode, setting up the lights. (Neon lights and palm trees.)
 
 Take notes and diagram what assortment of objects we have, so changing dimensions will be trivial.
 
