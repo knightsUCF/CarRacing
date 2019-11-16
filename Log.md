@@ -7,6 +7,8 @@ Plug in the monetization engine.
 
 Arrange world tiles, decorations, and also night mode, setting up the lights.
 
+Take notes and diagram what assortment of objects we have, so changing dimensions will be trivial.
+
 
 # Day 1 Ludum Dare MVP
 
