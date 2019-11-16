@@ -1,3 +1,8 @@
+# Keep Code Absolutely Simple - John Romero
+
+Let's keep the code absolutely simple so that we can finish and ship the game. The previous example of the state code is great because the code is short, simple, modular, and shows us the state property in the inspector. Very clear design, which is what we want.
+
+
 # Very Nice State Machine
 
 This is particularly nice because we can view the values in the inspector with declaring the instace in the same class. This will be very helpful for debuggin.
