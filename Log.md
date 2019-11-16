@@ -1,3 +1,7 @@
+# Variable Acceleration
+
+One of the features we have that other Crossy Road clones don't, is variable acceleration on the AI, which makes avoiding colisions much more interesting, especially if have the cars accelerate / decelerate randomly.
+
 # From Here on Out
 
 We are making good progress. We want to keep things modular. So let's get one thing working, and then get another thing working, and slowly bring them all together. Let's build in such a way that we don't leave any holes for us to fall through. Let's build on a solid foundation.
