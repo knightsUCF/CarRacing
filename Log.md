@@ -23,7 +23,7 @@ Let's try to get these important features done in one day as a Ludum Dare MVP:
     - gold
     
 - score
-    - our score points tracks gold -- check how Crossy Road does this
+    - our score points tracks gold -- check how Crossy Road does this, maybe gold and score will be seperate
     
 # Crossy Road
 
