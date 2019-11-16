@@ -1,3 +1,19 @@
+# From Here on Out
+
+We are making good progress. We want to keep things modular. So let's get one thing working, and then get another thing working, and slowly bring them all together. Let's build in such a way that we don't leave any holes for us to fall through. Let's build on a solid foundation.
+
+# Arrangement of Screens
+
+We will want to do a case study of the arrangement of screens, menus, and layout of:
+
+- Crossy Road
+
+- Rushy Racing
+
+- The other asset pack
+
+So we can determine where to go from there. The advertising and stuff we will do separate, but we should build out the car unlock functionality without monetization first, and make sure everything is functional.
+
 # Sound Effects 
 
 Incorporate sound effects right away, since they are easy and make a big difference.
