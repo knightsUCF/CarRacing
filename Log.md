@@ -1,3 +1,9 @@
+# Different Garbage Collection Mechanism for Cars versus Terrain
+
+Since the cars are moving, and not static, we can't just simply garbage collect them when the player is not on a tile, since the cars can be many tiles ahead, and if we destroy them they disappear right in front of the player.
+
+So either if the cars are way ahead of the player, or way behind we will destroy the cars to do garbage collection.
+
 # Variable Acceleration
 
 One of the features we have that other Crossy Road clones don't, is variable acceleration on the AI, which makes avoiding colisions much more interesting, especially if have the cars accelerate / decelerate randomly.
