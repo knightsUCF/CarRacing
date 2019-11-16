@@ -1,3 +1,8 @@
+#  Day 3 - Monetization
+
+Plug in the monetization engine.
+
+
 # Day 2 - Arrange World and Nightmode
 
 Arrange world tiles, decorations, and also night mode, setting up the lights.
