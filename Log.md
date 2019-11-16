@@ -1,4 +1,9 @@
-# 1 Day Ludum Dare MVP
+# Day 2 - Arrange World and Nightmode
+
+Arrange world tiles, decorations, and also night mode, setting up the lights.
+
+
+# Day 1 Ludum Dare MVP
 
 Let's try to get these important features done in one day as a Ludum Dare MVP:
 
