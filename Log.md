@@ -24,6 +24,9 @@ Let's try to get these important features done in one day as a Ludum Dare MVP:
     
     
    
+# Train Divider
+
+The train tracks not only could work as an obstacle but also serve as a way to divide the desert from the grasslands, and any other tiles, so that's a clean break in terrain. Also a nice way to punctuate a level change with train tracks.
 
 # Different Garbage Collection Mechanism for Cars versus Terrain
 
