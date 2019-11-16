@@ -7,8 +7,21 @@ Let's try to get these important features done in one day as a Ludum Dare MVP:
     - sound fx: car sounds, engine
    
 - game over state
-
     - smooth game over state
+    
+- cars spawning properly at equal speeds (randomize after MVP)
+
+- menu screen
+
+- unlocking cars
+    - different cars have varying top speed, acceleration, and turn speed
+    
+- populate traffic on opposite lanes
+
+- pickups
+    - gas (we run out of gas as we use acceleration and going at top speed often)
+    - gold
+    
     
    
 
