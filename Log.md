@@ -1,3 +1,11 @@
+# 1 Day Ludum Dare MVP
+
+Let's try to get these important features done in one day as a Ludum Dare MVP:
+
+- sounds
+    - score
+    - 
+
 # Different Garbage Collection Mechanism for Cars versus Terrain
 
 Since the cars are moving, and not static, we can't just simply garbage collect them when the player is not on a tile, since the cars can be many tiles ahead, and if we destroy them they disappear right in front of the player.
