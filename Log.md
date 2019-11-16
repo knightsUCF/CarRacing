@@ -4,6 +4,10 @@ Let's try to get these important features done in one day as a Ludum Dare MVP:
 
 - sounds
     - score
+    - sound fx: car sounds, engine
+   
+- game over state
+
     - 
 
 # Different Garbage Collection Mechanism for Cars versus Terrain
