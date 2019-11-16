@@ -1,3 +1,11 @@
+# On Biome Generation
+
+Well, we can create our own biome generation mechanism, when we do this by chunks.
+
+So if the next chunk is biome x, then we go through the list and spawn all the associated items with that list. Or to keep things simpler, we could have a few chunks we choose randomly from.
+
+The only problem is the black lines. Study the implementation in the Rushy Road.
+
 # Simple Game Manager Instance
 
 We will keep things very simple and name the Game Manager just Game.cs, and we will not need to use any singleton patterns.
