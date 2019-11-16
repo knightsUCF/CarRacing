@@ -36,7 +36,9 @@ Let's try to get these important features done in one day as a Ludum Dare MVP:
     
 - score
     - our score points tracks gold -- check how Crossy Road does this, maybe gold and score will be seperate
-    
+   
+- traffic collisions with AddForce()
+
 # Crossy Road
 
 Study the Crossy Road talk and take notes.
