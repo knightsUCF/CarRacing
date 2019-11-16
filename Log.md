@@ -1,3 +1,40 @@
+# Very Nice State Machine
+
+This is particularly nice because we can view the values in the inspector with declaring the instace in the same class. This will be very helpful for debuggin.
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+
+    class State : MonoBehaviour
+    {
+
+        public enum Game
+        {
+            Start,
+            Playing,
+            Dead
+        }
+
+
+        public enum Player
+        {
+            Test1,
+            Test2
+        }
+
+
+        public Game game;
+
+        public Player player;
+
+    }
+
+
+
+
 # State
 
 I like this simpler way of designating state. Since state really is just a variable, let's just keep this simple for now.
