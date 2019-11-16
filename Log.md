@@ -7,7 +7,7 @@ Let's try to get these important features done in one day as a Ludum Dare MVP:
     - sound fx: car sounds, engine
    
 - game over state
-    - smooth game over state
+    - smooth game over state and restart
     
 - cars spawning properly at equal speeds (randomize after MVP)
 
