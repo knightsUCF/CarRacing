@@ -1,3 +1,7 @@
+# Unlockable Cars
+
+Some cars will offer better turn speeds, better top speeds, and better acceleration. We can also create further variety by making some cars accelerate faster, versus some cars which have a higher top speed.
+
 # Progress So Far
 
 Progress is going great so far with the refactored project. We have the major controls now, gas, break, turn left and right.
