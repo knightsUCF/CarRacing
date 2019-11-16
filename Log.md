@@ -1,3 +1,19 @@
+# Sound Effects 
+
+Incorporate sound effects right away, since they are easy and make a big difference.
+
+We will want sound effects for:
+
+- score
+
+- car engine
+
+- slowing down quickly squeels
+
+- bumping cars / crashing sound effect
+
+
+
 # Unlockable Cars
 
 Some cars will offer better turn speeds, better top speeds, and better acceleration. We can also create further variety by making some cars accelerate faster, versus some cars which have a higher top speed.
