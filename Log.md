@@ -1,3 +1,19 @@
+# Day 1 Commencing
+
+Okay, so we are on Day 1. 
+
+Let's put the list of ToDos in order:
+
+- game over state (possibly AddForce collisions)
+
+- cars spawning properly
+
+- pickups
+
+- score
+
+
+
 #  Day 3 - Monetization
 
 Plug in the monetization engine.
