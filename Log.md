@@ -1,3 +1,32 @@
+# Simple Game Manager Instance
+
+We will keep things very simple and name the Game Manager just Game.cs, and we will not need to use any singleton patterns.
+
+Perhaps we might need a singleton in the future to save the game state. In that case we can easily revert back over to a singleton, while enjoying the benefits of keeping things simple until then. 
+
+Let's just focus on getting the basic core to work, and not get trapped in any time sinks.
+
+
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+
+
+    public class Game : MonoBehaviour
+    {
+
+
+        void Start()
+        {
+            Debug.Log("Starting game");
+        }
+
+    }
+
+
 # Keep Code Absolutely Simple - John Romero
 
 Let's keep the code absolutely simple so that we can finish and ship the game. The previous example of the state code is great because the code is short, simple, modular, and shows us the state property in the inspector. Very clear design, which is what we want.
