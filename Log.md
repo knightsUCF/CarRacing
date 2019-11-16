@@ -1,3 +1,23 @@
+# Progress So Far
+
+Progress is going great so far with the refactored project. We have the major controls now, gas, break, turn left and right.
+
+We would like to take the approach from the asset pack on actually turning the car model when turning.
+
+Also now we need to put some obstacles in front of the player.
+
+Don't worry about raycasts and AI yet. First populate the world with AI cars, which maintain the same speed.
+
+Then put a game over condition, if we bump into them. And maybe put some physics add force from the asset code, if that is easy to implement.
+
+Then build out the ability to pick up upgrades on the road.
+
+After this we will have accomplished a major part.
+
+Then we can perhaps implement the car body turning.
+
+
+
 # Holding Down Button To Accelerate / Break
 
 https://answers.unity.com/questions/1262535/holding-down-ui-mobile-button.html
