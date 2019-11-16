@@ -16,7 +16,7 @@ After this we will have accomplished a major part.
 
 Then we can perhaps implement the car body turning.
 
-
+Also prevent turning if we are not moving, or applying a different slower kind of turning.
 
 # Holding Down Button To Accelerate / Break
 
