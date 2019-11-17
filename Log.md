@@ -12,6 +12,8 @@ So we probably should have something like ResetGame() or NewGame() in Game.cs
 
 Then after we get these 2 priorities done, we should get pickup bonuses done. These 3 things will go a long way in advancing our prototype.
 
+After this the other big thing we can do is the score. Let's use the font from the asset pack, since that font seems to work great. That might be too similar to Crossy Road, but if that ather Racy Road, or whatever app uses that on the app store, then we will be alright with going this font. Anyway, we can always change the font later.
+
 
 # Codebase So Far Review
 
