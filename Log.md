@@ -11,7 +11,21 @@ So the first step will be spawn the traffic per lane in the AI. So something lik
     SpawnCarsInLane3() {}
 
 
+In AI.cs:
 
+    void SpawnCarsInLane1()
+    {
+        // spawn car 1
+
+        Instantiate(car1, pos1, Quaternion.Euler(new Vector3(0, 0, 0)), this.transform);
+
+        // spawn car 2
+
+        Instantiate(car2, pos2, Quaternion.Euler(new Vector3(0, 0, 0)), this.transform);
+
+        // we will also need a way to set a constant speed on the cars
+    }
+    
 
 # Prevent Car from Moving Backwards on Decelerate
 
