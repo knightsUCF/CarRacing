@@ -75,7 +75,37 @@ To give an example, the right button has Controls.OnRightDown tagged to pointer 
 That concludes our scene breakdown. Now on to the game code files.
 
 
+AI
 
+Our AI class at this point of time is only responsible of spawning game objects cars as a child of the Chunk parent tile object. We had some notion of introducing more complicated AI, but we will simply just spawn the cars by different speed per lane, which makes sense from a traffic view, because cars usually follow each other. We are not sure yet if this will be done by CarEngine, or if AI will handle this, and send along the car speeds to CarEngine. We probably want the AI to handle this.
+
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+
+    public class AI : MonoBehaviour
+    {
+        public GameObject[] cars;
+
+
+        public Vector3[] positions; //  = new Vector3(0, 0, 0);
+
+        int totalArrayCount;
+
+        private void Start()
+        {
+            totalArrayCount = cars.Length;
+            Debug.Log("Spawning cars");
+            for (int i = 0; i < totalArrayCount; i++ )
+            {
+                Instantiate(cars[i], positions[i], Quaternion.Euler(new Vector3(0, 0, 0)), this.transform);
+            }
+
+        }
+    }
 
 
 
