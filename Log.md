@@ -34,6 +34,27 @@ We added this in CarEngine.cs, since we want a public method AI.cs can use and c
     }
     
 
+So here is how we are initializing the game object's "car" speed:
+
+
+    void SpawnCarsInLane1()
+    {
+        // spawn car 1
+
+        car1GO = Instantiate(car1, pos1, Quaternion.Euler(new Vector3(0, 0, 0)), this.transform);
+
+        // spawn car 2
+
+        car2GO = Instantiate(car2, pos2, Quaternion.Euler(new Vector3(0, 0, 0)), this.transform);
+
+
+        // set speed
+
+        car1GO.GetComponent<CarEngine>().SetSpeed(10);
+        car2GO.GetComponent<CarEngine>().SetSpeed(10);
+
+    }
+    
     
 # Prevent Car from Moving Backwards on Decelerate
 
