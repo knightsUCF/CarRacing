@@ -1,3 +1,93 @@
+# Codebase So Far Review
+
+For the clean modular code from scratch, here are the files:
+
+AI
+CarEngine
+Controls
+Game
+Garbage
+Procedural
+State
+
+
+Before we dwelve into each of these, let's get a breakdown on the hierarchy.
+
+The standard components in the hierarchy:
+
+EventSystem
+Camera
+Lights
+
+
+Now onto the gameobjects in the hierarchy.
+
+
+State
+
+This contains the state code, which is not being used yet, but has all of the handy state stuff centralized with no complex routing.
+
+Game
+
+This is the game controller. The script Game.cs is placed on the game object game.
+
+Chunk
+
+This is a chunk of our world. At the top level placed on the parent are 3 components:
+
+Procedural (Chunk dragged in that is the parent, and 64 for the offset)
+Box Collider (is trigger checked)
+Garbage (30 set for lifetime
+
+As a child of the chunk one of the component is AI. The AI has arrays for car game object placement, and matching vector position placement. Though this needs to be reworked because seems like the AI is not spawning the objects correctly.
+
+Then we have a Player game object.
+
+The parent player game object gets a "Controls" script, with a set speed of 4.
+
+On the player is a child object, "Camera". This is for following the player around. The angle set on the camera is:
+
+pos: 7.28, 10, -5.4
+rotation: 40.87, 0, 0
+scale: 1, 1, 1
+
+In the future we might want the camera to be on an independent game object, especially when using the spring.
+
+Also as a child of the parent player game object is a car model.
+
+The last game object in the hierarchy is the HUD.
+
+The HUD contains four elements:
+
+Gas
+Break
+Right
+Left
+
+Each of these components has an "Event Trigger" added at the level of the button.
+
+For each we are registering two events: pointer down, and pointer up.
+
+Then we drag in the Player game object into the slots, since this gives us the Controls.cs file access.
+
+To give an example, the right button has Controls.OnRightDown tagged to pointer down, and Controls.OnRightRelease tagged to pointer up. This ensures we can keep sending out functionality when the player is holding the button.
+
+That concludes our scene breakdown. Now on to the game code files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # A Fix to the Variable Traffic Gameplay
 
 What we can do to vary traffic without introducing rays or any advanced AI functionality, is to set different constant speeds for traffic by each lane. 
