@@ -1,6 +1,40 @@
 # Prevent Car from Moving Backwards on Decelerate
 
-    if (speed <= 0.0) speed = 0.0;
+    if (speed <= 0) speed = 0;
+
+Added these successfully to the Controls.cs code:
+
+    void CapLowerBoundSpeed()
+    {
+        if (speed <= 0) speed = 0;
+    }
+
+    void CapUpperBoundSpeed()
+    {
+        if (speed >= maxSpeed) speed = maxSpeed;
+    }
+    
+And then put these in the main update loop of Controls.cs:
+
+    private void Update()
+    {
+        // ProcessManualInput();
+
+        // SelfDrive();
+
+        // SetPos();
+
+        CapLowerBoundSpeed();
+        CapUpperBoundSpeed();
+
+
+        MoveForward();
+
+        if (speedUp) Accelerate();
+        if (slowDown) Break();
+        if (turnLeft) TurnLeft();
+        if (turnRight) TurnRight();
+    }
 
 
 # Where From Here?
