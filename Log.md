@@ -7,7 +7,7 @@ So divide up the tile into ten segments. Each segment has a position range along
 
 # Fix for Recursive Spawning
 
-So the reason we were recursively spawning is because we were using this.transform. Not sure why this was, but that was the reason. Later investigate this in Discord and Google. 
+So the reason we were recursively spawning is because we were using this.transform. Not sure why, but that was the reason. Later investigate this in Discord and Google. 
 
 So taking out, this.transform this works:
 
