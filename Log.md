@@ -1,3 +1,40 @@
+# This is the AI Code We need to Somehow Convert from 0 to 64
+
+    void DebugSpawnCars()
+    {
+        // LANE 1
+        float lane1xPos = 2.5f;
+        float lane1Speed = 10.0f;
+        SpawnCar(car, GetRandomPos(2, 10, lane1xPos), lane1Speed);
+        SpawnCar(car, GetRandomPos(40, 50, lane1xPos), lane1Speed);
+    }
+
+
+    void SpawnCar(GameObject Car, Vector3 pos, float speed)
+    {
+        Debug.Log("Spawning car at " + (transform.position + pos));
+        // Debug.Log("transform.position: " + transform.position);
+        carGO = Instantiate(Car, transform.position + pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+        state.carCount += 1;
+        carGO.GetComponent<CarEngine>().SetSpeed(speed);
+    }
+
+
+    Vector3 GetRandomPos(int start, int end, float lane)
+    {
+        int randomNumber = GetRandomNumber(start, end);
+        Vector3 randomPos = new Vector3(lane, -0.5f, (float)randomNumber); // 4.2 is the lane position, and 0.5, the height on the y axis
+        return randomPos;
+    }
+
+
+    int GetRandomNumber(int start, int end)
+    {
+        int number;
+        number = Random.Range(start, end);
+        return number;
+    }
+
 # Working on AI
 
 The AI is coming together nicely. Though we don't know why sometimes two cars will overlap, even though we have properly spaced them apart. Getting unexpected behaviour here.
