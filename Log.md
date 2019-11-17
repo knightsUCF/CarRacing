@@ -10,6 +10,8 @@ Also make sure the is trigger colliders are set up correctly for the player. The
 
 So we probably should have something like ResetGame() or NewGame() in Game.cs
 
+Then after we get these 2 priorities done, we should get pickup bonuses done. These 3 things will go a long way in advancing our prototype.
+
 
 # Codebase So Far Review
 
