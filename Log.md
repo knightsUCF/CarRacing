@@ -655,7 +655,7 @@ Our garbage collection mechanism. We do not have garbage collection for the cars
 
 Going along with making everything as simple as possible, we will want to take a clever and super easy approach. Instead of customizing every single little thing, and setting up procedural generating mechanisms for each thing, instead we just want to have a "bag" of tiles we can pull from.
 
-So let's say we are generating grassland biodomes. We have 10 or so grassland tiles we can pull from. And we prearranged all of the designs on each of these tiles so we don't have to procedurally generate each cow pen from scratch. Instead we just have a random function which pulls out of the grasslands biodome GameObjects:
+So let's say we are generating grassland biodomes. We have 10 or so grassland tiles we can pull from. And we prearranged all of the designs on each of these tiles so we don't have to procedurally generate each cow pen from scratch. Instead we just have a random functions which pulls out of the grasslands biodome GameObjects:
 
     // biodomes (darkness can cover each, so make sure some biodomes have side lamps, or just use the car headlight illumination)
 
