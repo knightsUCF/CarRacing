@@ -75,7 +75,7 @@ To give an example, the right button has Controls.OnRightDown tagged to pointer 
 That concludes our scene breakdown. Now on to the game code files.
 
 
-AI
+# AI
 
 Our AI class at this point of time is only responsible of spawning game objects cars as a child of the Chunk parent tile object. We had some notion of introducing more complicated AI, but we will simply just spawn the cars by different speed per lane, which makes sense from a traffic view, because cars usually follow each other. We are not sure yet if this will be done by CarEngine, or if AI will handle this, and send along the car speeds to CarEngine. We probably want the AI to handle this.
 
@@ -110,7 +110,7 @@ Our AI class at this point of time is only responsible of spawning game objects 
 
 
 
-Car Engine
+# Car Engine
 
 Car engine is the car controller which moves the car models along the highway. We might simplify this class to pull all the rays out, and uneeded things. And then get the speed from the AI component on start. Later we can send out a signal to change this car speed from AI to CarEngine. But for now we want to at least initialize the speed by AI and send to CarEngine, instead of CarEngine handling the speed.
 
@@ -306,7 +306,7 @@ So the AI will be like the central hive car controller.
 
 
 
-Controls
+# Controls
 
 These are the player controls. Turns out the mobile button functionality was easier than expected, other than figuring out we have to use an Event Trigger to detect when a button is released so we can keep sending out functionality in between the button down and released.
 
@@ -517,7 +517,7 @@ I'm particularly satisfied with how this code turned out:
 
 
 
-Game
+# Game
 
 
 A very simple class, that's what we need. We will be using this to register the Game Over state and trigger appropriate actions, since that belongs to the scope of Game.cs
@@ -542,7 +542,7 @@ A very simple class, that's what we need. We will be using this to register the 
     }
 
 
-Garbage
+# Garbage
 
 Our garbage collection mechanism. We do not have garbage collection for the cars yet. What we will do to prevent all sorts of errors from happening (example: cars disappear in front of the player after they've been around longer than 30 seconds, which is the chunk self delete timer), is set up a special large colliders on the cars. And then if the car is outside of this collider after let's say 30 seconds, then destroy the car. The collider is anything relevant, and hence visible to the player area, so if the car is somewhere else then just destroy the car. Since we do not want cars from the back catching up, and cars in the front will get extra generated with each tile anyway. #TODO
 
@@ -624,7 +624,7 @@ Our garbage collection mechanism. We do not have garbage collection for the cars
         }
     }
 
-Procedural
+# Procedural
 
 
 Going along with making everything as simple as possible, we will want to take a clever and super easy approach. Instead of customizing every single little thing, and setting up procedural generating mechanisms for each thing, instead we just want to have a "bag" of tiles we can pull from.
