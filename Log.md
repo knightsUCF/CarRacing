@@ -1,3 +1,11 @@
+# Masterplan
+
+1. Cars spawning correctly
+2. Game over state
+3. Pickups
+4. Score
+
+
 # Fix for the AI 0 to 64 Random Offset
 
 So these two lines were the fix: (90% chances). We should double check the positions exactly of everything, and draw this out on paper.
