@@ -1,3 +1,8 @@
+# Prevent Car from Moving Backwards on Decelerate
+
+    if (speed <= 0.0) speed = 0;
+
+
 # Where From Here?
 
 Alright, so we diagrammed out what we have so far. That is great because we have a good pickup point. Until now we were just setting up the base project. So next up will be to make sure the cars are spawning correctly, and to set a collider to get a game over state, and also a seamless way to restart the game.
