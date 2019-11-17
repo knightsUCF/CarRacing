@@ -1,3 +1,18 @@
+# Work Day Commencing
+
+Okay, so we just want to do things in order today, step by step with no stress. We don't know how long we are going to work, and we don't want to know how long we will work. Today we should be taking off the Sunday. But we will do a few things, as long as we do things step by step in order.
+
+So the first step will be spawn the traffic per lane in the AI. So something like:
+
+    SpawnCarsInLane1() {}
+
+    SpawnCarsInLane2() {}
+
+    SpawnCarsInLane3() {}
+
+
+
+
 # Prevent Car from Moving Backwards on Decelerate
 
     if (speed <= 0) speed = 0;
