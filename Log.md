@@ -1,6 +1,6 @@
 # Prevent Car from Moving Backwards on Decelerate
 
-    if (speed <= 0.0) speed = 0;
+    if (speed <= 0.0) speed = 0.0;
 
 
 # Where From Here?
