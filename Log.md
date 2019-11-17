@@ -17,13 +17,21 @@ Then after we get these 2 priorities done, we should get pickup bonuses done. Th
 
 For the clean modular code from scratch, here are the files:
 
+
 AI
+
 CarEngine
+
 Controls
+
 Game
+
 Garbage
+
 Procedural
+
 State
+
 
 
 Before we dwelve into each of these, let's get a breakdown on the hierarchy.
@@ -31,8 +39,11 @@ Before we dwelve into each of these, let's get a breakdown on the hierarchy.
 The standard components in the hierarchy:
 
 EventSystem
+
 Camera
+
 Lights
+
 
 
 Now onto the gameobjects in the hierarchy.
