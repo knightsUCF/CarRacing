@@ -2,6 +2,10 @@
 
 Since we are generating two tiles at a time, the AI is generating the cars in the same spot. Not sure yet why some of the cars moving faster. Maybe because the public speed value has not been changed.
 
+The AI should be spawning the cars relative to the parent prefab. But instead we are spawning on an absolute Vector3. So both tiles are spawning at vector.zero.
+
+So to fix this we need to spawn the position relative to the parent's position.
+
 # Work Day Commencing
 
 Okay, so we just want to do things in order today, step by step with no stress. We don't know how long we are going to work, and we don't want to know how long we will work. Today we should be taking off the Sunday. But we will do a few things, as long as we do things step by step in order.
