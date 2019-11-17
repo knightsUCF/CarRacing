@@ -1,3 +1,10 @@
+# Starting Car Position Spawn
+
+An important thing is the starting position of the first car on the new tile. So that way we can fill out all the parts of traffic evenly.
+
+If we take 36 units for the tile. And then find the buffer. Then something like pick any random integer between 3 - 33. And then cast to a float for the position after we get the RandomRange(<int>) answer.
+
+
 # Generating Random Traffic Step by Step
 
 - generate traffic at equidistant positions (in progress)
