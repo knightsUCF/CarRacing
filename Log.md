@@ -1,3 +1,15 @@
+# Generating Random Traffic Step by Step
+
+- generate traffic at equidistant positions (in progress)
+
+- generate traffic in randomized segments of equidistant positions
+
+Randomized segements offer buffer space. So for example, if the car is 1 unit wide, then the road will have at least 2 or 3 units as a buffer. So if we are generating segments between 1 and 10, then we don't actually start the randomization between 3 and 7 let's say.
+
+Draw this out, so we can get a fraction based on the 64 meters of the tile. Also get the car size, since this will affect our fraction.
+
+
+
 # Randomizing Cars on the Road 
 
 So one way to spawn the cars randomly is to randomize the position from segments.
