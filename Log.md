@@ -1,3 +1,21 @@
+# Fix for the AI 0 to 64 Random Offset
+
+So these two lines were the fix: (90% chances)
+
+        start += (int)transform.position.z;
+        end += (int)transform.position.z;
+        
+        
+
+    Vector3 GetRandomPos(int start, int end, float lane)
+    {
+        start += (int)transform.position.z;
+        end += (int)transform.position.z;
+        int randomNumber = GetRandomNumber(start, end);
+        Vector3 randomPos = new Vector3(lane, -0.5f, (float)randomNumber); // 4.2 is the lane position, and 0.5, the height on the y axis
+        return randomPos;
+    }
+
 # This is the AI Code We need to Somehow Convert from 0 to 64
 
     void DebugSpawnCars()
