@@ -648,7 +648,7 @@ So when we generate the tiles we will have a random tile per each instance. Now 
 - when are we moving to the next biome
 - are we using train tracks to divide the biomes
 
-But even so are procedural generation mechanism will be very simple.
+But even so our procedural generation mechanism will be very simple.
 
 
     // https://github.com/dgkanatsios/InfiniteRunner3D/blob/master/Assets/Scripts/PathSpawnCollider.cs
@@ -751,6 +751,49 @@ But even so are procedural generation mechanism will be very simple.
 
     }
     */
+    
+# State
+
+Also very simple. This is our finite state machine which will keep us out of trouble.
+
+
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+
+    class State : MonoBehaviour
+    {
+
+        public enum Game
+        {
+            Start,
+            Playing,
+            Dead
+        }
+
+
+        public enum Player
+        {
+            Test1,
+            Test2
+        }
+
+
+        public Game game;
+
+        public Player player;
+
+
+
+
+    }
+
+
+
+
 
 # A Fix to the Variable Traffic Gameplay
 
