@@ -517,6 +517,29 @@ I'm particularly satisfied with how this code turned out:
 
 
 
+Game
+
+
+A very simple class, that's what we need. We will be using this to register the Game Over state and trigger appropriate actions, since that belongs to the scope of Game.cs
+
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+
+
+    public class Game : MonoBehaviour
+    {
+
+
+        void Start()
+        {
+            Debug.Log("Starting game");
+        }
+
+    }
 
 
 
