@@ -1,3 +1,30 @@
+# Fix for Recursive Spawning
+
+So the reason we were recursively spawning is because we were using this.transform. Not sure why this was, but that was the reason. Later investigate this in Discord and Google. 
+
+So taking out, this.transform this works:
+
+
+    void SpawnCarsInLane1()
+    {
+        Debug.Log("Calling spawn cars");
+        // spawn car 1
+
+        car1GO = Instantiate(car1, transform.position + pos1, Quaternion.Euler(new Vector3(0, 0, 0)));
+
+        // spawn car 2
+
+        car2GO = Instantiate(car2, transform.position + pos2, Quaternion.Euler(new Vector3(0, 0, 0)));
+
+
+        // set speed
+
+        car1GO.GetComponent<CarEngine>().SetSpeed(10);
+        car2GO.GetComponent<CarEngine>().SetSpeed(10);
+
+    }
+
+
 # AI Spawning Twice in the Same Spot
 
 Since we are generating two tiles at a time, the AI is generating the cars in the same spot. Not sure yet why some of the cars moving faster. Maybe because the public speed value has not been changed.
