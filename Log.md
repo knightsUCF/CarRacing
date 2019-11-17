@@ -6,6 +6,28 @@ The AI should be spawning the cars relative to the parent prefab. But instead we
 
 So to fix this we need to spawn the position relative to the parent's position.
 
+We seemingly fixed spawning relative to the parent by adding the original transform. However we are getting some recursive behaviour by increased multiple spawning. 
+
+    void SpawnCarsInLane1()
+    {
+        Debug.Log("Calling spawn cars");
+        // spawn car 1
+
+        car1GO = Instantiate(car1, transform.position + pos1, Quaternion.Euler(new Vector3(0, 0, 0)), this.transform);
+
+        // spawn car 2
+
+        car2GO = Instantiate(car2, transform.position + pos2, Quaternion.Euler(new Vector3(0, 0, 0)), this.transform);
+
+
+        // set speed
+
+        car1GO.GetComponent<CarEngine>().SetSpeed(10);
+        car2GO.GetComponent<CarEngine>().SetSpeed(10);
+
+    }
+    
+
 # Work Day Commencing
 
 Okay, so we just want to do things in order today, step by step with no stress. We don't know how long we are going to work, and we don't want to know how long we will work. Today we should be taking off the Sunday. But we will do a few things, as long as we do things step by step in order.
