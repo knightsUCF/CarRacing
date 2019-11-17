@@ -26,7 +26,15 @@ In AI.cs:
         // we will also need a way to set a constant speed on the cars
     }
     
+We added this in CarEngine.cs, since we want a public method AI.cs can use and control the speed of the different cars. This will be just the speed generated in the Start() method of AI.cs. If the car engine then wants to customize the speed when moving in and out of traffic, that is fine. At that point we will be using rays to make sure we don't collide with another car. But for now we will be starting with constant speed per lane.
 
+    public void SetSpeed(float Speed)
+    {
+        speed = Speed;
+    }
+    
+
+    
 # Prevent Car from Moving Backwards on Decelerate
 
     if (speed <= 0) speed = 0;
