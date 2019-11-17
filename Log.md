@@ -1,3 +1,10 @@
+# Randomizing Cars on the Road 
+
+So one way to spawn the cars randomly is to randomize the position from segments.
+
+So divide up the tile into ten segments. Each segment has a position range along the z we can randomize. So for segment one, we will spawn between point A of segment's start, and point B of segment's end. So we will know that no two cars will collide since there will be a buffer gap between each segment, and since each car will have a set speed they not be running into each other.
+
+
 # Fix for Recursive Spawning
 
 So the reason we were recursively spawning is because we were using this.transform. Not sure why this was, but that was the reason. Later investigate this in Discord and Google. 
