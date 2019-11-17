@@ -621,13 +621,136 @@ Our garbage collection mechanism. We do not have garbage collection for the cars
             {
                 playerOnTile = false;
             }
-
         }
+    }
 
+Procedural
+
+
+Going along with making everything as simple as possible, we will want to take a clever and super easy approach. Instead of customizing every single little thing, and setting up procedural generating mechanisms for each thing, instead we just want to have a "bag" of tiles we can pull from.
+
+So let's say we are generating grassland biodomes. We have 10 or so grassland tiles we can pull from. And we prearranged all of the designs on each of these tiles so we don't have to procedurally generate each cow pen from scratch. Instead we just have a random function which pulls out of the grasslands biodome GameObjects:
+
+    // biodomes (darkness can cover each, so make sure some biodomes have side lamps, or just use the car headlight illumination)
+
+    public GameObject[] grassLand;
+    public GameObject[] desertLand;
+    public GameObject[] cityLand;
+    public GameObject[] winterLand;
+
+So this way we don't have to worry about any involved and perhaps too overly complex procedural mechanisms before being to first just ship the product.
+
+So we will create a number of grass land tiles, with cow pens in different locations, and just throw those into the array. Same for desertLand.
+
+So when we generate the tiles we will have a random tile per each instance. Now how to combine the two together? Well we will need three things:
+
+- how many tiles of each biome
+- when are we moving to the next biome
+- are we using train tracks to divide the biomes
+
+But even so are procedural generation mechanism will be very simple.
+
+
+    // https://github.com/dgkanatsios/InfiniteRunner3D/blob/master/Assets/Scripts/PathSpawnCollider.cs
+
+
+    using UnityEngine;
+    using System.Collections;
+
+    /*
+
+    Attach to chunk object, this will talk to the collider that is attached.
+    When the player enters the collider this spawns another object.
+
+    Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
+
+
+    */
+
+
+
+    public class Procedural : MonoBehaviour
+    {
+
+
+
+        public GameObject chunk; // randomized chunks: public GameObject[] chunks
+
+        public float offset = 250.0f;
+
+        Vector3 pos;
+
+        Vector3 rotation; // we don't really need this, but our tiles are rotated 90, and we might have to rewrite Controls.cs because the car goes the other way
+
+
+
+        private void OnTriggerEnter(Collider c)
+        {
+            if (c.gameObject.tag == "Player")
+            {
+
+                // Debug.Log("Detected player");
+
+                pos = transform.position;
+                // pos.x = transform.position.x + offset; // spawns to the right of us
+                pos.z = transform.position.z + offset; // spawns in front
+
+
+                // Instantiate(chunk, pos, Quaternion.Euler(new Vector3(0, 90, 0)));
+
+                Instantiate(chunk, pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+            }
+        }
 
 
     }
 
+
+
+
+
+
+
+    /*
+    public GameObject chunk; // later for randomized chunks: public GameObject[] chunks; // and we will need a method to pick random element out of them, well in this case we can implement the for loop code
+
+
+    void OnTriggerEnter(Collider hit)
+    {
+
+        // player entered chunk collider
+
+        if (hit.gameObject.tag == Constants.PlayerTag) // set this to our player
+        {
+
+            // okay first test this, to check how many times we get "entered collider" output to the log, because we don't want to spawn too much stuff and crash
+
+            // find whether the next path will be straight, left or right
+
+            // int randomSpawnPoint = Random.Range(0, PathSpawnPoints.Length);
+
+
+
+            for (int i = 0; i < PathSpawnPoints.Length; i++)
+            {
+                //instantiate the path, on the set rotation
+                if (i == randomSpawnPoint)
+                    Instantiate(Path, PathSpawnPoints[i].position, PathSpawnPoints[i].rotation);
+                else
+                {
+                    //instantiate the border, but rotate it 90 degrees first
+                    Vector3 rotation = PathSpawnPoints[i].rotation.eulerAngles;
+                    rotation.y += 90;
+                    Vector3 position = PathSpawnPoints[i].position;
+                    position.y += positionY;
+                    Instantiate(DangerousBorder, position, Quaternion.Euler(rotation));
+                }
+            }
+
+        }
+
+    }
+    */
 
 # A Fix to the Variable Traffic Gameplay
 
