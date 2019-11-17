@@ -1,6 +1,6 @@
 # Fix for the AI 0 to 64 Random Offset
 
-So these two lines were the fix: (90% chances)
+So these two lines were the fix: (90% chances). We should double check the positions exactly of everything, and draw this out on paper.
 
         start += (int)transform.position.z;
         end += (int)transform.position.z;
