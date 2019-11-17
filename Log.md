@@ -2,6 +2,9 @@
 
 The AI is coming together nicely. Though we don't know why sometimes two cars will overlap, even though we have properly spaced them apart. Getting unexpected behaviour here.
 
+The spacing here works for a 64 x 64 tile. When we increase the size of the tile, we will also need to adjust the spawning ranges here.
+
+
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
