@@ -1,3 +1,16 @@
+# Where From Here?
+
+Alright, so we diagrammed out what we have so far. That is great because we have a good pickup point. Until now we were just setting up the base project. So next up will be to make sure the cars are spawning correctly, and to set a collider to get a game over state, and also a seamless way to restart the game.
+
+These will be our 2 priorities to do.
+
+Now we can also study how the assets achieved the game over state to get a smooth loop. Perhaps we will fade the screen in and out to transition, or drop a screen. Check how Crossy Road does this, and the asset packs. Try to come up with a solid approach the first time, so that we are not mangling code.
+
+Also make sure the is trigger colliders are set up correctly for the player. The advantage of using is trigger colliders is that we don't have to deal with the physics systems, but at the time we don't get the physics collisions. So if we go with is trigger, we can just simply change out: OnTriggerEnter() to OnCollisionEnter() later on. The two can also be seperated with the trigger enter ensuring the player restarts the game (after a few seconds), and the physics collider to showing the effect. Then after a few seconds of observing the collision we reset everything.
+
+So we probably should have something like ResetGame() or NewGame() in Game.cs
+
+
 # Codebase So Far Review
 
 For the clean modular code from scratch, here are the files:
