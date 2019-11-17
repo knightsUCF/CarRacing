@@ -1,3 +1,17 @@
+# A Fix to the Variable Traffic Gameplay
+
+What we can do to vary traffic without introducing rays or any advanced AI functionality, is to set different constant speeds for traffic by each lane. 
+
+So lane 1 we can generate a random speed between the lower bound 0 and 10.
+
+Lane 2 we can generate a random speed between 20 - 30.
+
+And lane 3, the fast traffic, we can generate a random speed between 30 and 40.
+
+Of course we will have to adjust these numbers during the gameplay, and store our settings.
+
+Then when the cars are going in their respective lanes, once in a while (in phase 2 of the development of this), then we can increase or decrease the speed. So that way the player never gets stuck in one lane if traffic is too close, and never changing. So this way we prevent the player getting stuck, vary the gameplay, and do not have to rely on any complex AI solutions for the prototype.
+
 # Reference: https://answers.unity.com/questions/1262535/holding-down-ui-mobile-button.html
 
 # Day 1 Commencing
