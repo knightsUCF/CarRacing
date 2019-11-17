@@ -1,5 +1,6 @@
 # AI Polished Final for Now
 
+
         using System.Collections;
         using System.Collections.Generic;
         using UnityEngine;
@@ -40,7 +41,7 @@
 
 
 
-            void ModerateTraffic()
+            void DeployModerateTraffic()
             {
                 // LANE 1
 
@@ -97,9 +98,7 @@
 
             int GetRandomNumber(int start, int end)
             {
-                int number;
-                number = Random.Range(start, end);
-                return number;
+                return Random.Range(start, end);
             }
 
 
@@ -241,6 +240,7 @@
 
 
         }
+
 
 
 # Car Spawning Coming Along Nicely
