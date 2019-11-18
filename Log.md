@@ -1,3 +1,10 @@
+# Low Poly Style
+
+Cars: https://assetstore.unity.com/detail/3d/vehicles/land/low-poly-cars-101798
+
+Terrain: https://assetstore.unity.com/detail/3d/vegetation/trees/low-poly-trees-pack-73954
+
+
 # AI Polished Final for Now
 
 
