@@ -2,6 +2,17 @@
 
 Maybe out collider is going out of bounds when we turn sharply to one side.
 
+Well the actual solution might be found here:
+
+"For your objects to receive the OnTriggerEnter, at least one of them has to have the Is Trigger property checked and at least one of them has to have a Rigid Body. If neither of your objects is a Trigger, you can use OnCollisionEnter instead.
+
+Once that's all set, you should check the Layers (not Tags) on your objects. To edit which Layers collide with each other, you can look at Edit -> Project Settings -> Physics.
+
+By default Unity sets all layers to collide with all layers. That's a good works-by-default setup, but you may want to play with it to optimize later on."
+
+By deleting one of the objects on the car, a filler capsule or whatever, perhaps we essentially got rid of the rigid body which was helping us register the OnTriggerEnter() events.
+
+
 # Getting Collisions to Register
 
 Let's do an OnTriggerEnter, or OnCollision, on the player so we can recognize the AI car game object and decide when we lost the game by touching another car.
