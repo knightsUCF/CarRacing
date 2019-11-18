@@ -1,3 +1,90 @@
+# New Game
+
+So here is our functionality for starting a new game. We are doing everything correctly except spawning new cars. Something is preventing the chunk from possibly registering the player to spawn new cars.
+
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+
+
+
+        public class Game : MonoBehaviour
+        {
+
+            public GameObject player;
+            public GameObject chunk;
+
+
+            public Vector3 playerResetPos = new Vector3(0.0f, 0.0f, 0.0f);
+            public Vector3 chunkStartPos = new Vector3(0.0f, 0.0f, 0.0f);
+
+
+            GameObject[] cars;
+            GameObject[] chunks;
+
+
+            State state;
+
+            private void Start()
+            {
+                state = FindObjectOfType<State>();
+            }
+
+
+            private void Update()
+            {
+                if (state.game == State.Game.Over)
+                {
+                    state.game = State.Game.New;
+                    NewGame();
+                }
+            }
+
+
+
+            void NewGame()
+            {
+                DeleteAllCarsInScene();
+                DeleteAllChunksInScene();
+                CreateStartingChunk();
+                ResetPlayerPosition(); 
+            }
+
+
+
+            void ResetPlayerPosition()
+            {
+                player.transform.position = playerResetPos;
+            }
+
+
+
+            void DeleteAllCarsInScene()
+            {
+                cars = GameObject.FindGameObjectsWithTag("Car");
+                foreach (GameObject car in cars) Destroy(car);
+            }
+
+
+
+            void DeleteAllChunksInScene()
+            {
+                chunks = GameObject.FindGameObjectsWithTag("Chunk");
+                foreach (GameObject chunk in chunks) Destroy(chunk);
+            }
+
+
+            void CreateStartingChunk()
+            {
+                Instantiate(chunk, chunkStartPos, Quaternion.Euler(new Vector3(0, 0, 0)));
+            }
+
+        }
+
+
+
 # Multiple Car Spawning Bug
 
 The reasons we were spawning multiple cars is because we had multiple colliders (probably), so once we cleared this out just to a capsule everything worked. We will need to set up colliders properly.
