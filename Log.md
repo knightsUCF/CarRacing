@@ -12,6 +12,8 @@ By default Unity sets all layers to collide with all layers. That's a good works
 
 By deleting one of the objects on the car, a filler capsule or whatever, perhaps we essentially got rid of the rigid body which was helping us register the OnTriggerEnter() events.
 
+Sure enough, when we delete the "Cube" object, which contains a rigid body, we stop spawning. So having a rigid body on at least one of the objects solves our issue.
+
 
 # Getting Collisions to Register
 
