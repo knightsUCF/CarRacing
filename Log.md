@@ -1,3 +1,14 @@
+# Goals for Today
+
+So we solved the issue of cars not spawning correctly. One problem was taking out this.transform, and the other was adding the transform to the z position.
+
+Now we might have a bug where we are not spawning the terrain in front of us. If this is the case maybe our collider is not sticking out far enough. 
+
+Also we want to introduce a game over state, and currently we are not getting collisions. So perhaps add a rigid body to fix this.
+
+If we get collisions with the rigid body then we can check out the add force code from the asset pack.
+
+
 # Low Poly Style
 
 Cars: https://assetstore.unity.com/detail/3d/vehicles/land/low-poly-cars-101798
