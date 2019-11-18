@@ -2,6 +2,8 @@
 
 So here is our functionality for starting a new game. We are doing everything correctly except spawning new cars. Something is preventing the chunk from possibly registering the player to spawn new cars.
 
+So the solution to the new cars not spawning correctly is that the AI object had a question mark / plus, letting us known this was not part of the original prefab, so when dragging the prefab into the chunk slot of procedural, we were not getting the AI attached. So updating the prefab with the AI part, and then dragging the prefab from the project window (not hierarchy) into the procedural slot fixed the problem.
+
 
         using System.Collections;
         using System.Collections.Generic;
