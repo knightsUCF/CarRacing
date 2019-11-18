@@ -6,6 +6,31 @@ Maybe out collider is going out of bounds when we turn sharply to one side.
 
 Let's do an OnTriggerEnter, or OnCollision, on the player so we can recognize the AI car game object and decide when we lost the game by touching another car.
 
+So we just simply add this script at the same level where we have an is trigger collider. Also make sure that the tag is on the right level. We had the proper "Car" tag at the parent level, but where not registering this at the child level where the tag was left "undefined". After changing to "Car" everything worked correctly.
+
+
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+
+
+
+        public class DetectCollision : MonoBehaviour
+        {
+
+            private void OnTriggerEnter(Collider c)
+            {
+                if (c.gameObject.tag == "Car")
+                {
+                    Debug.Log("Detected AI Car");
+                }
+            }
+
+        }
+
+
 
 # On AI Car Rigidbodies
 
