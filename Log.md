@@ -1,6 +1,6 @@
 # Recognizing Game State
 
-We are simply using this to set game state. This has a box collider is trigger, and also set the DetectCollision.cs script on the same level.
+We are simply using DetectCollision.cs to set game state. This has a box collider is trigger, and also set the DetectCollision.cs script on the same level.
 
 So anyway, check a bool variable 60 times a second should not give us any performance issues so that way we can communicate the state.
 
