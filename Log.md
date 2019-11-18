@@ -1,3 +1,8 @@
+# Multiple Car Spawning Bug
+
+The reasons we were spawning multiple cars is because we had multiple colliders (probably), so once we cleared this out just to a capsule everything worked. We will need to set up colliders properly.
+
+
 # Solution to Weird Not Spawning Terrain Bug
 
 Maybe out collider is going out of bounds when we turn sharply to one side.
