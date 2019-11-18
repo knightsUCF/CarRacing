@@ -1,3 +1,26 @@
+# What's Next?
+
+Well, we mechanically set up the recognition of a game over state.
+
+We will of course need some smooth transition. But we could do this at another time.
+
+So the next two things we want to do are pickups and score.
+
+Pickups can be generated just like a regular car.
+
+To start do a simple pickup which simply raises our score, which gives us a chance to finish both components.
+
+Then after we get that done we can come back and work on a smooth game over state transition.
+
+
+
+So our original plan was:
+
+Cars spawning correctly
+Game over state
+Pickups
+Score
+
 # Recognizing Game State
 
 We are simply using DetectCollision.cs to set game state. This has a box collider is trigger, and also set the DetectCollision.cs script on the same level.
