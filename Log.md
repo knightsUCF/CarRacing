@@ -1,3 +1,53 @@
+# Recognizing Game State
+
+We are simply using this to set game state. This has a box collider is trigger, and also set the DetectCollision.cs script on the same level.
+
+So anyway, check a bool variable 60 times a second should not give us any performance issues so that way we can communicate the state.
+
+Then once DetectCollision registers the game over state, the Game.cs script picks up on this:
+
+
+From Game.cs:
+
+         private void Update()
+            {
+                if (state.game == State.Game.Over)
+                {
+                    state.game = State.Game.New;
+                    NewGame();
+                }
+            }
+
+
+DetectCollision.cs:
+
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+
+
+
+        public class DetectCollision : MonoBehaviour
+        {
+            State state;
+
+            private void Start()
+            {
+                state = FindObjectOfType<State>();
+            }
+
+
+            private void OnTriggerEnter(Collider c)
+            {
+                if (c.gameObject.tag == "Car") state.game = State.Game.Over;
+            }
+
+        }
+
+
+
 # New Game
 
 So here is our functionality for starting a new game. We are doing everything correctly except spawning new cars. Something is preventing the chunk from possibly registering the player to spawn new cars.
