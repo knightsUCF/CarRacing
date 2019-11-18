@@ -1,3 +1,17 @@
+# Getting Collisions to Register
+
+Let's do an OnTriggerEnter, or OnCollision, on the player so we can recognize the AI car game object and decide when we lost the game by touching another car.
+
+
+# On AI Car Rigidbodies
+
+We have some strange behaviour going on. When we add a rigidbody with "is kinematic" turned off we don't get the car spawning.
+
+Let's just first get the collision to register. Then we can always add the kinematic stuff, and even the apply force when this happens if we have to.
+
+
+
+
 # Goals for Today
 
 So we solved the issue of cars not spawning correctly. One problem was taking out this.transform, and the other was adding the transform to the z position.
