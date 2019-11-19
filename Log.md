@@ -1,3 +1,14 @@
+# Generating Opposite Traffic
+
+First generate traffic flowing in the same direction.
+
+Then flip the cars 180.
+
+Then add negative acceleration in the CarEngine script.
+
+We can still pull from the CarsHolder pack, we will just need to flip them 180, and then apply the opposite velocity and acceleration. We will need to adjust the values for both acceleration and deceleration.
+
+
 # Generate First Terrain
 
 Generate the first terrain, since we are just simply initializing the original chunk, while we should be initializing a random chunk out of a grasslands array.
