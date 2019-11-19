@@ -3,10 +3,11 @@
 Originally we wanted to put these methods inside of Garbage.cs, but garbage destroy the chunk prefab and also auto destroy, so that might not be the best choice, until we somehow have Garbage as a permanent game object member of the hierarchy dolling out that command. Until then we wrote a script called Clear, which gets the job done nicely:
 
 
-
          using System.Collections;
          using System.Collections.Generic;
          using UnityEngine;
+
+
 
 
 
@@ -15,6 +16,7 @@ Originally we wanted to put these methods inside of Garbage.cs, but garbage dest
 
              State state;
              Score score;
+
 
              GameObject[] cars;
              GameObject[] loot;
@@ -60,6 +62,7 @@ Originally we wanted to put these methods inside of Garbage.cs, but garbage dest
              }
 
          }
+
 
 
 # Refactor (Move) Clear.Chunks() and others into Garbage.cs
