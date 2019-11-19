@@ -1,3 +1,20 @@
+# What are the Major Things Left to Do?
+
+So before working on the polish stuff, let's work on the big stuff needed to ship the game. 
+
+Let's throw some stuff randomly here, and then organize later:
+
+* menu screens
+
+* unlockable cars
+
+* saving unlocked cars to profile (Google + Apple will need different save functionality)
+
+* a few test environments to test how we are geenrating random chunks
+
+* what else?
+
+
 # What's Next?
 
 Well we've completed the "Masterplan" to do list:
