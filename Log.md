@@ -193,7 +193,7 @@ And then we when can have a method per each:
 
 We could condense this to one method:
 
-    void InstantiateRandomChunkLand(GameObject chunkLands)
+    void InstantiateRandomChunkLand(GameObject[] chunkLands)
     {
         Instantiate(chunkLands[Random.Range(0, chunkLands.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
     }
