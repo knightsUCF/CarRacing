@@ -6,6 +6,30 @@ We are not able to get the colliders to work. Maybe this is because we adjusting
 
 One way of doing this is something like CapX(), and then cap the boundaries of the x on the car, so we cannot move any more. I believe this is what they did in the space game tutorial.
 
+So we were able to do that with this code added to Update() of Control.cs:
+
+
+    float leftXRail = -13;
+    float rightXRail = -3.5f;
+
+    void CapX()
+    {
+        if (transform.position.x < leftXRail)
+        {
+            pos = transform.position;
+            pos.x = leftXRail;
+            transform.position = pos;
+        }
+
+        if (transform.position.x > rightXRail)
+        {
+            pos = transform.position;
+            pos.x = rightXRail;
+            transform.position = pos;
+        }
+    }
+    
+
 # Car Area Clear
 
 Need to test the threshold. We are calling this once in Start() of Garbage.cs, so we run this once per chunk generated. With a threshold of 100.0f we were deleting too many cars, with a threshold of 1000.0f, we seem to be fine. Do more testing here. #TODO
