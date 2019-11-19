@@ -12,6 +12,7 @@
 
         public struct Profile
         {
+            public int highScore;
             public float timeSpentPlaying;
         }
 
