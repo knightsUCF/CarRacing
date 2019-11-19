@@ -66,11 +66,26 @@ And then we when can have a method per each:
 
 We could condense this to one method:
 
-    void InstantiateRandomChunkLand(GameObject chunkLand)
+    void InstantiateRandomChunkLand(GameObject chunkLands)
     {
-        Instantiate(chunkLand[Random.Range(0, chunkLand.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+        Instantiate(chunkLands[Random.Range(0, chunkLands.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
     }
     
+
+So at first we are just going to test one type.
+
+So let's just create the public GameObject[] grassLandChunks in Procedural.cs;
+
+Then when the time comes to spawn a new chunk, we can do:
+
+    InstantiateRandomChunkLand(grassLandChunks); // passing in an array
+
+Out of this we will spawn one random chunk, so we are done testing here.
+
+Then later when we decide to switch the biome from let's say for example grassLandChunks to desertLandChunks, we can simply do:
+
+
+    InstantiateRandomChunkLand(desertLandChunks); // passing in an array
 
 
 
