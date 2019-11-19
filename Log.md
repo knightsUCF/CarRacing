@@ -1,3 +1,9 @@
+# A Way to Design the Procedural Levels
+
+We can test out each method of GenerateModerateTraffic(), GenerateModerateTrafficWithLoot(), maybe even number them and write up a description in the notes.
+
+This way we can test just one iteration over and over and guage how that feels. We can always increase this to 2X repetitions in the actual gameplay, but then we can test the change from GenerateModerateTraffic() to GenerateLightTraffic() and fine tune that through gameplay. Then with enough of thes levels we can randomly change from GenerateModerateTraffic() to GenerateLightTraffic() and other combinations.
+
 # Debugging Code - Total Cars Count (game objects with tag)
 
 We added this code to Garbage.cs, to convienently get the total cars count during the Start() method:
