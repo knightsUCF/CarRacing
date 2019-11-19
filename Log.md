@@ -64,6 +64,16 @@ And then we when can have a method per each:
     }
 
 
+We could condense this to one method:
+
+    void InstantiateRandomChunkLand(GameObject chunkLand)
+    {
+        Instantiate(chunkLand[Random.Range(0, chunkLand.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
+    
+
+
+
 # Next Up
 
 Let's do different cars, and different levels generated next.
