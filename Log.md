@@ -90,6 +90,8 @@ Now here are a few things we can do to polish the above:
 
 * score
 
+* check that we are using the Standard shader instead of mobile shader on any assets, that's where the glitching graphics bug is likely coming from
+
 
 But these are all polish things. We should move on to the bigger stuff, before we are going to do this kind of polish, just so that we can get closer to the finished product, which includes screens, unlocking cars, different types of cars. Like with the masterplan we should just have a few simple items to work toward.
 
