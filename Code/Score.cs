@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 
@@ -8,17 +9,11 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
 
-    float reward;
+    public Text score;
 
 
-    // for some reason on trigger enter works better than on exit
-
-    private void OnTriggerEnter(Collider c)
+    public void Set(int amount)
     {
-        if (c.gameObject.tag == "AI")
-        {
-            reward = UI.Instance.GetScore() + 50.0f;
-            UI.Instance.SetScore(reward);
-        }
+        score.text = amount.ToString();
     }
 }
