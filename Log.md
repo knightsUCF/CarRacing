@@ -158,9 +158,9 @@ Then can test the procedure for spawning a series of random chunks per biome. We
 
 A simple way to generate random biome specific tiles per sequence could be too simply declare the available chunks up at the top:
 
-public GameObject[] grassLandChunks;
-public GameObject[] desertLandChunks;
-public GameObject[] winterLandChunks;
+    public GameObject[] grassLandChunks;
+    public GameObject[] desertLandChunks;
+    public GameObject[] winterLandChunks;
 
 
 And then we when can have a method per each:
