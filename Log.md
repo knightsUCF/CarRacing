@@ -1,3 +1,8 @@
+# Refactor (Move) Clear.Chunks() and others into Garbage.cs
+
+Refactor and fix code, which will break. To keep all the Clear.X() stuff out of Game.cs and instead put in Garbage.cs.
+
+
 # Variable Reward on Loot
 
 So every time there is loot, the type should be different. This way we introduce V A R I A B L E   R E W A R D  into the gameplay.
