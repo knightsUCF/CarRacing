@@ -34,6 +34,8 @@ And then writing a method which does this:
 
 For now we want the simplest working way, but later we can instantiate series of chunks based on biomes. So first let's say we want to spawn 5 tiles of the grasslands biome, all random tiles pulled out of the "grasslands biome" tile bag.
 
+We can test spawning the random chunks, just by simply changing the color of the platform. So we would duplicate everything else, and then rename the game object Chunk to something like Chunk1GrassLand, Chunk2GrassLand... Chunk1DesertLand, Chunk2DesertLand... Chunk1WinterLand, Chunk2WinterLand.
+
 # Next Up
 
 Let's do different cars, and different levels generated next.
