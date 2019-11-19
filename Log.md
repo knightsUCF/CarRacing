@@ -1,3 +1,7 @@
+# Side Colliders
+
+Make the length of the side collider the size of the tile, 64 in this case.
+
 # Car Area Clear
 
 Need to test the threshold. We are calling this once in Start() of Garbage.cs, so we run this once per chunk generated. With a threshold of 100.0f we were deleting too many cars, with a threshold of 1000.0f, we seem to be fine. Do more testing here. #TODO
