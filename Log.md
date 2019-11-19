@@ -1,3 +1,7 @@
+# Random Loot Must Have Modifiers
+
+So if we have a type of loot that is required to progress like gas, we could force a spawn, if we don't spawn up to x number of times in a row, so that way the player can proceed in the game. Although there will still be a level of challenge required, when the player must get that gas loot to progress, since we spawned them and all is fair.
+
 # Level Design
 
 We are just creating objects that go on each platform, and labeling each of those as levels. In the future however, we might choose to make the platform tiles bigger...
