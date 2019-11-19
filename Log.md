@@ -1,6 +1,6 @@
 # Debugging Code - Total Cars Count (game objects with tag)
 
-We added this code to Garbage.cs, to conviently get the total cars count during the Start() method:
+We added this code to Garbage.cs, to convienently get the total cars count during the Start() method:
 
 
     void Start()
