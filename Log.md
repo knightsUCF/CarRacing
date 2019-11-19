@@ -2,6 +2,8 @@
 
 So opposite traffic is finished, and random cars, and also random terrains, so what's next?
 
+- we need to add colliders to the other cars because the player is not colliding, #TODO
+
 
 
 # Generating Opposite Traffic
