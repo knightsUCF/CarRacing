@@ -1,3 +1,9 @@
+# Edge Case - Waiting Before Driving
+
+What if the player simply waits with acceleration of 0, and velocity of 0. Then the first wave of cars are spawned and those continue forward. Well, even though they are moving at a constant speed, once the player then speeds up, and the new wave of cars are spawned, what if they are spawned on top of each other? 
+
+We can fix this with having a garbage collector helper. If we detect than any two cars are within some collider distance of each other, then destroy one, and leave the other. By the time the player catches up for the next wave of cars spawned, that would have already happened ahead of him.
+
 # Add Invincibility Mode for Testing
 
 Everytime we check whether to destroy the car, in there check the state of the invicibility mode. Build this out as a button toggle.
