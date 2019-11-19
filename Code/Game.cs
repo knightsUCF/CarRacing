@@ -16,19 +16,16 @@ public class Game : MonoBehaviour
     public Vector3 chunkStartPos = new Vector3(0.0f, 0.0f, 0.0f);
 
 
-    GameObject[] cars;
-    GameObject[] loot;
-    GameObject[] chunks;
-
 
     State state;
-    Score score;
+    Clear clear;
+
 
 
     private void Start()
     {
         state = FindObjectOfType<State>();
-        score = FindObjectOfType<Score>();
+        clear = FindObjectOfType<Clear>();
     }
 
 
@@ -47,10 +44,10 @@ public class Game : MonoBehaviour
     {
         // deinitialize
 
-        ClearScore();
-        ClearCars();
-        ClearLoot();
-        ClearChunks();
+        clear.Score();
+        clear.Cars();
+        clear.Loot();
+        clear.Chunks();
 
         // initialize
 
@@ -60,40 +57,13 @@ public class Game : MonoBehaviour
 
 
 
+
     void ResetPlayerPosition()
     {
         player.transform.position = playerResetPos;
     }
 
 
-    void ClearScore()
-    {
-        state.score = 0;
-        score.Set(0);
-    }
-
-
-    void ClearCars()
-    {
-        cars = GameObject.FindGameObjectsWithTag("Car");
-        foreach (GameObject car in cars) Destroy(car);
-    }
-
-
-    void ClearLoot()
-    {
-        loot = GameObject.FindGameObjectsWithTag("Loot");
-        foreach (GameObject l in loot) Destroy(l);
-    }
-
-
-    void ClearChunks()
-    {
-        chunks = GameObject.FindGameObjectsWithTag("Chunk");
-        foreach (GameObject chunk in chunks) Destroy(chunk);
-    }
-
-    
 
     void CreateStartingChunk()
     {
