@@ -1,6 +1,18 @@
 # Instantiating Different Levels
 
 
+This might be as simple as declaring this at the top of Procedural.cs:
+
+    public GameObject[] chunks;
+    
+
+And then writing a method which does this:
+
+
+    void InstantiateRandomChunk()
+    {
+        Instantiate(chunks[Random.Range(0, chunks.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
 
 
 # Next Up
