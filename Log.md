@@ -1,3 +1,17 @@
+# Generating Opposite Traffic
+
+To generate traffic going the opposite way we will need a few modifications:
+
+- shift the x component (will be done by AI.cs)
+
+- also flip the car models 180 (can also be done by AI.cs)
+
+- drive the opposite way (will be done by car engine)
+
+
+The way AI.cs and CarEngine.cs will recognize on which direction of the road to spawn traffic, is to have some sort of bool marker on the parent prefab. So at instantiation we get this value, and by this we set the three parameters above.
+
+
 # Instantiating Different Cars
 
 We can use the same method from instantiating different chunks applied to generating different cars.
