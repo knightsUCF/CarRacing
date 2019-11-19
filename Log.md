@@ -14,6 +14,8 @@ Let's throw some stuff randomly here, and then organize later:
 
 * what else?
 
+* monetization (study asset code)
+
 
 # What's Next?
 
