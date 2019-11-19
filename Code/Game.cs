@@ -22,11 +22,13 @@ public class Game : MonoBehaviour
 
 
     State state;
+    Score score;
 
 
     private void Start()
     {
         state = FindObjectOfType<State>();
+        score = FindObjectOfType<Score>();
     }
 
 
@@ -67,6 +69,7 @@ public class Game : MonoBehaviour
     void ClearScore()
     {
         state.score = 0;
+        score.Set(0);
     }
 
 
