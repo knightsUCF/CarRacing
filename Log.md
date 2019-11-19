@@ -1,3 +1,7 @@
+# Variable Reward Within Variable Reward
+
+So for example, when we generate the gold coins loot, which will be generate from a random assortment of loot items, then we can also vary the gold count reward, so that will give the player an extra layer of variable reward.
+
 # Random Must Have Loot Modifiers
 
 So if we have a type of loot that is required to progress like gas, we could force a spawn, if we don't spawn up to x number of times in a row, so that way the player can proceed in the game. Although there will still be a level of challenge required, when the player must get that gas loot to progress, since we spawned them and all is fair.
