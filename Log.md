@@ -1,3 +1,67 @@
+# Clear.cs Code
+
+Originally we wanted to put these methods inside of Garbage.cs, but garbage destroy the chunk prefab and also auto destroy, so that might not be the best choice, until we somehow have Garbage as a permanent game object member of the hierarchy dolling out that command. Until then we wrote a script called Clear, which gets the job done nicely:
+
+
+
+         using System.Collections;
+         using System.Collections.Generic;
+         using UnityEngine;
+
+
+
+         public class Clear : MonoBehaviour
+         {
+
+             State state;
+             Score score;
+
+             GameObject[] cars;
+             GameObject[] loot;
+             GameObject[] chunks;
+
+
+
+
+             private void Start()
+             {
+                 state = FindObjectOfType<State>();
+                 score = FindObjectOfType<Score>();
+             }
+
+
+
+
+             public void Score()
+             {
+                 state.score = 0;
+                 score.Set(0);
+             }
+
+
+             public void Cars()
+             {
+                 cars = GameObject.FindGameObjectsWithTag("Car");
+                 foreach (GameObject car in cars) Destroy(car);
+             }
+
+
+             public void Loot()
+             {
+                 loot = GameObject.FindGameObjectsWithTag("Loot");
+                 foreach (GameObject l in loot) Destroy(l);
+             }
+
+
+             public void ClearChunks()
+             {
+                 chunks = GameObject.FindGameObjectsWithTag("Chunk");
+                 foreach (GameObject chunk in chunks) Destroy(chunk);
+             }
+
+         }
+
+
 # Refactor (Move) Clear.Chunks() and others into Garbage.cs
 
 Refactor and fix code, which will break. To keep all the Clear.X() stuff out of Game.cs and instead put in Garbage.cs.
