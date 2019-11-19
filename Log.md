@@ -38,6 +38,32 @@ We can test spawning the random chunks, just by simply changing the color of the
 
 Then can test the procedure for spawning a series of random chunks per biome. We could use different shades of color per biome, so shades of green per grass land, shades of yellow per desert land, etc. And then of course we could even randomize the starting biome, and biome sequence generation.
 
+A simple way to generate random biome specific tiles per sequence could be too simply declare the available chunks up at the top:
+
+public GameObject[] grassLandChunks;
+public GameObject[] desertLandChunks;
+public GameObject[] winterLandChunks;
+
+
+And then we when can have a method per each:
+
+
+    void InstantiateRandomGrassLandChunk()
+    {
+        Instantiate(grassLandChunks[Random.Range(0, grassLandChunks.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
+    
+    void InstantiateRandomDesertLandChunk()
+    {
+        Instantiate(desertLandChunks[Random.Range(0, desertLandChunks.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
+    
+    void InstantiateRandomWinterLandChunk()
+    {
+        Instantiate(winterLandChunks[Random.Range(0, winterLandChunks.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
+
+
 # Next Up
 
 Let's do different cars, and different levels generated next.
