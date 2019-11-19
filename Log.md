@@ -2,9 +2,9 @@
 
 So the code we need to randomly generate cars can be found here:
 
-    CarsHolder carsHolder;
+    CarsHolder carsHolder; // global
     
-    carsHolder = FindObjectOfType<CarsHolder>();
+    carsHolder = FindObjectOfType<CarsHolder>(); // in Start()
 
 
     void DeployModerateTrafficWithLootAndRandomCars()
