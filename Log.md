@@ -2,6 +2,7 @@
 
 Refactor and fix code, which will break. To keep all the Clear.X() stuff out of Game.cs and instead put in Garbage.cs.
 
+Also refactor "counts" in Data, since we moved them.
 
 # Variable Reward on Loot
 
