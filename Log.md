@@ -1,3 +1,23 @@
+# The Rest of the Masterplan List
+
+Here are the other major todos:
+
+
+
+opposite traffic
+
+godmode toggle button for testing
+
+different cars generated
+
+different levels
+
+menu screen
+
+unlockable cars screen
+
+
+
 # Side Colliders
 
 Make the length of the side collider the size of the tile on the z axis, 64 in this case. Set the snapping to 2 or something with ProGrids. We are going to call this "Rail" and keep under the Chunk game object.
