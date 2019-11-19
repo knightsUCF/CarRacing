@@ -16,6 +16,10 @@
 
 - rebuilding project to get rid of flashing
 
+- windmills in background
+
+- website and trailer (can work on this post game release)
+
 
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
