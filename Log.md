@@ -1,3 +1,14 @@
+# Menu Screen
+
+First take notes and study Crossy Road, Rushing Racing, that one other racing game on the app store, and the assets of course.
+
+Then diagram out how we will want the screens to proceed. Crossy Road might have two company advertisement screens, one for the studio and the other for the game.
+
+After going through and studying the above games, then diagram out here the order of the menus. Use placeholders. Should be pretty straightforward.
+
+Also consider using that yellow background, with the 3D custom voxel letters popping out, or doing a parallax effect in the menu.
+
+
 # Invincibility Button (For Testing)
 
 The invincibilty button should be pretty straightforward. Right where we set the state to game over, that's where we will need an if statement to bypass:
