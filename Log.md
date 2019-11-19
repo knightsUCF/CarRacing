@@ -36,6 +36,8 @@ For now we want the simplest working way, but later we can instantiate series of
 
 We can test spawning the random chunks, just by simply changing the color of the platform. So we would duplicate everything else, and then rename the game object Chunk to something like Chunk1GrassLand, Chunk2GrassLand... Chunk1DesertLand, Chunk2DesertLand... Chunk1WinterLand, Chunk2WinterLand.
 
+Then can test the procedure for spawning a series of random chunks per biome. And then of course we could even randomize the starting biome, and biome sequence generation.
+
 # Next Up
 
 Let's do different cars, and different levels generated next.
