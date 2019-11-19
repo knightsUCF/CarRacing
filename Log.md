@@ -43,6 +43,8 @@ The invincibilty button should be pretty straightforward. Right where we set the
 
     if (!godMode) state.game = state.Game.Over;
     
+And in the HUD we will make a "God Mode" toggle button.
+    
     
     
 
