@@ -2,7 +2,12 @@
 
 So instead of putting the OnTriggerEnter() functionality in a Loot.cs script, instead we put this in DetectCollision.cs, since Loot is a type of collision anyway.
 
-Now one important thing is to always first edit the prefab in the scene, then drag that over the prefab in the project window to override, then drag the prefab from the project window into the slot to restore. And also as a last step do this also for the Chunk object. Since part of this object changed, then drag over to the project window, and then drag the chunk from the project window over onto the procedrual slot of the game object chunk in the hierarchy. 
+Now one important thing is to always first edit the prefab in the scene, then drag that over the prefab in the project window to override, then drag the prefab from the project window into the slot to restore. And also as a last step do this also for the Chunk object. Since part of this object changed, then drag over to the project window, and then drag the chunk from the project window over onto the procedrual slot of the game object chunk in the hierarchy.
+
+
+Also for some reason we are registering this twice. So we will only add one score thing per this or whatever. We can just brute force a fix. Not sure why we are getting the loot to register double.
+
+But at least now we can connect the loot pickup with the score update functionality.
 
 
 
