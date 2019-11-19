@@ -1,6 +1,6 @@
 # Side Colliders
 
-Make the length of the side collider the size of the tile, 64 in this case.
+Make the length of the side collider the size of the tile on the z axis, 64 in this case.
 
 # Car Area Clear
 
