@@ -14,7 +14,6 @@
 
 - different colors on each car model
 
-- smooth game over sequence (study Crossy Road)
 
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
@@ -24,6 +23,8 @@ Make a list and put in order.
 Also study the Crossy Road GDC talk at this point, and take notes here.
 
 - variable reward loot
+
+- smooth game over sequence (study Crossy Road)
 
 
 # Unlockable Cars
