@@ -26,6 +26,8 @@
 
 - mooing near cow pastures
 
+- car tire marks, possibly tire smoke / dirt
+
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
 
@@ -40,6 +42,8 @@ Also study the Crossy Road GDC talk at this point, and take notes here.
 - monetization
 
 - user profile (connect with Android and iOS)
+
+- car turning
 
 - add high score record, plus leaderboard high score compare (what if there are not that many players? well we can make an auto leaderboard, that first scans if there are more than 10, than show leaderboard, then as more players are added divided down to 10 places or 50 or so by region)
 
