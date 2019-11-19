@@ -62,7 +62,9 @@ So then simply in AI we can do:
         SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(55, 62, lane3xPos), lane3Speed);
     }
 
+We might also take out loot from the left lane.
 
+Once we get everything working we can work on more of a randomization appearance to the traffic by simply calling multiple methods at different times.
 
 # Generate First Terrain
 
