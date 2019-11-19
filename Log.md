@@ -1,3 +1,7 @@
+# After Masterplan is Complete
+
+After the masterplan is complete do another few rounds of important todos. Then only start on polish, and sound effects, etc.
+
 # Masterplan ToDo in Order
 
 Here are the todos in order:
