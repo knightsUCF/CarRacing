@@ -1,3 +1,44 @@
+# Loot
+
+So instead of putting the OnTriggerEnter() functionality in a Loot.cs script, instead we put this in DetectCollision.cs, since Loot is a type of collision anyway.
+
+Now one important thing is to always first edit the prefab in the scene, then drag that over the prefab in the project window to override, then drag the prefab from the project window into the slot to restore. And also as a last step do this also for the Chunk object. Since part of this object changed, then drag over to the project window, and then drag the chunk from the project window over onto the procedrual slot of the game object chunk in the hierarchy. 
+
+
+
+Here is the code:
+
+         using System.Collections;
+         using System.Collections.Generic;
+         using UnityEngine;
+
+
+
+
+         public class DetectCollision : MonoBehaviour
+         {
+             State state;
+
+             private void Start()
+             {
+                 state = FindObjectOfType<State>();
+             }
+
+
+             private void OnTriggerEnter(Collider c)
+             {
+                 if (c.gameObject.tag == "Car") state.game = State.Game.Over;
+
+                 if (c.gameObject.tag == "Loot")
+                 {
+                     Debug.Log("LOOT!");
+                 }
+             }
+
+         }
+
+
+
 # How to Fix the Common Chunk Problem
 
 Whenever we are modifying the chunk, make sure to drag the chunk from the hierarchy over and onto the chunk prefab in the project inspector, so we can modify the prefab. Then drag the prefab from the project window into the slot in Procedural.cs of Chunk game object in the scene.
