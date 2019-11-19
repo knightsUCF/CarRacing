@@ -45,6 +45,8 @@ Also study the Crossy Road GDC talk at this point, and take notes here.
 
 - car turning
 
+- level design
+
 - add high score record, plus leaderboard high score compare (what if there are not that many players? well we can make an auto leaderboard, that first scans if there are more than 10, than show leaderboard, then as more players are added divided down to 10 places or 50 or so by region)
 
 # Unlockable Cars
