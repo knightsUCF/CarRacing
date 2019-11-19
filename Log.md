@@ -1,3 +1,14 @@
+# The Polish List
+
+- neon lights and nightmode
+
+- ambient highway sounds, car sounds
+
+- sound fx, score if any
+
+- leaderboard
+
+
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
 
 Make a list and put in order.
