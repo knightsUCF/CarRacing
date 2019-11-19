@@ -1,3 +1,9 @@
+# CarsHolder.cs
+
+Just like we did for Chunks Holder we will need to do the same thing for CarsHolder.cs.
+
+So create a game object in the hierarchy named "Cars Holder" and attach CarsHolder.cs.
+
 # Begin Implementing Procedurally Generated Terrain
 
 Add code from below. Test by changing the color of the platform, and creating extra Chunks from that, labeled as grassLandChunk1, grassLandChunk2, etc.
