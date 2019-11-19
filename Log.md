@@ -1,3 +1,27 @@
+# Car Area Clear
+
+Need to test the threshold
+
+
+    public void AreaCars()
+    {
+        cars = GameObject.FindGameObjectsWithTag("Car");
+        foreach (GameObject car in cars)
+        {
+            float distance = Vector3.Distance(car.transform.position, transform.position);
+            Debug.Log("distance: " + distance);
+
+            if (distance > 1000.0f)
+            {
+                carsDestroyed += 1;
+
+                Debug.Log("Destroying " + carsDestroyed +" cars");
+                Destroy(car);
+            }
+        }
+    }
+
+
 # New Day
 
 Let's go through the masterplan list.
