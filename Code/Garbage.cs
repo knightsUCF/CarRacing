@@ -16,12 +16,38 @@ public class Garbage : MonoBehaviour
 
     bool playerOnTile;
 
+    int totalNumberOfCars;
+
+    GameObject[] cars;
+
+
+
 
 
 
 
     void Start()
     {
+        
+        // DEBUG: Total cars count /////////////////////////////////
+
+
+        cars = GameObject.FindGameObjectsWithTag("Car");
+
+        int count = 0;
+
+        foreach (GameObject car in cars)
+        {
+            count += 1;
+
+           //Destroy(car);
+        }
+
+        Debug.Log("Total car count in scene: " + count);
+
+        ////////////////////////////////////////////////////////////
+
+        
         Invoke("DestroyObject", LifeTime);
     }
 
@@ -74,6 +100,8 @@ public class Garbage : MonoBehaviour
         }
 
     }
+
+
 
 
 
