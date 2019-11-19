@@ -4,6 +4,12 @@ So before working on the polish stuff, let's work on the big stuff needed to shi
 
 Let's throw some stuff randomly here, and then organize later:
 
+* colliders on sides, so player can't venture out of the road
+
+* realistic car turning (spring camera will help)
+
+* spring camera
+
 * menu screens
 
 * unlockable cars
