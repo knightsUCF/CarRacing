@@ -36,6 +36,7 @@ Also study the Crossy Road GDC talk at this point, and take notes here.
 
 - monetization
 
+- user profile (connect with Android and iOS)
 
 # Unlockable Cars
 
