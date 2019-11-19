@@ -1,3 +1,18 @@
+# What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
+
+Make a list and put in order.
+
+Also study the Crossy Road GDC talk at this point, and take notes here.
+
+
+# Unlockable Cars
+
+Study the asset first, the user experience, and the game code.
+
+Then use that form to scroll through the available cars, but don't gray them out so the player can preview them.
+
+First just get them working in the scene, then do the stats on each car. So we would have handling, top speed, and other metrics per car to make the purchases seem more exciting. Study the different stats racing games give you, and pick 3 or 4, and then list them here.
+
 # Menu Screen
 
 First take notes and study Crossy Road, Rushing Racing, that one other racing game on the app store, and the assets of course.
