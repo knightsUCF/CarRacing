@@ -1,3 +1,8 @@
+# Begin Implementing Procedurally Generated Terrain
+
+Add code from below. Test by changing the color of the platform, and creating extra Chunks from that, labeled as grassLandChunk1, grassLandChunk2, etc.
+
+
 # App Promotion
 
 cpimobi.com promises 0.09$ per install.
