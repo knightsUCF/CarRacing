@@ -24,6 +24,19 @@ Now here are a few things we can do to polish the above:
 
 * perhaps we want the score to enlarge on pickup, something like from Moenen
 
+* different types of cars
+
+* gas meter in HUD
+
+* tire squeels when slamming on breaks
+
+* engine noise
+
+* score
+
+
+But these are all polish things. We should move on to the bigger stuff, before we are going to do this kind of polish, just so that we can get closer to the finished product, which includes screens, unlocking cars, different types of cars. Like with the masterplan we should just have a few simple items to work toward.
+
 
 # Score and Loot Implementation
 
