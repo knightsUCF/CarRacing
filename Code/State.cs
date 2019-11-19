@@ -15,27 +15,17 @@ class State : MonoBehaviour
     }
 
 
-    public enum Player
-    {
-        Test1,
-        Test2
-    }
 
 
     public Game game;
 
-    public Player player;
 
+
+    // move these over into a struct at Data.cs
 
     public int carCount = 0;
-
     public int chunkCount = 1; // start at 1 because there is a starting chunk in the scene
-
-
     public int score = 0;
-
-
-
 
 }
 
