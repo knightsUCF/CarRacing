@@ -1,3 +1,7 @@
+# Add Invincibility Mode for Testing
+
+Everytime we check whether to destroy the car, in there check the state of the invicibility mode. Build this out as a button toggle.
+
 # Getting Flickering even though all Shaders are Set to Standard
 
 This might be a shader issue. Will have to rebuild project at second to worst, and worst just ship with the bug. Do some research. Figure out how come the asset pack does not have this flickering screen issue. Perhaps this also might be because left the mouse scan codes in. Let's take those out.
