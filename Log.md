@@ -1,4 +1,22 @@
-# Instantiating Different Levels
+# Instantiating Different Cars
+
+We can use the same method from instantiating different chunks applied to generating different cars.
+
+From wherever we generate the cars, (AI.cs), let's include up on top:
+
+    public GameObject[] cars;
+
+And then use the same method from Procedural.cs:
+
+
+    void InstantiateRandomCar()
+    {
+        Instantiate(cars[Random.Range(0, cars.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
+
+We could of course use this method from procedural, but this is a short enough method we can keep in AI.cs, especially if we want to customzie this process later.
+
+# Instantiating Different Chunks
 
 
 This might be as simple as declaring this at the top of Procedural.cs:
