@@ -14,6 +14,8 @@
 
 - different colors on each car model
 
+- rebuilding project to get rid of flashing
+
 
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
