@@ -1,3 +1,30 @@
+# What's Next?
+
+Well we've complete the "Masterplan" to do list:
+
+* Cars spawning correctly
+* Game over state
+* Pickups
+* Score
+
+
+Now here are a few things we can do to polish the above:
+
+* make sure we are adding an even number on score, why are we detecting 2 on trigger enters?
+
+* let's make pickups spinning, add sound effects, add different sort of pickups
+
+* we want a question mark pickup box (unless that is copyrighted by Nintendo), so we can introduce skinner boxes, and have the player anticipating what they will get in the question mark box
+
+* also let's have regular loot, like coins, and other stuff, perhaps gas
+
+* we can have a gas meter, so the player needs to pick up loot to progress, a nice way of forcing the player to get loot (and increase chances of losing) instead of just avoiding traffic without worrying about loot
+
+* we want a smoother game over state, perhaps fade the screen at least, also check how Crossy Road does this
+
+* perhaps we want the score to enlarge on pickup, something like from Moenen
+
+
 # Score and Loot Implementation
 
 So here is the simple score script, which just writes the score to the screen. We attach this score script to the game object "Score" in the hierarchy, which is under the HUD game object, which also contains the movements controls, gas pedal, turning, etc.
