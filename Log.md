@@ -1,3 +1,7 @@
+# New Day
+
+Let's go through the masterplan list.
+
 # Edge Case - Waiting Before Driving
 
 What if the player simply waits with acceleration of 0, and velocity of 0. Then the first wave of cars are spawned and those continue forward. Well, even though they are moving at a constant speed, once the player then speeds up, and the new wave of cars are spawned, what if they are spawned on top of each other? 
