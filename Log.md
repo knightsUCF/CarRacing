@@ -1,3 +1,9 @@
+# Variable Reward on Loot
+
+So every time there is loot, the type should be different. This way we introduce V A R I A B L E  R E W A R D  into the gameplay.
+
+
+
 # Settings.cs Code
 
          using System.Collections;
