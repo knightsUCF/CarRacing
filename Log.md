@@ -16,6 +16,8 @@ Let's throw some stuff randomly here, and then organize later:
 
 * monetization (study asset code)
 
+Play the asset prototypes and determine further what is missing.
+
 
 # What's Next?
 
