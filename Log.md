@@ -1,3 +1,9 @@
+# What's Next?
+
+So opposite traffic is finished, and random cars, and also random terrains, so what's next?
+
+
+
 # Generating Opposite Traffic
 
 First generate traffic flowing in the same direction.
