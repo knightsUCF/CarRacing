@@ -1,3 +1,45 @@
+# Solving the Random Car Generation
+
+So the code we need to randomly generate cars can be found here:
+
+
+    void DeployModerateTrafficWithLootAndRandomCars()
+    {
+        // LANE 1
+
+        float lane1xPos = 2.5f;
+        float lane1Speed = 8.0f;
+
+        SpawnCar(loot, GetRandomPos(2, 10, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(15, 20, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(25, 30, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(40, 50, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(55, 62, lane1xPos), lane1Speed);
+
+        // LANE 2
+
+        float lane2xPos = 0.8f;
+        float lane2Speed = 10.0f;
+
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(2, 10, lane2xPos), lane2Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(15, 20, lane2xPos), lane2Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(25, 30, lane2xPos), lane2Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(40, 50, lane2xPos), lane2Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(55, 62, lane2xPos), lane2Speed);
+
+        // LANE 3
+
+        float lane3xPos = 4.2f;
+        float lane3Speed = 5.0f;
+
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(2, 10, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(15, 20, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(25, 30, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(40, 50, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.cars[Random.Range(0, carsHolder.cars.Length)], GetRandomPos(55, 62, lane3xPos), lane3Speed);
+    }
+
+
 # CarsHolder.cs
 
 Just like we did for Chunks Holder we will need to do the same thing for CarsHolder.cs.
