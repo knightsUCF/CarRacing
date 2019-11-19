@@ -20,6 +20,8 @@
 
 - website and trailer (can work on this post game release)
 
+- allow player to customize the color of their car
+
 
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
