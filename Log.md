@@ -2,6 +2,10 @@
 
 Make the length of the side collider the size of the tile on the z axis, 64 in this case. Set the snapping to 2 or something with ProGrids. We are going to call this "Rail" and keep under the Chunk game object.
 
+We are not able to get the colliders to work. Maybe this is because we adjusting the transform. Well, we still had collisions on the cars with the transform. 
+
+One way of doing this is something like CapX(), and then cap the boundaries of the x on the car, so we cannot move any more. I believe this is what they did in the space game tutorial.
+
 # Car Area Clear
 
 Need to test the threshold. We are calling this once in Start() of Garbage.cs, so we run this once per chunk generated. With a threshold of 100.0f we were deleting too many cars, with a threshold of 1000.0f, we seem to be fine. Do more testing here. #TODO
