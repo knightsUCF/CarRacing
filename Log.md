@@ -1,3 +1,24 @@
+# Masterplan ToDo in Order
+
+Here are the todos in order:
+
+* colliders on the sides, so player can't venture out of the road
+
+* opposite traffic
+
+* godmode toggle button for testing
+
+* different cars generated
+
+* different levels
+
+* menu screen
+
+* unlockable cars screen
+
+
+
+
 # What are the Major Things Left to Do?
 
 So before working on the polish stuff, let's work on the big stuff needed to ship the game. 
