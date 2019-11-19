@@ -53,7 +53,7 @@ Originally we wanted to put these methods inside of Garbage.cs, but garbage dest
              }
 
 
-             public void ClearChunks()
+             public void Chunks()
              {
                  chunks = GameObject.FindGameObjectsWithTag("Chunk");
                  foreach (GameObject chunk in chunks) Destroy(chunk);
