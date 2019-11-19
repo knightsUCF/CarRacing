@@ -5,67 +5,96 @@ using UnityEngine;
 
 
 
-
 public class Game : MonoBehaviour
 {
 
+    public GameObject player;
+    public GameObject chunk;
 
-    // SINGLETON //////////////////////////////////////////////
 
-    void Awake()
+    public Vector3 playerResetPos = new Vector3(0.0f, 0.0f, 0.0f);
+    public Vector3 chunkStartPos = new Vector3(0.0f, 0.0f, 0.0f);
+
+
+    GameObject[] cars;
+    GameObject[] loot;
+    GameObject[] chunks;
+
+
+    State state;
+
+
+    private void Start()
     {
-        if (instance == null)
+        state = FindObjectOfType<State>();
+    }
+
+
+    private void Update()
+    {
+        if (state.game == State.Game.Over)
         {
-            instance = this;
-        }
-        else
-        {
-            DestroyImmediate(this);
+            state.game = State.Game.New;
+            NewGame();
         }
     }
 
-    private static Game instance;
 
-    public static Game Instance
+
+    void NewGame()
     {
-        get
-        {
-            if (instance == null)
-            {
-                instance = new Game();
-            }
-            return instance;
-        }
+        // deinitialize
+
+        ClearScore();
+        ClearCars();
+        ClearLoot();
+        ClearChunks();
+
+        // initialize
+
+        CreateStartingChunk();
+        ResetPlayerPosition(); 
     }
 
-    //////////////////////////////////////////////////////////////
 
 
-    // game initialization
-
-    protected Game()
+    void ResetPlayerPosition()
     {
-        GameState = GameState.Start;
-        CanSwipe = false;
+        player.transform.position = playerResetPos;
     }
 
-    // allows us to grab the game state struct?
 
-    public GameState GameState { get; set; }
-
-
-    // not sure what this is
-
-    public bool CanSwipe { get; set; }
-
-
-
-    // methods
-
-    public void Die()
+    void ClearScore()
     {
-        UI.Instance.SetStatus(Constants.StatusDeadTapToStart);
-        this.GameState = GameState.Dead;
+        state.score = 0;
+    }
+
+
+    void ClearCars()
+    {
+        cars = GameObject.FindGameObjectsWithTag("Car");
+        foreach (GameObject car in cars) Destroy(car);
+    }
+
+
+    void ClearLoot()
+    {
+        loot = GameObject.FindGameObjectsWithTag("Loot");
+        foreach (GameObject l in loot) Destroy(l);
+    }
+
+
+    void ClearChunks()
+    {
+        chunks = GameObject.FindGameObjectsWithTag("Chunk");
+        foreach (GameObject chunk in chunks) Destroy(chunk);
+    }
+
+    
+
+    void CreateStartingChunk()
+    {
+        Instantiate(chunk, chunkStartPos, Quaternion.Euler(new Vector3(0, 0, 0)));
     }
 
 }
