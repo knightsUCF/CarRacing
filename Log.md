@@ -4,6 +4,34 @@ Just like we did for Chunks Holder we will need to do the same thing for CarsHol
 
 So create a game object in the hierarchy named "Cars Holder" and attach CarsHolder.cs.
 
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+
+
+    public class CarsHolder : MonoBehaviour
+    {
+        public GameObject[] cars;
+    }
+
+And then in AI.cs:
+
+    CarsHolder carsHolder;
+
+    carsHolder = FindObjectOfType<carsHolder>();
+    
+    InstantiateRandomCar(carsHolder.cars);
+    
+   
+    void InstantiateRandomCar(GameObject[] randomCar)
+    {
+        Instantiate(randomCar[Random.Range(0, randomCar.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
+    
+    
+
 # Begin Implementing Procedurally Generated Terrain
 
 Add code from below. Test by changing the color of the platform, and creating extra Chunks from that, labeled as grassLandChunk1, grassLandChunk2, etc.
