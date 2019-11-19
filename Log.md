@@ -1,6 +1,6 @@
 # What's Next?
 
-Well we've complete the "Masterplan" to do list:
+Well we've completed the "Masterplan" to do list:
 
 * Cars spawning correctly
 * Game over state
