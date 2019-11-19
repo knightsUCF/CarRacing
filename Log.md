@@ -1,3 +1,7 @@
+# How to Fix the Common Chunk Problem
+
+Whenever we are modifying the chunk, make sure to drag the chunk from the hierarchy over and onto the chunk prefab in the project inspector, so we can modify the prefab. Then drag the prefab from the project window into the slot in Procedural.cs of Chunk game object in the scene.
+
 # What's Next?
 
 Well, we mechanically set up the recognition of a game over state.
