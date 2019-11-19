@@ -7,8 +7,14 @@ So opposite traffic is finished, and random cars, and also random terrains, so w
 
 ## Menu
 
+- study Crossy Road
+- study other Asset Packs, take notes how do the menu screen
+
 ## Unlockable Cars
 
+- study the asset pack
+
+- replicate their functionality, refactor code down to something simpler
 
 
 # Generating Opposite Traffic
