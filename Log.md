@@ -14,7 +14,7 @@ In which we can case we could just spawn the next few consecutive tiles. Also we
 
 One way to indicate when we should spawn the tiles is to add a count ID property to each tile, so we know the number in the sequence, then once we are in the start method, we can determine if we are at a number divisible by our spawning, so perhaps 5, so every 5 tiles spawn a new sequence of 5 more tiles.
 
-Or spawn 5 tiles the first time, and then spawn n total + 1 tiles on each new tile we arrive into. This is probably the optimial solution. This way we will always get a horizon. So when we spawn the next tile, this tile will need to be placed 5 tiles back.
+Or spawn 5 tiles the first time, and then spawn n total + 1 tiles on each new tile we arrive into. This is probably the optimial solution. This way we will always get a horizon, since we will always have 5 (or x required) tiles ahead of us. So when we spawn the next tile, this tile will need to be placed 5 tiles back.
 
 
 # The Polish List
