@@ -1,3 +1,12 @@
+# Invincibility Button (For Testing)
+
+The invincibilty button should be pretty straightforward. Right where we set the state to game over, that's where we will need an if statement to bypass:
+
+    if (!godMode) state.game = state.Game.Over;
+    
+    
+    
+
 # Generating Opposite Traffic
 
 To generate traffic going the opposite way we will need a few modifications:
