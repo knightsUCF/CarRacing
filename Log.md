@@ -1,3 +1,69 @@
+# Score and Loot Implementation
+
+So here is the simple score script, which just writes the score to the screen. We attach this score script to the game object "Score" in the hierarchy, which is under the HUD game object, which also contains the movements controls, gas pedal, turning, etc.
+
+
+         using System.Collections;
+         using System.Collections.Generic;
+         using UnityEngine;
+         using UnityEngine.UI;
+
+
+         public class Score : MonoBehaviour
+         {
+
+             public Text score;
+
+
+             public void Set(int amount)
+             {
+                 score.text = amount.ToString();
+             }
+         }
+
+Then the rest of the functionality which connects loot with scoring can be found in DetectCollision.cs. Like we mentioned in the DetectCollision script comments, we can scan here for all types of loot based on the loot tag and reward the player accordingly.
+
+
+         using System.Collections;
+         using System.Collections.Generic;
+         using UnityEngine;
+
+
+
+
+         public class DetectCollision : MonoBehaviour
+         {
+
+             State state;
+             Score score;
+
+
+             private void Start()
+             {
+                 state = FindObjectOfType<State>();
+                 score = FindObjectOfType<Score>();
+             }
+
+
+             private void OnTriggerEnter(Collider c)
+             {
+
+                 if (c.gameObject.tag == "Car") state.game = State.Game.Over;
+
+
+                 if (c.gameObject.tag == "Loot")
+                 {
+                     score.Set(state.score += 10);
+                     Destroy(c.gameObject);
+                 }
+
+                 // later we will have different types of tags, so LootBonusPoints, LootHealth, etc, and just add things here based on the type
+             }
+
+         }
+
+
+
 # Loot
 
 So instead of putting the OnTriggerEnter() functionality in a Loot.cs script, instead we put this in DetectCollision.cs, since Loot is a type of collision anyway.
