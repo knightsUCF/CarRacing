@@ -6,6 +6,8 @@ After the masterplan is complete do another few rounds of important todos. Then 
 
 Here are the todos in order:
 
+* garbage collection on the cars (add functionality to Garbage.cs)
+
 * colliders on the sides, so player can't venture out of the road
 
 * opposite traffic
