@@ -8,6 +8,61 @@ Then add negative acceleration in the CarEngine script.
 
 We can still pull from the CarsHolder pack, we will just need to flip them 180, and then apply the opposite velocity and acceleration. We will need to adjust the values for both acceleration and deceleration.
 
+Okay, so we actually want to create another separate array in the CarsHolder.cs script:
+
+    public class CarsHolder : MonoBehaviour
+    {
+        public GameObject[] cars;
+
+        public GameObject[] leftLaneCars; // contains flipped models by 180, and opposite driving direction
+    }
+
+This way we can set the car engine opposite directions on the separate set of prefabs we drag into leftLaneCars. We should also rename cars to rightLaneCars. #TODO
+
+So then simply in AI we can do:
+
+
+    void DeployLeftLaneModerateTrafficWithLootAndRandomCars()
+    {
+
+        // LANE 1
+
+        float lane1xPos = -1f;
+        float lane1Speed = 10.0f;
+
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(2, 10, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(15, 20, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(25, 30, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(40, 50, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(55, 62, lane1xPos), lane1Speed);
+
+
+        // LANE 2
+
+        float lane2xPos = -2.5f;
+        float lane2Speed = 8.0f;
+
+        SpawnCar(loot, GetRandomPos(2, 10, lane1xPos), lane1Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(15, 20, lane2xPos), lane2Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(25, 30, lane2xPos), lane2Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(40, 50, lane2xPos), lane2Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(55, 62, lane2xPos), lane2Speed);
+
+        
+
+        // LANE 3
+
+        float lane3xPos = -4.2f;
+        float lane3Speed = 5.0f;
+
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(2, 10, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(15, 20, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(25, 30, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(40, 50, lane3xPos), lane3Speed);
+        SpawnCar(carsHolder.leftLaneCars[Random.Range(0, carsHolder.leftLaneCars.Length)], GetRandomPos(55, 62, lane3xPos), lane3Speed);
+    }
+
+
 
 # Generate First Terrain
 
