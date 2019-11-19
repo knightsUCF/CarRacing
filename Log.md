@@ -26,6 +26,8 @@ Also study the Crossy Road GDC talk at this point, and take notes here.
 
 - smooth game over sequence (study Crossy Road)
 
+- monetization
+
 
 # Unlockable Cars
 
