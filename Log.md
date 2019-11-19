@@ -9,7 +9,7 @@ To generate traffic going the opposite way we will need a few modifications:
 - drive the opposite way (will be done by car engine)
 
 
-The way AI.cs and CarEngine.cs will recognize on which direction of the road to spawn traffic, is to have some sort of bool marker on the parent prefab. So at instantiation we get this value, and by this we set the three parameters above.
+The way AI.cs and CarEngine.cs will recognize which direction of the road to spawn traffic, is to have some sort of bool marker on the parent prefab. So at instantiation we get this value, and by this we set the three parameters above.
 
 
 # Instantiating Different Cars
