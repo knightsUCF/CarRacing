@@ -67,7 +67,7 @@ We might also take out loot from the left lane.
 Once we get everything working we can work on more of a randomization appearance to the traffic by simply calling multiple methods at different times.
 
 
-So in CarEngine.cs we added an enum:
+So in CarEngine.cs we added an enum, which we will set from the inspector on the attached car prefab.
 
 
     public enum Lane
