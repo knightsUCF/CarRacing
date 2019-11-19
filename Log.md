@@ -43,6 +43,8 @@ Or spawn 5 tiles the first time, and then spawn n total + 1 tiles on each new ti
 
 - car tire marks, possibly tire smoke / dirt
 
+- logo (try to assemble from cubes)
+
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
 
