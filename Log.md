@@ -1,3 +1,30 @@
+# Debugging Code - Total Cars Count (game objects with tag)
+
+We added this code to Garbage.cs, to conviently get the total cars count during the Start() method:
+
+
+    void Start()
+    {
+        cars = GameObject.FindGameObjectsWithTag("Car");
+
+        int count = 0;
+
+        foreach (GameObject car in cars)
+        {
+            count += 1;
+
+           //Destroy(car);
+        }
+
+        Debug.Log("Total car count in scene: " + count);
+
+        Invoke("DestroyObject", LifeTime);
+    }
+
+
+
+
+
 # Clear.cs Code
 
 Originally we wanted to put these methods inside of Garbage.cs, but garbage destroy the chunk prefab and also auto destroy, so that might not be the best choice, until we somehow have Garbage as a permanent game object member of the hierarchy dolling out that command. Until then we wrote a script called Clear, which gets the job done nicely:
