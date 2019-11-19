@@ -10,11 +10,13 @@ Let's throw some stuff randomly here, and then organize later:
 
 * saving unlocked cars to profile (Google + Apple will need different save functionality)
 
-* a few test environments to test how we are geenrating random chunks
+* a few test environments to test how we are generating random chunks, we can just have different colored cubes on the sidelines to test
 
 * what else?
 
 * monetization (study asset code)
+
+* opposite traffic
 
 Play the asset prototypes and determine further what is missing.
 
