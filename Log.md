@@ -1,3 +1,12 @@
+# Generate First Terrain
+
+Generate the first terrain, since we are just simply initializing the original chunk, while we should be initializing a random chunk out of a grasslands array.
+
+
+# Car Area Clear Bug
+
+So we are not clearing the area properly. We should get a log statement going of our transform position, and our distance position, to indicate where we are clearing. #TODO
+
 # Solving the Random Car Generation
 
 So the code we need to randomly generate cars can be found here:
