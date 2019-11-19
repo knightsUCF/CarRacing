@@ -1,3 +1,36 @@
+# Settings.cs Code
+
+         using System.Collections;
+         using System.Collections.Generic;
+         using UnityEngine;
+
+
+
+         public class Settings : MonoBehaviour
+         {
+
+
+             public struct Sound
+             {
+                 public bool onoff;
+                 public float volume;
+             }
+
+
+             Sound sound;
+
+
+
+             private void Start()
+             {
+                 // initialize settings
+
+                 sound.onoff = true;
+                 sound.volume = 8.0f;
+             }
+         }
+
+
 # Data.cs Code
 
 
