@@ -1,6 +1,6 @@
 # The Polish List
 
-- neon lights and nightmode, lights on cars
+- neon lights and nightmode, back and front lights on cars
 
 - ambient highway sounds, car sounds
 
@@ -9,6 +9,10 @@
 - leaderboard
 
 - color theming
+
+- object pooling for optimized spawning
+
+- different colors on each car model
 
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
