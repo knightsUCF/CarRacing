@@ -106,6 +106,11 @@ Then in Update() of CarEngine.cs:
 
 So the last thing left is to flip the models by 180 degrees, which is straightforward.
 
+So we simply flipped the rotation from 90 degrees (original), to -90 on the left lane cars.
+
+We also took the loot out because for now we will not be procedurally generating loot on the left lane, but if we are then we have to reverse the direction on the moving loot.
+
+
 
 # Generate First Terrain
 
