@@ -1,3 +1,7 @@
+# App Promotion
+
+cpimobi.com promises 0.09$ per install.
+
 # Variable Reward Within Variable Reward
 
 So for example, when we generate the gold coins loot, which will be generate from a random assortment of loot items, then we can also vary the gold count reward, so that will give the player an extra layer of variable reward.
