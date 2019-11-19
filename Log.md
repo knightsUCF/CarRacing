@@ -17,6 +17,8 @@ Make a list and put in order.
 
 Also study the Crossy Road GDC talk at this point, and take notes here.
 
+- variable reward loot
+
 
 # Unlockable Cars
 
