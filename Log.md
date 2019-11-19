@@ -1,6 +1,6 @@
 # Side Colliders
 
-Make the length of the side collider the size of the tile on the z axis, 64 in this case.
+Make the length of the side collider the size of the tile on the z axis, 64 in this case. Set the snapping to 2 or something with ProGrids. We are going to call this "Rail" and keep under the Chunk game object.
 
 # Car Area Clear
 
