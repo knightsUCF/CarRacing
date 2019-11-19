@@ -66,6 +66,47 @@ We might also take out loot from the left lane.
 
 Once we get everything working we can work on more of a randomization appearance to the traffic by simply calling multiple methods at different times.
 
+
+So in CarEngine.cs we added an enum:
+
+
+    public enum Lane
+    {
+        Right,
+        Left
+    }
+
+    public Lane lane;
+    
+    
+    
+    
+Then in Update() of CarEngine.cs:
+    
+    
+    if (lane == Lane.Right) MoveForward();
+    if (lane == Lane.Left) MoveBackward();
+    
+    
+    
+ And then simply:
+ 
+     private void MoveForward()
+    {
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+    }
+
+
+    // for left lane traffic
+
+    private void MoveBackward()
+    {
+        transform.Translate(Vector3.back * Time.deltaTime * speed);
+    }
+
+So the last thing left is to flip the models by 180 degrees, which is straightforward.
+
+
 # Generate First Terrain
 
 Generate the first terrain, since we are just simply initializing the original chunk, while we should be initializing a random chunk out of a grasslands array.
