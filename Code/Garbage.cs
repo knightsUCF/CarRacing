@@ -8,6 +8,8 @@ using UnityEngine;
 public class Garbage : MonoBehaviour
 {
 
+    // place on Chunk parent game object
+
 
     public float LifeTime = 10f;
 
@@ -27,23 +29,36 @@ public class Garbage : MonoBehaviour
 
     void DestroyObject()
     {
+
+        Destroy(gameObject);
+
+        /*
+        if (!playerOnTile)
+        {
+            Debug.Log("Destroying game object");
+            Destroy(gameObject);
+        }
+        */
+
+        /*
         if (Game.Instance.GameState != GameState.Dead)
         {
-            if (!playerOnTile) 
+            if (!playerOnTile)
             {
                 Debug.Log("Destroying game object");
                 Destroy(gameObject);
             }
         }
+        */
     }
 
-    
+
 
     // detect whether the player is in the collider so we don't destroy the tile the player is resting on
 
     private void OnTriggerEnter(Collider c)
     {
-        if (c.gameObject.tag == Constants.PlayerTag)
+        if (c.gameObject.tag == "Player")
         {
             playerOnTile = true;
         }
@@ -53,7 +68,7 @@ public class Garbage : MonoBehaviour
 
     private void OnTriggerExit(Collider c)
     {
-        if (c.gameObject.tag == Constants.PlayerTag)
+        if (c.gameObject.tag == "Player")
         {
             playerOnTile = false;
         }
