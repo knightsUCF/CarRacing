@@ -8,6 +8,8 @@
 
 - leaderboard
 
+- color theming
+
 
 # What are the Other Core Features to Implement Before Moving on to Polish and More Granular Stuff?
 
