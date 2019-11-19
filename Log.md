@@ -2,6 +2,36 @@
 
 Add code from below. Test by changing the color of the platform, and creating extra Chunks from that, labeled as grassLandChunk1, grassLandChunk2, etc.
 
+So there was a problem with placing the public GameObject[] chunks on each instance. The problem was that we had to individually drag in all the game object prefabs, for each chunk (Chunk1Grassland), so that would have been too much repetitive dragging.
+
+Instead we created a public game object "Chunks Holder", and then attached to this ChunksHolder.cs:
+
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+
+    public class ChunksHolder : MonoBehaviour
+    {
+
+        public GameObject[] grassLandChunks;
+
+        // public GameObject[] desertLandChunks;
+
+        // public GameObject[] winterLandChunks;
+
+    }
+
+
+This gets the job done. Then in Procedural.cs we have:
+
+    ChunksHolder chunksHolder;
+
+    chunksHolder = FindObjectOfType<ChunksHolder>();
+    
+     InstantiateRandomChunkLand(chunksHolder.grassLandChunks);
+
 
 # App Promotion
 
