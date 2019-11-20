@@ -16,6 +16,7 @@ Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racin
         SceneManager.LoadScene(sceneName);
     }
 
+So here not only do we not have any fancy screen loading, but we actually have a delay variable. Maybe this is to have a delay at the beginning of the game, so the users can notice the intro screens.
 
 # Crossy Road UI/UX Analysis
 
