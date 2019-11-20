@@ -1,3 +1,7 @@
+# Wait with the Logo
+
+so after our scene data has been loaded, let's have a couroutine run, which will give us a few seconds of delay before we inactivate the logo.
+
 # Checking When Scene Loaded
 
 The part that says, "Time to start the game!" is when we can start up the actual gameplay.
