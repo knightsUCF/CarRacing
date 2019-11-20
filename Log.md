@@ -21,6 +21,7 @@ CharacterManager.cs
 
 So now we will try to build the Characters scene with physical objects, and hook up the scripts.
 
+Of course we would like to build the scene from scratch, but perhaps this time we will just use the asset code base for speed of development.
 
 # Lights
 
