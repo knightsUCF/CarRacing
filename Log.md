@@ -1,3 +1,8 @@
+# Getting Started with Laying Out UI/UX
+
+So first study how the asset packs handle the scene loading to start the game, load the game, and then also how are we loading and transitioning between gameplay and the car purchasing screen.
+
+
 # Crossy Road UI/UX Analysis
 
 - Screen 1: App logo comes up first (just a static image, so if scene is taking a moment to load we will not notice any stuttering with a static image). This is the same logo as the app thumbnail. A voxel chicken.
@@ -17,6 +22,30 @@ https://www.realsimple.com/work-life/money/color-psychology
 "Consequently, a purple box may help persuade us that the product has special properties and is worth a princely sum."
 
 "A mainstay at fast-food restaurants, yellow evokes energy and increases appetite, perhaps explaining why your stomach may start to growl when you pass those golden arches."
+
+So after screen 3 we enter the gameplay screen.
+
+- Screen 4: Gameplay
+
+So here at the gameplay screen we have the UI/UX set up in the four corners of the screen. 
+
+The upper left hand corner has a timer and a gift box with arrows. Shows 19H left until a free gift.
+
+The icon on the to pin the lower left is a multiplayer icon, which we will not need.
+
+Then there is an icon on the bottom which shows a character, and is flashing at the player to be pressed.
+
+Once we press that, that's where we have our characters. This is one of our main money making mechanisms, so that makes sense to place the button on the lower left. There are some buttons in the character purchasing interface, but we probably will not be using that yet.
+
+
+Then in the lower right hand corner we have an arrow button. This button actually pops up an interface. A game controller, and a letter which might be the letter G. The game controller seems just like a toggle button, with no immediate effect. The icon on top of that allows us to redeem a code.
+
+So basically we will want two ways of monetizing. Rewarded ads, and purchasable cars. So we can start with having a button, which takes us into the car purchasing screen. What we want to do is figure out the loading screen.
+
+
+## Rushy Racing
+
+
 
 # Starting Off the Workday
 
