@@ -7,6 +7,37 @@ https://www.youtube.com/watch?v=LBs6qOgCDOY
 
 Write everything to a data class like we had before.
 
+So we are going to use a data class like this:
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+
+
+public class Data : MonoBehaviour
+{
+
+    public struct Car
+    {
+        public bool acquired;
+        public int cost;
+        public int topSpeed;
+        public int acceleration;
+        public int deceleration;
+        public int turnSpeed;
+    }
+
+
+    Car car1;
+    Car car2;
+    Car car3;
+
+    
+}
+
+
 
 # Work at the Cafe
 
