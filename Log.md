@@ -21,6 +21,7 @@ So we are going to use a data class like this:
 
         public struct Car
         {
+            public int ID;
             public bool acquired;
             public int cost;
             public int topSpeed;
@@ -34,8 +35,9 @@ So we are going to use a data class like this:
         Car car2;
         Car car3;
 
-    
+
     }
+
 
 
 
