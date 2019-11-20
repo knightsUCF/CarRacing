@@ -1,7 +1,3 @@
-# Lights
-
-We've completely neglected lights. We will want to take a look at some lighting tutorials. Of course we probably will not use post effects on mobile, but we don't suffer any major perfomance losses by lighting the scene. #TODO
-
 # Onto Character Selection
 
 Start with the asset pack to determine how they are doing the dragging. And diagram out anything here.
@@ -20,6 +16,16 @@ CharacterScroller.cs
 CharacterInfo.cs
 
 CharacterManager.cs
+
+
+
+So now we will try to build the Characters scene with physical objects, and hook up the scripts.
+
+
+# Lights
+
+We've completely neglected lights. We will want to take a look at some lighting tutorials. Of course we probably will not use post effects on mobile, but we don't suffer any major perfomance losses by lighting the scene. #TODO
+
 
 
 
