@@ -1,3 +1,51 @@
+# Code Solution to Intro Sequence
+
+So here is the code solution to the intro sequence. We are basically using a domino like effect with the cascading coroutines:
+
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+
+        Debug.Log("Time to start the game!!!");
+
+        // let's wait a little to show off the intro logo
+
+        StartCoroutine("HideAppLogo");
+
+    }
+
+
+    private IEnumerator HideAppLogo()
+    {
+        float delay = 2.0f;
+        yield return new WaitForSeconds(delay);
+        appLogo.SetActive(false);
+        companyLogo.SetActive(true);
+
+        StartCoroutine("HideCompanyLogo");
+    }
+
+    
+    private IEnumerator HideCompanyLogo()
+    {
+        float delay = 3.0f;
+        yield return new WaitForSeconds(delay);
+        companyLogo.SetActive(false);
+        gameLogo.SetActive(true);
+
+        StartCoroutine("HideGameLogo");
+    }
+
+
+    private IEnumerator HideGameLogo()
+    {
+        float delay = 3.0f;
+        yield return new WaitForSeconds(delay);
+        gameLogo.SetActive(false);
+    }
+
 # Intro Sequence
 
 
