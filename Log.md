@@ -19,7 +19,7 @@ Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racin
 So here not only do we not have any fancy screen loading, but we actually have a delay variable. Maybe this is to have a delay at the beginning of the game, so the users can notice the intro screens.
 
 
-Okay, so how are we actually making the transition to the game screen?
+Okay, so how are we actually making the transition to the car unlockable screen?
 
 
 
