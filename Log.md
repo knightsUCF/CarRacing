@@ -2,6 +2,8 @@
 
 We will want some intro animations (even if simple movements) and sounds to set the player. #TODO
 
+We also of course need intro icons and graphics. #TODO.
+
 # Code Solution to Intro Sequence
 
 So here is the code solution to the intro sequence. We are basically using a domino like effect with the cascading coroutines. All the logo game objects are under the "Intro" parent game object, which contains the Intro.cs code. We then want to make sure just the Intro Logo is active, while the rest will get activated and deactivated, starting with the intro app logo getting deactivated. We also have a background image graphic of the same color next to each logo, which is a transparent PNG, which can be overlayed against the background. We could later fine tune the wait times. #TODO
