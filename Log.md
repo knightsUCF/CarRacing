@@ -9,15 +9,15 @@ Write everything to a data class like we had before.
 
 So we are going to use a data class like this:
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
 
 
 
 
-public class Data : MonoBehaviour
-{
+    public class Data : MonoBehaviour
+    {
 
     public struct Car
     {
