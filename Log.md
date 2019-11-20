@@ -10,6 +10,11 @@
 
 - then each of the cubes gets a "TransformSave.cs" with the field, unique ID, (each object should have unique ID) and save order. Save order can be 0.
 
+- that's all!
+
+
+So let's try saving the state of our unlockable cars.
+
 
 # Encrypted Save System
 
