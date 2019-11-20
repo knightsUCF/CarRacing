@@ -19,23 +19,23 @@ So we are going to use a data class like this:
     public class Data : MonoBehaviour
     {
 
-    public struct Car
-    {
-        public bool acquired;
-        public int cost;
-        public int topSpeed;
-        public int acceleration;
-        public int deceleration;
-        public int turnSpeed;
-    }
+        public struct Car
+        {
+            public bool acquired;
+            public int cost;
+            public int topSpeed;
+            public int acceleration;
+            public int deceleration;
+            public int turnSpeed;
+        }
 
 
-    Car car1;
-    Car car2;
-    Car car3;
+        Car car1;
+        Car car2;
+        Car car3;
 
     
-}
+    }
 
 
 
