@@ -6,53 +6,131 @@ We will want some intro animations (even if simple movements) and sounds to set 
 
 So here is the code solution to the intro sequence. We are basically using a domino like effect with the cascading coroutines. All the logo game objects are under the "Intro" parent game object, which contains the Intro.cs code. We then want to make sure just the Intro Logo is active, while the rest will get activated and deactivated, starting with the intro app logo getting deactivated. We also have a background image graphic of the same color next to each logo, which is a transparent PNG, which can be overlayed against the background. We could later fine tune the wait times. #TODO
 
-The last one to show is the "overlapping logo", which is the game logo overlapped above the gameplay screen. We might get rid of this when the user starts clicking. Or get rid of this after a set delay. In Crossy Road, the overlapping logo only goes away after we click, and then they use an animation to move out of the way.
+The last one to show is the "overlapping logo", which is the game logo overlapped above the gameplay screen. We might get rid of this when the user starts clicking. Or get rid of this after a set delay. In Crossy Road, the overlapping logo only goes away after we click, and then they use an animation to move out of the way. So we decided to go away with waiting for a tap before turning off. So now we wait for the user to tap before turning off the overlappingLogo;
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+
+    using UnityEngine;
+    using UnityEngine.SceneManagement;
+    using System.Collections;
+
+
+
+
+    public class Intro: MonoBehaviour
     {
-        Debug.Log("OnSceneLoaded: " + scene.name);
-        Debug.Log(mode);
 
-        Debug.Log("Time to start the game!!!");
+        public GameObject appLogo;
+        public GameObject companyLogo;
+        public GameObject gameLogo;
+        public GameObject overlappingLogo;
 
-        // let's wait a little to show off the intro logo
 
-        StartCoroutine("HideAppLogo");
+        // called zero
+        void Awake()
+        {
+            Debug.Log("Awake");
+        }
 
+        // called first
+        void OnEnable()
+        {
+            Debug.Log("OnEnable called");
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        // called second
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            Debug.Log("OnSceneLoaded: " + scene.name);
+            Debug.Log(mode);
+
+            Debug.Log("Time to start the game!!!");
+
+            // let's wait a little to show off the intro logo
+
+            StartCoroutine("HideAppLogo");
+
+        }
+
+
+        private IEnumerator HideAppLogo()
+        {
+            float delay = 2.0f;
+            yield return new WaitForSeconds(delay);
+            appLogo.SetActive(false);
+            companyLogo.SetActive(true);
+
+            StartCoroutine("HideCompanyLogo");
+        }
+
+
+        private IEnumerator HideCompanyLogo()
+        {
+            float delay = 2.0f;
+            yield return new WaitForSeconds(delay);
+            companyLogo.SetActive(false);
+            gameLogo.SetActive(true);
+
+            StartCoroutine("HideGameLogo");
+        }
+
+
+        private IEnumerator HideGameLogo()
+        {
+            float delay = 3.0f;
+            yield return new WaitForSeconds(delay);
+
+            gameLogo.SetActive(false);
+            overlappingLogo.SetActive(true);
+        }
+
+
+        bool introOver = false;
+
+
+        void DetectTapToTurnOffOverlappingLogo()
+        {
+            foreach (Touch touch in Input.touches)
+            {
+
+                if (touch.fingerId == 0)
+                {
+                    // Finger 1 is touching! (remember, we count from 0)
+                    overlappingLogo.SetActive(false);
+                    introOver = true;
+                }
+
+                if (touch.fingerId == 1)
+                {
+                    // finger 2 is touching! Huzzah!
+                    overlappingLogo.SetActive(false);
+                    introOver = true;
+                }
+            }
+        }
+
+
+
+
+        // called third
+        void Start()
+        {
+            Debug.Log("Start");
+        }
+
+        // called when the game is terminated
+        void OnDisable()
+        {
+            Debug.Log("OnDisable");
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+
+        void Update()
+        {
+            if (!introOver) DetectTapToTurnOffOverlappingLogo();
+        }
     }
-
-
-    private IEnumerator HideAppLogo()
-    {
-        float delay = 2.0f;
-        yield return new WaitForSeconds(delay);
-        appLogo.SetActive(false);
-        companyLogo.SetActive(true);
-
-        StartCoroutine("HideCompanyLogo");
-    }
-
-    
-    private IEnumerator HideCompanyLogo()
-    {
-        float delay = 2.0f;
-        yield return new WaitForSeconds(delay);
-        companyLogo.SetActive(false);
-        gameLogo.SetActive(true);
-
-        StartCoroutine("HideGameLogo");
-    }
-
-
-    private IEnumerator HideGameLogo()
-    {
-        float delay = 3.0f;
-        yield return new WaitForSeconds(delay);
-
-        gameLogo.SetActive(false);
-        overlappingLogo.SetActive(true);
-    }
-
 
 # Intro Sequence
 
