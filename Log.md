@@ -8,6 +8,8 @@ So what if instead we move all this stuff over to the Game scene. In the worst c
 
 So we will need some code to detect when everything is loaded. Then we will progress to the other screen intro graphics.
 
+So we brought the graphic into Game, right near the top. To make the graphic come to the front, we inputted a "1" for sort order under canvas of the Intro Graphic, game object element.
+
 # Setting Up Scaling on Menu Images
 
 The way that they set up the canvas scaling on Rushy Road is as follows:
