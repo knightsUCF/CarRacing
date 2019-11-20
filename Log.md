@@ -27,8 +27,14 @@ So this button is called "CharacterBtn". Then if we look down to the button prop
 
 - UIManager.CharacterBtn
 
+The CharacterBtn method can be found here in UIManager:
 
+    public void CharacterBtn()
+    {
+        GameManager.Instance.LoadScene("Character", 0.5f);
+    }
 
+So now let's take a look at GameManager's LoadScene method. Notice that there is a delay here of half a second.
 
 # Sound Manager
 
