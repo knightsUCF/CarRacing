@@ -8,6 +8,8 @@ Now the next tutorial is about the shop, so that might fit in nicely with our pr
 
 Tutorial 7 - Shop: https://www.youtube.com/watch?v=fRnSErPTMPM
 
+We are also interested in tutorials 14, and 15, since they are about save states, and tutorial 26, which is about the phone build.
+
 # Encryption
 
 So the below tutorial takes care of everything in terms of saving state, but the author does mention that we do need a way to encrypt the data, which is not required. Let's take a look at the next tutorial and check if he addresses encryption, or if there are any extra parts required for saving. 
