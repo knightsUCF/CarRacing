@@ -1,3 +1,27 @@
+# Getting Started with Laying Out UI/UX
+
+So first study how the asset packs handle the scene loading to start the game, load the game, and then also how are we loading and transitioning between gameplay and the car purchasing screen.
+
+Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racing:
+
+
+    public void LoadScene(string sceneName, float delay)
+    {
+        StartCoroutine(LoadingScene(sceneName, delay));
+    }
+
+    IEnumerator LoadingScene(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
+    }
+
+So here not only do we not have any fancy screen loading, but we actually have a delay variable. Maybe this is to have a delay at the beginning of the game, so the users can notice the intro screens.
+
+
+
+
+
 # Sound Manager
 
 We could just use the SoundManager.cs from Rushy Racing:
@@ -268,25 +292,6 @@ We could just use the SoundManager.cs from Rushy Racing:
 
 
 
-# Getting Started with Laying Out UI/UX
-
-So first study how the asset packs handle the scene loading to start the game, load the game, and then also how are we loading and transitioning between gameplay and the car purchasing screen.
-
-Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racing:
-
-
-    public void LoadScene(string sceneName, float delay)
-    {
-        StartCoroutine(LoadingScene(sceneName, delay));
-    }
-
-    IEnumerator LoadingScene(string sceneName, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(sceneName);
-    }
-
-So here not only do we not have any fancy screen loading, but we actually have a delay variable. Maybe this is to have a delay at the beginning of the game, so the users can notice the intro screens.
 
 # Crossy Road UI/UX Analysis
 
