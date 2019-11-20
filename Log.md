@@ -2,19 +2,6 @@
 
 So first study how the asset packs handle the scene loading to start the game, load the game, and then also how are we loading and transitioning between gameplay and the car purchasing screen.
 
-Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racing:
-
-
-    public void LoadScene(string sceneName, float delay)
-    {
-        StartCoroutine(LoadingScene(sceneName, delay));
-    }
-
-    IEnumerator LoadingScene(string sceneName, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(sceneName);
-    }
 
 So here not only do we not have any fancy screen loading, but we actually have a delay variable. Maybe this is to have a delay at the beginning of the game, so the users can notice the intro screens.
 
@@ -34,6 +21,22 @@ The CharacterBtn method can be found here in UIManager:
         GameManager.Instance.LoadScene("Character", 0.5f);
     }
 
+
+Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racing:
+
+
+    public void LoadScene(string sceneName, float delay)
+    {
+        StartCoroutine(LoadingScene(sceneName, delay));
+    }
+
+    IEnumerator LoadingScene(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
+    }
+    
+    
 So now let's take a look at GameManager's LoadScene method. Notice that there is a delay here of half a second.
 
 # Sound Manager
