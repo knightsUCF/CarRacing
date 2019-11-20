@@ -2,6 +2,11 @@
 
 This tutorial shows how to save player data for both Android and iOS: https://www.youtube.com/watch?v=LBs6qOgCDOY
 
+So through this and create a save system, that we can easily test on Android.
+
+Once this is done, if working at the cafe, then write the whole car inventory screen from scratch, and plug into the project later.
+
+
 # Daily Rewards
 
 Page 8 of the Crashy Racing template.
@@ -49,7 +54,7 @@ Now, there might be some inconvience with running someone else's code, but as lo
 
 So today we are starting off with working on two main things:
 
-- character selection
+- character selection (plus saving)
 
 - monetization
 
