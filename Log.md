@@ -1,3 +1,54 @@
+# Checking When Scene Loaded
+
+The part that says, "Time to start the game!" is when we can start up the actual gameplay.
+
+We could simply turn on a state bool, and have the game checking this bool before setting everything up, including sounds, and etc.
+
+
+    using UnityEngine;
+    using UnityEngine.SceneManagement;
+
+
+
+
+    public class HasSceneLoaded: MonoBehaviour
+    {
+        // called zero
+        void Awake()
+        {
+            Debug.Log("Awake");
+        }
+
+        // called first
+        void OnEnable()
+        {
+            Debug.Log("OnEnable called");
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        // called second
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            Debug.Log("OnSceneLoaded: " + scene.name);
+            Debug.Log(mode);
+
+            Debug.Log("Time to start the game!!!");
+        }
+
+        // called third
+        void Start()
+        {
+            Debug.Log("Start");
+        }
+
+        // called when the game is terminated
+        void OnDisable()
+        {
+            Debug.Log("OnDisable");
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+    }
+
 # When to Exactly Load?
 
 So we set up the Crossy Road chicken logo. The question is when are we loading?
