@@ -6,6 +6,8 @@ We will need some way for the user to interact with the data.
 
 Let's just create a button, which increments the gold number. Then when we exit the application, let's initialize the saved state from the previous session.
 
+Actually we will not be able to test because we don't have the android stuff set up on this computer. We can try but we probably can't.
+
 
 # Further Save State Tutorials
 
