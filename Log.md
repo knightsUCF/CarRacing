@@ -1,3 +1,9 @@
+# Onto Character Selection
+
+Start with the asset pack to determine how they are doing the dragging. And diagram out anything here.
+
+
+
 # What's Next?
 
 Now that we've completed the intro sequence we will want to go ahead and implement the car unlockable screen, (transition to Characters scene.)
