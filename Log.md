@@ -1,4 +1,4 @@
-# Encyrption
+# Encryption
 
 So the below tutorial takes care of everything in terms of saving state, but the author does mention that we do need a way to encrypt the data, which is not required. Let's take a look at the next tutorial and check if he addresses encryption, or if there are any extra parts required for saving. 
 
