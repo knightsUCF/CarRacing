@@ -37,11 +37,18 @@ Let's also write a program, which can save the state on a phone.
 
 So there are three files we need for the save tutorial: https://www.youtube.com/watch?v=LBs6qOgCDOY
 
+Create a game object "Save Manager", and add SaveManager.cs
+
+
+///////////////////////////////////////////////////////////////
+
+
 SaveState.cs
 
 SerializationHelper.cs (calls this just Helper.cs)
 
 SaveManager.cs
+
 
 
 
