@@ -1,3 +1,37 @@
+# New Day
+
+Well, we have a lot done. And today is the anniversary of the Crossy Road release. So let's see how much we can get done today.
+
+How far are we away from finishing the game? Well, indeed there are a lot thing to polish, but if we prevent getting stuck in any time sinks we can actually have the game done in the next 24 - 48 hours.
+
+Now, there might be some inconvience with running someone else's code, but as long as that prevents future code spaghetti, we should run with the implementation, so we can connect the ad services.
+
+So today we are starting off with working on two main things:
+
+- character selection
+
+- monetization
+
+Finishing character selection will naturally take us over to monetization.
+
+After monetization let's do:
+
+- car turning
+
+- smooth game over state
+
+Then what?
+
+- enviroments
+
+- neon lights and environments
+
+- sounds
+
+After all this we should be progressing very nicely. 
+
+Then we are just going to do small polish things until release.
+
 # Onto Character Selection
 
 Start with the asset pack to determine how they are doing the dragging. And diagram out anything here.
