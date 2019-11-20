@@ -25,6 +25,8 @@ So we renamed our HasSceneLoaded script to Intro. Since this will handle all the
         logo.SetActive(false);
     }
 
+So that is working alright. Now let's get the rest of intro sequence going.
+
 # Checking When Scene Loaded
 
 The part that says, "Time to start the game!" is when we can start up the actual gameplay.
