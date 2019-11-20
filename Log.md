@@ -48,7 +48,7 @@ So we probably will want to put the above two methods into the Game Manager. Wil
 
 Well, let's put these two methods in there, and then we can always just simply have a way of getting the scene back. Unless that will take longer, but don't think so, since we have to change scenes anyway with the Game Manager scenario.
 
-
+Or we can have a dedicated scene loader, which might be better.
 
 # Sound Manager
 
