@@ -6,6 +6,7 @@ We've completely neglected lights. We will want to take a look at some lighting 
 
 Start with the asset pack to determine how they are doing the dragging. And diagram out anything here.
 
+So the character scrolling is done through "CharacterScroller"
 
 
 # What's Next?
