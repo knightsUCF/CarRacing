@@ -2,6 +2,29 @@
 
 so after our scene data has been loaded, let's have a couroutine run, which will give us a few seconds of delay before we inactivate the logo.
 
+So we renamed our HasSceneLoaded script to Intro. Since this will handle all the intro stuff for us. Then we set up a coroutine to handle the length of the intro logo:
+
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+
+        Debug.Log("Time to start the game!!!");
+
+        // let's wait a little to show off the intro logo
+
+        StartCoroutine("HideLogo");
+
+    }
+
+    private IEnumerator HideLogo()
+    {
+        float delay = 2.0f;
+        yield return new WaitForSeconds(delay);
+        logo.SetActive(false);
+    }
+
 # Checking When Scene Loaded
 
 The part that says, "Time to start the game!" is when we can start up the actual gameplay.
