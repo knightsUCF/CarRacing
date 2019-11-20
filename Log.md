@@ -8,6 +8,14 @@ Start with the asset pack to determine how they are doing the dragging. And diag
 
 So the character scrolling is done through "CharacterScroller"
 
+Okay so we replicated all the code for CharacterScroller.cs. The required dependencies were:
+
+SoundManager.cs
+CoinManager.cs
+
+CharacterScroller.cs
+CharacterInfo.cs
+CharacterManager.cs
 
 # What's Next?
 
