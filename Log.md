@@ -1,3 +1,7 @@
+# Character Selection
+
+Let's go through the scene and break down the character selection. But first let's take a look at the other asset pack, and check if they did things better.
+
 # New Day
 
 Well, we have a lot done. And today is the anniversary of the Crossy Road release. So let's see how much we can get done today.
