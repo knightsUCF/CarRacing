@@ -1,3 +1,22 @@
+# Daily Rewards
+
+Page 8 of the Crashy Racing template.
+
+"This tempalte has ab uitl in daily reward systme in which the user will be rewarded with coins every predefined interval of time. This is an effective way to increase user engagement and retention for your game. You can configure this feature from the DailyRewardController object in the hierarchy.
+
+That's all the manual says for this. Look for "DailyRewardController.cs" in the project folder.
+
+# Adding Characters
+
+Adding characters is very easy in the Crashy Racing asset (asset #2). 
+
+Add a Character.cs script to the character. Then drag the prefab into the character manager list so the character will be available in the game. 
+
+Perhaps easier would be for us just to design the whole system ourselves, and then just use the necessary functions. This way we will be able to design things easier. But still use the physics methods for moving the characters around, and etc.
+
+
+
+
 # Easy Mobile
 
 Easy Mobile is our monetization system.
