@@ -1,3 +1,21 @@
+# Intro Sequence
+
+
+- Screen 1: App logo (also thumbnail)
+
+- Screen 2: Company logo (with sounds)
+
+- Screen 3: Game logo (zooms in, we can use the cube voxel effect)
+
+- Screen 4: Gameplay
+
+
+So show two more of these screens, before we go to gameplay.
+
+We can accomplish this all through methods in Intro.cs.
+
+
+
 # Wait with the Logo
 
 so after our scene data has been loaded, let's have a couroutine run, which will give us a few seconds of delay before we inactivate the logo.
