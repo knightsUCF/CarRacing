@@ -8,7 +8,7 @@
 
 - the buttons are linked as follows: GameMaster.SaveGame, GameMaster.LoadGame
 
-- then each of the cubes gets a "TransformSave.cs" with the field, unique ID, and save order. Save order can be 0.
+- then each of the cubes gets a "TransformSave.cs" with the field, unique ID, (each object should have unique ID) and save order. Save order can be 0.
 
 
 # Encrypted Save System
