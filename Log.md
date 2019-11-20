@@ -8,6 +8,8 @@
 
 https://www.realsimple.com/work-life/money/color-psychology
 
+"The signature color of sophistication (hello, little black dress), black dominates high-end makeup packaging and can even make inexpensive blushes and lipsticks seem more upscale."
+
 "Patrons are 15 percent more likely to return to stores with blue color schemes than to those with orange color scheme."
 
 "The color is associated with fairness and affordability, which is why you’ll find orange at stores offering good value, like Home Depot and Payless."
