@@ -10,6 +10,8 @@ Also we will need to take a look at the other asset pack, to check how they impl
 
 So the intro sequence is complete now. Of course we have to create the intro image sequences, and possibly some sounds. But the implementation is done. Save this for later. #TODO.
 
+We will also need a way to trigger the car, and everything going once the actual game starts, and keep those objects inactive in the hierarchy till then. #TODO
+
 # Intro Animations
 
 We will want some intro animations (even if simple movements) and sounds to set the player. #TODO
