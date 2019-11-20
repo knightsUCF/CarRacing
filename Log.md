@@ -2,6 +2,8 @@
 
 So here is the code solution to the intro sequence. We are basically using a domino like effect with the cascading coroutines. All the logo game objects are under the "Intro" parent game object, which contains the Intro.cs code. We then want to make sure just the Intro Logo is active, while the rest will get activated and deactivated, starting with the intro app logo getting deactivated. We also have a background image graphic of the same color next to each logo, which is a transparent PNG, which can be overlayed against the background. We could later fine tune the wait times. #TODO
 
+The last one to show is the "overlapping logo", which is the game logo overlapped above the gameplay screen. We might get rid of this when the user starts clicking. Or get rid of this after a set delay.
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("OnSceneLoaded: " + scene.name);
@@ -42,8 +44,11 @@ So here is the code solution to the intro sequence. We are basically using a dom
     {
         float delay = 3.0f;
         yield return new WaitForSeconds(delay);
+
         gameLogo.SetActive(false);
+        overlappingLogo.SetActive(true);
     }
+
 
 # Intro Sequence
 
