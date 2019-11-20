@@ -1,3 +1,11 @@
+# Easy Mobile
+
+Easy Mobile is our monetization system.
+
+"Most	importantly,	this	template	is	pre-integrated	with	Easy	Mobile	plugin,	making	it	a	truly	fully-featured	game	that	is	release-ready.	Easy	Mobile	is	a	comprehensive,	cross-platform	package	that	provides	most	of	desired	features	of	mobile	games:	• Support	for	AdColony,	AdMob,	Chartboost,	Heyzap	and	UnityAds	• In-app	purchasing	• Support	for	Game	Center	(iOS)	and	Google	Play	Games	Services	(Android)	for	leaderboards	and	achievements	• Recording	gameplay	and	exporting	GIF	images	• Sharing	to	social	networks	(PNG	or	GIF	images)	• Push	notification	using	OneSignal	service	• Native	rating	request	popup	(rate	my	app)	*	Being	pre-integrated	means	this	template	is	already	configured	to	work	with	Easy	Mobile.	All	you	need	is	import	Easy	Mobile	and	do	a	few	setup	steps,	and	have	all	the	above	features	readily	implemented.	You	don’t	even	have	to	write	a	single	line	of	integration	code!	*	This	template	DOES	NOT	include	Easy	Mobile.	*	The	use	of	Easy	Mobile	is	totally	optional:	as	long	as	it’s	not	imported,	all	the	integration	code	will	automatically	be	excluded	from	compilation,	so	that	no	impact	will	be	made	on	the	game,	which	is	fully	functioning	on	its	own."	
+
+file:///C:/Users/x/Documents/Crossy%20Road%20Template%202/Assets/_CrashyRacing/UserGuide_UAS.pdf
+
 # Reward System
 
 The reward system in the second asset pack is worth taking a look at. Where we get a package, and that package shakes to give us a gift. What is the purpose of this? Is this somehow tied with the rewarded video ads?
