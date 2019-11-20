@@ -1,3 +1,13 @@
+# Crossy Road UI/UX Analysis
+
+- Screen 1: App logo comes up first (just a static image, so if scene is taking a moment to load we will not notice any stuttering with a static image). This is the same logo as the app thumbnail. A voxel chicken.
+
+- Screen 2: After the app is done loading, the app logo goes away. (Or do we load somewhere else?) HIpster Whale logo, so logo of the company vibrating up and down. Water Bubbles Happen.
+
+- Screen 3: Crossy Road logo. The logo zooms in from the back. We are keeping the same nice light lbue for all the screens. We could use yellow here. Does yellow cause people to spend money?
+
+
+
 # Starting Off the Workday
 
 Okay, so today we want to get as much done as possible. Let's just go slowly and evenly, since we don't want to wear ourselves out. We have plenty of time to get these tasks done. Rushing only blunts our concentration, and makes us tired.
