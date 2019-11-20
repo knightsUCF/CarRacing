@@ -1,3 +1,38 @@
+# Save System 
+
+
+Start with this tutorial:
+
+https://www.youtube.com/watch?v=LBs6qOgCDOY
+
+Write everything to a data class like we had before.
+
+
+# Work at the Cafe
+
+Okay, we've uploaded the project into Google Drive, so we can recreate, but we should build out the pieces seperately and modularly to keep focused. 
+
+The things we are building
+
+- save system (for car character data)
+
+- unlockable car screen
+
+- monetization
+
+- car turning
+
+- smooth game over state
+
+- environments
+
+- neon lights and environments, car lights
+
+- sounds
+
+Reasses 
+
+
 # Saving Data
 
 This tutorial shows how to save player data for both Android and iOS: https://www.youtube.com/watch?v=LBs6qOgCDOY
