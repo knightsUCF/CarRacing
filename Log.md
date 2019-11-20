@@ -8,6 +8,8 @@
 
 https://www.realsimple.com/work-life/money/color-psychology
 
+"Patrons are 15 percent more likely to return to stores with blue color schemes than to those with orange color scheme."
+
 
 
 # Starting Off the Workday
