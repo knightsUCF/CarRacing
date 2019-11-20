@@ -1,3 +1,12 @@
+# Setting Up the Encrypted Save System
+
+- download the asset here: https://assetstore.unity.com/detail/tools/input-management/encrypted-save-154946
+
+- find the example scene folder, drag into hierarchy
+
+- Rename "Managers" to Save System. Contents: GameMaster.cs, SaveMaster.cs
+
+
 # Encrypted Save System
 
 So we are going to test this new encrypted save system. Not sure how much encryption will help, (probably will also need obfuscation), but let's give this a try.
