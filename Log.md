@@ -1,3 +1,11 @@
+# Setting Up Scaling on Menu Images
+
+The way that they set up the canvas scaling on Rushy Road is as follows:
+
+Locate the canvas element for the UI.
+
+Go to Canvas Scaler, and for UI scale mode choose "scale with screen size", and then for reference resolution use: x 1080, y 720. Then for Screen match mode use "match width or height". Then drag the height slider all the way to 1 for height.
+
 # Menu Screen Order
 
 - Screen 1: App logo comes up first (just a static image, so if scene is taking a moment to load we will not notice any stuttering with a static image). This is the same logo as the app thumbnail. A voxel chicken.
