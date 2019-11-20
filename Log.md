@@ -50,6 +50,29 @@ Well, let's put these two methods in there, and then we can always just simply h
 
 Or we can have a dedicated scene loader, which might be better.
 
+So we put the methods in Game.cs:
+
+
+    public void LoadScene(string sceneName, float delay)
+    {
+        StartCoroutine(LoadingScene(sceneName, delay));
+    }
+
+    IEnumerator LoadingScene(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
+    }
+
+
+    public void LoadCharactersScene()
+    {
+        LoadScene("Characters", 0.5f);
+    }
+
+One of the interesting things that they did is have the button call two methods. One plays the sound and other does the transitioning. So we will save one slot for this. Perhaps we will need the sound manager to be an instance, so that we don't interrupt the sound playing in the middle.
+
+
 # Sound Manager
 
 We could just use the SoundManager.cs from Rushy Racing:
