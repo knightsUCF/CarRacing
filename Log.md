@@ -39,6 +39,17 @@ Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racin
     
 So now let's take a look at GameManager's LoadScene method. Notice that there is a delay here of half a second.
 
+
+So that is the complete scene transition. The ironic thing is we were looking for a way to not slow down the scenes, but here we are working with a delay. Perhaps the delay prevents stuttering. 
+
+In either case, let's test this out.
+
+So we probably will want to put the above two methods into the Game Manager. Will we have a problem if the Game Manager is not a singleton?
+
+Well, let's put these two methods in there, and then we can always just simply have a way of getting the scene back. Unless that will take longer, but don't think so, since we have to change scenes anyway with the Game Manager scenario.
+
+
+
 # Sound Manager
 
 We could just use the SoundManager.cs from Rushy Racing:
