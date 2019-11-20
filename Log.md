@@ -6,6 +6,8 @@
 
 - Screen 3: Crossy Road logo. The logo zooms in from the back. We are keeping the same nice light lbue for all the screens. We could use yellow here. Does yellow cause people to spend money?
 
+https://www.realsimple.com/work-life/money/color-psychology
+
 
 
 # Starting Off the Workday
