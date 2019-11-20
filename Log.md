@@ -1,3 +1,29 @@
+# Menu Screen Order
+
+- Screen 1: App logo comes up first (just a static image, so if scene is taking a moment to load we will not notice any stuttering with a static image). This is the same logo as the app thumbnail. A voxel chicken.
+
+- Screen 2: After the app is done loading, the app logo goes away. (Or do we load somewhere else?) HIpster Whale logo, so logo of the company vibrating up and down. Water Bubbles Happen.
+
+- Screen 3: Crossy Road logo. The logo zooms in from the back. We are keeping the same nice light lbue for all the screens. We could use yellow here. Does yellow cause people to spend money?
+
+https://www.realsimple.com/work-life/money/color-psychology
+
+"The signature color of sophistication (hello, little black dress), black dominates high-end makeup packaging and can even make inexpensive blushes and lipsticks seem more upscale."
+
+"Patrons are 15 percent more likely to return to stores with blue color schemes than to those with orange color scheme."
+
+"The color is associated with fairness and affordability, which is why you’ll find orange at stores offering good value, like Home Depot and Payless."
+
+"Consequently, a purple box may help persuade us that the product has special properties and is worth a princely sum."
+
+"A mainstay at fast-food restaurants, yellow evokes energy and increases appetite, perhaps explaining why your stomach may start to growl when you pass those golden arches."
+
+So after screen 3 we enter the gameplay screen.
+
+- Screen 4: Gameplay
+
+
+
 # Getting Started with Laying Out UI/UX
 
 So first study how the asset packs handle the scene loading to start the game, load the game, and then also how are we loading and transitioning between gameplay and the car purchasing screen.
