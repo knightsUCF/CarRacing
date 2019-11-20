@@ -1,3 +1,7 @@
+# Reward System
+
+The reward system in the second asset pack is worth taking a look at. Where we get a package, and that package shakes to give us a gift. What is the purpose of this? Is this somehow tied with the rewarded video ads?
+
 # Character Selection
 
 Let's go through the scene and break down the character selection. But first let's take a look at the other asset pack, and check if they did things better.
