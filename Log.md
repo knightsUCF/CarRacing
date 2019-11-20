@@ -72,6 +72,10 @@ So we put the methods in Game.cs:
 
 One of the interesting things that they did is have the button call two methods. One plays the sound and other does the transitioning. So we will save one slot for this. Perhaps we will need the sound manager to be an instance, so that we don't interrupt the sound playing in the middle.
 
+Well that worked. The 0.5f is almost unnoticable. We can decrease this in the future if needed.
+
+So let's now get the menu screens going, and then come back to the characters purchasing screen.
+
 
 # Sound Manager
 
