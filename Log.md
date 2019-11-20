@@ -21,6 +21,11 @@ So here not only do we not have any fancy screen loading, but we actually have a
 
 Okay, so how are we actually making the transition to the car unlockable screen?
 
+So this button is called "CharacterBtn". Then if we look down to the button properties, we are sending out two events:
+
+- UIManager.PlayButtonSound
+
+- UIManager.CharacterBtn
 
 
 
