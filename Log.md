@@ -1,3 +1,15 @@
+# What's Next?
+
+Now that we've completed the intro sequence we will want to go ahead and implement the car unlockable screen, (transition to Characters scene.)
+
+We will start by observing how this is done in the asset pack.
+
+Also we will need to take a look at the other asset pack, to check how they implemented the coin purchasing mechanism, plus any sort of in app purchasing plugs they are using.
+
+# Intro Sequence Complete
+
+So the intro sequence is complete now. Of course we have to create the intro image sequences, and possibly some sounds. But the implementation is done. Save this for later. #TODO.
+
 # Intro Animations
 
 We will want some intro animations (even if simple movements) and sounds to set the player. #TODO
