@@ -1,3 +1,103 @@
+# Save System Tutorial Code Files
+
+So there are three files we need for the save tutorial: https://www.youtube.com/watch?v=LBs6qOgCDOY
+
+SaveState.cs
+SerializationHelper.cs (calls this just Helper.cs)
+SaveManager.cs
+
+
+SaveState.cs
+
+    public class SaveState
+    {
+        public int gold = 123;
+    }
+
+
+SerializationHelper.cs
+
+
+    using System.IO;
+    using System.Xml.Serialization;
+
+
+
+    public static class SerializationHelper
+    {
+
+        public static string Serialize<T>(this T toSerialize)
+        {
+            XmlSerializer xml = new XmlSerializer(typeof(T));
+            StringWriter writer = new StringWriter();
+            xml.Serialize(writer, toSerialize);
+            return writer.ToString();
+        }
+
+
+        public static T Deserialize<T>(this string toDeserialize)
+        {
+            XmlSerializer xml = new XmlSerializer(typeof(T));
+            StringReader reader = new StringReader(toDeserialize);
+            return (T)xml.Deserialize(reader);
+        }
+
+    }
+
+
+SaveManager.cs
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    // https://www.youtube.com/watch?v=LBs6qOgCDOY
+
+
+    public class SaveManager : MonoBehaviour
+    {
+        public static SaveManager Instance { set; get; }
+
+        public SaveState state;
+
+        private void Awake()
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+            Load();
+
+            Debug.Log(SerializationHelper.Serialize<SaveState>(state));
+        }
+
+        // save the SaveState script to PlayerPref
+
+        public void Save()
+        {
+            PlayerPrefs.SetString("save", SerializationHelper.Serialize<SaveState>(state)); // turning state into a string
+        }
+
+        // load the previous saved state from player preferences
+
+        public void Load()
+        {
+           if (PlayerPrefs.HasKey("save"))
+           {
+                state = SerializationHelper.Deserialize<SaveState>(PlayerPrefs.GetString("save"));
+           }
+
+            // if never saved the game
+
+            else
+            {
+                state = new SaveState();
+                Save();
+                Debug.Log("No save file found. Creating a new one.");
+            }
+        }
+    }
+ 
+
+
 # Save System 
 
 
