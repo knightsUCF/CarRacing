@@ -1,3 +1,13 @@
+# Further Save State Tutorials
+
+Okay, we will want to continue the tutorials, since they are by the same author and pick up right where we left of.
+
+Tutorial 6: https://www.youtube.com/watch?v=FRKYVhxzrRw
+
+Now the next tutorial is about the shop, so that might fit in nicely with our progression here: 
+
+Tutorial 7 - Shop: https://www.youtube.com/watch?v=fRnSErPTMPM
+
 # Encryption
 
 So the below tutorial takes care of everything in terms of saving state, but the author does mention that we do need a way to encrypt the data, which is not required. Let's take a look at the next tutorial and check if he addresses encryption, or if there are any extra parts required for saving. 
