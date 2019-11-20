@@ -17,7 +17,7 @@ So let's start off with the menu. Both the menu and the car unlockable screen mi
 
 So first up:
 
-- study Crossy Road order of screen
+- study Crossy Road order of screens
 
 - study the asset pack (are they using additive scene loading? how to prevent scene loading pause)
 
