@@ -1,3 +1,12 @@
+# Testing Save System
+
+Okay, let's test the save system.
+
+We will need some way for the user to interact with the data. 
+
+Let's just create a button, which increments the gold number. Then when we exit the application, let's initialize the saved state from the previous session.
+
+
 # Further Save State Tutorials
 
 Okay, we will want to continue the tutorials, since they are by the same author and pick up right where we left of.
