@@ -6,6 +6,9 @@ Locate the canvas element for the UI.
 
 Go to Canvas Scaler, and for UI scale mode choose "scale with screen size", and then for reference resolution use: x 1080, y 720. Then for Screen match mode use "match width or height". Then drag the height slider all the way to 1 for height.
 
+So that ensures that our logo will be lined up full screen. Now we will need to create another image under the canvas element, and choose simply the fill color of the background graphic. Then we set this size to 2000 by 2000, and dragged this element to the top over the logo, so this shows up in the background.
+
+
 # Menu Screen Order
 
 - Screen 1: App logo comes up first (just a static image, so if scene is taking a moment to load we will not notice any stuttering with a static image). This is the same logo as the app thumbnail. A voxel chicken.
