@@ -1,3 +1,15 @@
+# Encyrption
+
+So the below tutorial takes care of everything in terms of saving state, but the author does mention that we do need a way to encrypt the data, which is not required. Let's take a look at the next tutorial and check if he addresses encryption, or if there are any extra parts required for saving. 
+
+If there is encryption we can save that for later.
+
+Should we split data off from savestate?
+
+Well data will automatically reset on each game, and savestate is actually what we are saving. So let's just split for now to keep things simple. 
+
+Let's also write a program, which can save the state on a phone.
+
 # Save System Tutorial Code Files
 
 So there are three files we need for the save tutorial: https://www.youtube.com/watch?v=LBs6qOgCDOY
