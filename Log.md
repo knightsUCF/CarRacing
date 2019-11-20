@@ -2,6 +2,20 @@
 
 So first study how the asset packs handle the scene loading to start the game, load the game, and then also how are we loading and transitioning between gameplay and the car purchasing screen.
 
+Here are some scene loading code from lines 225 of GameManager.cs of Rushy Racing:
+
+
+    public void LoadScene(string sceneName, float delay)
+    {
+        StartCoroutine(LoadingScene(sceneName, delay));
+    }
+
+    IEnumerator LoadingScene(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
+    }
+
 
 # Crossy Road UI/UX Analysis
 
