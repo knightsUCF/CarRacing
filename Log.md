@@ -1,3 +1,14 @@
+# Encrypted Save System
+
+So we are going to test this new encrypted save system. Not sure how much encryption will help, (probably will also need obfuscation), but let's give this a try.
+
+YouTube tutorial: https://www.youtube.com/watch?v=H7WuyoXlNZE&feature=youtu.be
+
+Asset "Encrypted Save": https://assetstore.unity.com/detail/tools/input-management/encrypted-save-154946
+
+
+
+
 # Testing Save System
 
 Okay, let's test the save system.
