@@ -12,6 +12,8 @@ https://www.realsimple.com/work-life/money/color-psychology
 
 "The color is associated with fairness and affordability, which is why you’ll find orange at stores offering good value, like Home Depot and Payless."
 
+"Consequently, a purple box may help persuade us that the product has special properties and is worth a princely sum."
+
 # Starting Off the Workday
 
 Okay, so today we want to get as much done as possible. Let's just go slowly and evenly, since we don't want to wear ourselves out. We have plenty of time to get these tasks done. Rushing only blunts our concentration, and makes us tired.
