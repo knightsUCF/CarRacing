@@ -1,3 +1,13 @@
+# When to Exactly Load?
+
+So we set up the Crossy Road chicken logo. The question is when are we loading?
+
+We might be loading during the first chicken logo, so perhaps this is why they would be part of the same scene.
+
+So what if instead we move all this stuff over to the Game scene. In the worst case scenario, we can show a "Loading" thing.
+
+So we will need some code to detect when everything is loaded. Then we will progress to the other screen intro graphics.
+
 # Setting Up Scaling on Menu Images
 
 The way that they set up the canvas scaling on Rushy Road is as follows:
