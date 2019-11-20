@@ -1,3 +1,18 @@
+# Starting Off the Workday
+
+Okay, so today we want to get as much done as possible. Let's just go slowly and evenly, since we don't want to wear ourselves out. We have plenty of time to get these tasks done. Rushing only blunts our concentration, and makes us tired.
+
+So today we will want to start off by implementing two major things:
+
+- menu
+
+- unlockable cars screen
+
+
+Just like that one random forum poster said, they had two apps. Both identical with functionality, but one had a superior UI/UX. The one with the better UI/UX garnered all of the downloads. So people will use an app just because of the sleek UI/UX.
+
+We want the game to have a sleek, feel good, smooth UI/UX. Study Crossy Road for this. One of the things Crossy Road does is have that water splash sound when the logo comes up. That is very professional. Maybe we can have a logo also with a sound effect.
+
 # What's Next?
 
 So opposite traffic is finished, and random cars, and also random terrains, so what's next?
