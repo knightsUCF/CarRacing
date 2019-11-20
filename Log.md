@@ -13,6 +13,18 @@ Just like that one random forum poster said, they had two apps. Both identical w
 
 We want the game to have a sleek, feel good, smooth UI/UX. Study Crossy Road for this. One of the things Crossy Road does is have that water splash sound when the logo comes up. That is very professional. Maybe we can have a logo also with a sound effect.
 
+So let's start off with the menu. Both the menu and the car unlockable screen might use the same code from the asset pack.
+
+So first up:
+
+- study Crossy Road order of screen
+
+- study the asset pack (are they using additive scene loading? how to prevent scene loading pause)
+
+- diagram out here the order of screens, we can just place holders for now
+
+- determine how we will set up the interface buttons, how does Crossy Road do this?
+
 # What's Next?
 
 So opposite traffic is finished, and random cars, and also random terrains, so what's next?
