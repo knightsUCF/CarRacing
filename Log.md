@@ -1,3 +1,7 @@
+# Setting Up In App Purchases
+
+https://docs.unity3d.com/Manual/UnityIAPSettingUp.html
+
 # Unity Services
 
 https://docs.unity3d.com/Manual/UnityServices.html
