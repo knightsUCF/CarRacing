@@ -1,3 +1,88 @@
+# Code From Below Refactored
+
+
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+
+
+
+
+
+        public class SaveSystem : MonoBehaviour
+        {
+
+                private CarData CreateSaveGameObject()
+                {
+                        CarData carData = new CarData();
+                        carData.car2Unlocked = car2Unlocked;
+                        return carData;
+                }
+
+
+                public void Save()
+                {
+                        CarData carData = CreateSaveGameObject();
+                        BinaryFormatter bf = new BinaryFormatter();
+                        FileStream file = File.Create(Application.persistentDataPath + "/gamesave.save");
+                        bf.Serialize(file, carData);
+                        file.Close(); // gold = 0; // resets values for next game
+                        Debug.Log("Game Saved");
+                }
+
+
+
+                public void Load()
+                {
+                        if (File.Exists(Application.persistentDataPath + "/gamesave.save"))
+                        {
+                                BinaryFormatter bf = new BinaryFormatter();
+                                FileStream file = File.Open(Application.persistentDataPath + "/gamesave.save", FileMode.Open);
+                                CarData carData = (CarData)bf.Deserialize(file);
+                                file.Close();
+                                car2Unlocked = carData.car2Unlocked; // gold = save.gold;
+                                Debug.Log("Game Loaded");
+                        }
+                        else Debug.Log("No game saved!");
+                }
+
+
+            public void Test()
+                {
+
+                }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Yet Another Save System
 
 Following this tutorial: https://www.raywenderlich.com/418-how-to-save-and-load-a-game-in-unity#toc-anchor-005
