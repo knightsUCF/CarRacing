@@ -1,5 +1,4 @@
-# Maybe this Will Finally Be our Save System
-
+# Save System Finally Working!
 
 SaveSystem.cs
 
@@ -53,6 +52,13 @@ SaveSystem.cs
 
                     unlockedCars = (List<bool>)bf.Deserialize(file);
 
+                    Debug.Log(unlockedCars);
+
+                    foreach (bool item in unlockedCars)
+                    {
+                        Debug.Log(item);
+                    }
+
                     file.Close();
 
                     Debug.Log("File loaded");
@@ -60,7 +66,11 @@ SaveSystem.cs
                 }
         }
 
+
+
 Test.cs
+
+
 
         using System.Collections;
         using System.Collections.Generic;
@@ -82,7 +92,13 @@ Test.cs
 
                 saveSystem = FindObjectOfType<SaveSystem>();
 
-                saveSystem.unlockedCars.Add(car1);
+                // saveSystem.unlockedCars.Add(car1);
+
+                // saveSystem.Save();
+
+                saveSystem.Load();
+
+
 
 
                 // SaveSystem.Save();
@@ -94,6 +110,7 @@ Test.cs
             }
 
         }
+
 
 
 
