@@ -32,13 +32,13 @@ SaveSystem.cs
                         //Application.persistentDataPath is a string, so if you wanted you can put that into debug.log if you want to know where save games are located
                         FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd"); //you can call it anything you want
 
-                // bf.Serialize(file, SaveSystem.savedGames);
+                        // bf.Serialize(file, SaveSystem.savedGames);
 
-                bf.Serialize(file, unlockedCars);
+                        bf.Serialize(file, unlockedCars);
 
-                file.Close();
+                        file.Close();
 
-                Debug.Log("File saved");
+                        Debug.Log("File saved");
                 }
 
                 public void Load()
@@ -48,20 +48,20 @@ SaveSystem.cs
                                 BinaryFormatter bf = new BinaryFormatter();
                                 FileStream file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
 
-                    // SaveSystem.savedGames = (List<SaveData>)bf.Deserialize(file);
+                            // SaveSystem.savedGames = (List<SaveData>)bf.Deserialize(file);
 
-                    unlockedCars = (List<bool>)bf.Deserialize(file);
+                            unlockedCars = (List<bool>)bf.Deserialize(file);
 
-                    Debug.Log(unlockedCars);
+                            Debug.Log(unlockedCars);
 
-                    foreach (bool item in unlockedCars)
-                    {
-                        Debug.Log(item);
-                    }
+                            foreach (bool item in unlockedCars)
+                            {
+                                Debug.Log(item);
+                            }
 
-                    file.Close();
+                            file.Close();
 
-                    Debug.Log("File loaded");
+                            Debug.Log("File loaded");
                         }
                 }
         }
