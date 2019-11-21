@@ -1,3 +1,64 @@
+# Maybe this Will Finally Be our Save System
+
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
+
+// https://gamedevelopment.tutsplus.com/tutorials/how-to-save-and-load-your-players-progress-in-unity--cms-20934
+
+
+
+        public class SaveSystem : MonoBehaviour
+        {
+
+            // public static List<SaveData> savedGames = new List<SaveData>();
+
+            public List<bool> unlockedCars = new List<bool>();
+
+
+
+                //it's static so we can call it from anywhere
+                public void Save()
+                {
+                        // SaveSystem.savedGames.Add(SaveData.current);
+
+                        BinaryFormatter bf = new BinaryFormatter();
+                        //Application.persistentDataPath is a string, so if you wanted you can put that into debug.log if you want to know where save games are located
+                        FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd"); //you can call it anything you want
+
+                // bf.Serialize(file, SaveSystem.savedGames);
+
+                bf.Serialize(file, unlockedCars);
+
+                file.Close();
+
+                Debug.Log("File saved");
+                }
+
+                public void Load()
+                {
+                        if (File.Exists(Application.persistentDataPath + "/savedGames.gd"))
+                        {
+                                BinaryFormatter bf = new BinaryFormatter();
+                                FileStream file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
+
+                    // SaveSystem.savedGames = (List<SaveData>)bf.Deserialize(file);
+
+                    unlockedCars = (List<bool>)bf.Deserialize(file);
+
+                    file.Close();
+
+                    Debug.Log("File loaded");
+                        }
+                }
+        }
+
+
+
+
 # Code From Below Refactored
 
 
