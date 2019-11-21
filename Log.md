@@ -1,3 +1,15 @@
+# Unity Services
+
+https://docs.unity3d.com/Manual/UnityServices.html
+
+# Configuring for Google Play Store
+
+https://docs.unity3d.com/Manual/UnityIAPGoogleConfiguration.html
+
+# Configuring for iOS App Store
+
+
+
 # Save System Finally Working!
 
 SaveSystem.cs
