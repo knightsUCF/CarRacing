@@ -9,6 +9,12 @@ The refactored files are just two:
 - Save.cs
 
 
+///////////////////////////////////////////////
+
+
+Game.cs: 
+
+
 
         using System;
         using System.Collections;
@@ -101,6 +107,24 @@ The refactored files are just two:
 
                 Debug.Log("Saving as JSON: " + json);
             }
+        }
+
+
+
+Save.cs:
+
+
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+
+
+        [System.Serializable]
+        public class Save
+        {
+            public int gold = 0;
         }
 
 
