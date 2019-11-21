@@ -1,5 +1,9 @@
 # Maybe this Will Finally Be our Save System
 
+
+SaveSystem.cs
+
+
         using UnityEngine;
         using System.Collections;
         using System.Collections.Generic;
@@ -54,6 +58,41 @@
                     Debug.Log("File loaded");
                         }
                 }
+        }
+
+Test.cs
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+
+
+
+
+        public class Test : MonoBehaviour
+        {
+
+            SaveSystem saveSystem;
+
+            bool car1 = false;
+
+
+            void Start()
+            {
+
+                saveSystem = FindObjectOfType<SaveSystem>();
+
+                saveSystem.unlockedCars.Add(car1);
+
+
+                // SaveSystem.Save();
+                // SaveSystem.Load();
+
+                // Debug.Log("Car 1 unlocked: " + SaveData.current.car1Unlocked);
+                // Debug.Log("Car 2 unlocked: " + SaveData.current.car2Unlocked);
+
+            }
+
         }
 
 
