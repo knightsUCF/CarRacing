@@ -1,3 +1,110 @@
+# Yet Another Save System
+
+Following this tutorial: https://www.raywenderlich.com/418-how-to-save-and-load-a-game-in-unity#toc-anchor-005
+
+The refactored files are just two:
+
+- Game.cs (contains the save methods)
+
+- Save.cs
+
+
+
+        using System;
+        using System.Collections;
+        using System.Collections.Generic;
+        using System.IO;
+        using System.Runtime.Serialization.Formatters.Binary;
+        using UnityEngine;
+        using UnityEngine.UI;
+
+
+
+
+        public class Game : MonoBehaviour
+        {
+
+            public int gold = 0;
+
+
+
+            public void SaveGame()
+            {
+                // 1
+                Save save = CreateSaveGameObject();
+
+                // 2
+                BinaryFormatter bf = new BinaryFormatter();
+                FileStream file = File.Create(Application.persistentDataPath + "/gamesave.save");
+                bf.Serialize(file, save);
+                file.Close();
+
+                // 3
+
+                gold = 0;
+
+                Debug.Log("Game Saved");
+            }
+
+
+            public void NewGame()
+            {
+                gold = 0;
+            }
+
+
+            private Save CreateSaveGameObject()
+            {
+                Save save = new Save();
+
+                save.gold = gold;
+
+                return save;
+            }
+
+
+
+            public void LoadGame()
+            {
+                // 1
+                if (File.Exists(Application.persistentDataPath + "/gamesave.save"))
+                {
+
+                    // 2
+                    BinaryFormatter bf = new BinaryFormatter();
+                    FileStream file = File.Open(Application.persistentDataPath + "/gamesave.save", FileMode.Open);
+                    Save save = (Save)bf.Deserialize(file);
+
+                    file.Close();
+
+                    // 4
+
+                    gold = save.gold;
+
+
+                    Debug.Log("Game Loaded");
+
+
+                }
+                else
+                {
+                    Debug.Log("No game saved!");
+                }
+            }
+
+
+
+            public void SaveAsJSON()
+            {
+                Save save = CreateSaveGameObject();
+                string json = JsonUtility.ToJson(save);
+
+                Debug.Log("Saving as JSON: " + json);
+            }
+        }
+
+
+
 # Trying New Save System
 
 https://assetstore.unity.com/detail/tools/integration/quick-save-107676
