@@ -21,6 +21,7 @@ So some things that will be necessary:
 
 
 
+
 So out of all these, we will be working on 3 things, which are necessary in progressing the gameplay along further:
 
 - car turning
@@ -32,6 +33,8 @@ So out of all these, we will be working on 3 things, which are necessary in prog
 - pixel art controls
 
 - different randomized cars
+
+- intro graphics
 
 
 Then we can work on in app purchases. 
