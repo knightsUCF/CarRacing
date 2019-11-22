@@ -29,6 +29,8 @@ So out of all these, we will be working on 3 things, which are necessary in prog
 
 - sounds (simply have at least some traffic sounds for now, maybe tire squeels when breaking abruptly)
 
+- pixel art controls
+
 
 # Setting Up In App Purchases
 
