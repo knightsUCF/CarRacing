@@ -1,3 +1,8 @@
+# Button Bug Fix - Raycast Target Off
+
+So we had to turn off "raycast target" for the image not to be part of the button. Because when we enlarged the image the borders became invisible and responsive to the button presses.
+
+
 # Let's Get Going on a New Day
 
 Okay, so let's get going on a new day of work. We had plans to do in app purchases, but since we will be demoing the game, we should reshift our priorities. 
