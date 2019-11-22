@@ -1,3 +1,24 @@
+# Car Turning
+
+https://answers.unity.com/questions/173817/how-to-rotate-a-car-smoothly.html
+
+
+Rotate should be used only for continuous rotations, because it can accumulate errors and let your model tilted to some weird angle after some time. For tilting and other small angle changes, it's always better to set transform.localEulerAngles.
+The function below use this property to turn the car like you said: turns smoothly to the angle during half the time, then turns back to zero in the other half. Additionally, it "banks" to the side automatically, like real cars do when changing lanes - if you don't need this, replace bank by zero when setting the localEulerAngles.
+You may place this code in the car script or in any other object, because you must pass the car transform when calling the function. Since it is a coroutine, you just call it when starting changing lanes, and the routine does the rest automatically.
+I included a test Update function that I used to fine tune the routine - attach this script to the car and use the keys A or D to change to the right or left lane.
+
+private var turn: float = 0; private var changing = false;
+
+function ChangeLane(car:Transform, angle: float, time: float){ var t: float; var bank: float; if (changing) return; changing = true; for (t = 0; t < 1;){ t += 2*Time.deltaTime/time; turn = Mathf.Lerp(turn, angle, t); bank = 0.5 turn; car.localEulerAngles = Vector3(0, turn, bank); yield; } for (t = 0; t < 1;){ t += 2*Time.deltaTime/time; turn = Mathf.Lerp(turn, 0, t); bank = 0.5 turn; car.localEulerAngles = Vector3(0, turn, bank); yield; } changing = false; }
+
+// This is just for testing purposes - you must call ChangeLane in your script // when changing lanes. Attach this script to the car to test it.
+
+function Update(){ if (Input.GetKeyDown("a")){ ChangeLane(transform, 5, 1); } if (Input.GetKeyDown("d")){ ChangeLane(transform, -5, 1); } }
+
+Add comment ·  Hide 2 · Share
+
+
 # Bugs for Demo Release
 
 - on game over first tile goes to black
