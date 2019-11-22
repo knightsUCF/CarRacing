@@ -1,3 +1,35 @@
+# Let's Get Going on a New Day
+
+Okay, so let's get going on a new day of work. We had plans to do in app purchases, but since we will be demoing the game, we should reshift our priorities. 
+
+So some things that will be necessary:  
+
+
+- Levels
+
+- Sounds?
+
+- car turning
+
+- smooth game over state
+
+- environments
+
+- neon lights and environments, car lights
+
+- sounds
+
+
+
+So out of all these, we will be working on 3 things, which are necessary in progressing the gameplay along further:
+
+- car turning
+
+- environments
+
+- sounds (simply have at least some traffic sounds for now, maybe tire squeels when breaking abruptly)
+
+
 # Setting Up In App Purchases
 
 https://docs.unity3d.com/Manual/UnityIAPSettingUp.html
