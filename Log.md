@@ -18,6 +18,7 @@ function Update(){ if (Input.GetKeyDown("a")){ ChangeLane(transform, 5, 1); } if
 
 Add comment ·  Hide 2 · Share
 
+https://forum.unity.com/threads/car-handling.42043/
 
 # Bugs for Demo Release
 
