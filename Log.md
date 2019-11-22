@@ -1,3 +1,9 @@
+# Bugs for Demo Release
+
+- on game over first tile goes to black
+
+- cars stop spawning after a certain point
+
 # Button Bug Fix - Raycast Target Off
 
 So we had to turn off "raycast target" for the image not to be part of the button. Because when we enlarged the image the borders became invisible and responsive to the button presses.
@@ -23,6 +29,10 @@ So some things that will be necessary:
 - neon lights and environments, car lights
 
 - sounds
+
+- attractive spinning loot, perhaps variable reward
+
+- gas meter?
 
 
 
