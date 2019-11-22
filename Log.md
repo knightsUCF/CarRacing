@@ -31,6 +31,11 @@ So out of all these, we will be working on 3 things, which are necessary in prog
 
 - pixel art controls
 
+- different randomized cars
+
+
+Then we can work on in app purchases. 
+
 
 # Setting Up In App Purchases
 
