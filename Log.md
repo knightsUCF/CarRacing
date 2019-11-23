@@ -7,7 +7,7 @@ After we get the below chunk code working
 
 - traffic, plus variety of traffic patterns, different colored cars
 
-- environments
+- environments, neon lights
 
 - loot, possibly gas meter, variable reward, speed boost, invicibility, etc
 
@@ -23,7 +23,7 @@ After we get the below chunk code working
 
 - monetization
 
-- neon lights
+
 
 
 # New Chunk Code to Fill Up the Horizon with More Chunks
