@@ -1,3 +1,135 @@
+# New Chunk Code to Fill Up the Horizon with More Chunks
+
+New chunk code to fill up the horizon with more chunks, and generate a chunk five or so chunks down, to always have a few chunks ahead of the player.
+
+            using UnityEngine;
+            using System.Collections;
+
+
+
+
+            /*
+
+            Attach to chunk object, this will talk to the collider that is attached.
+            When the player enters the collider this spawns another object.
+
+            Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
+
+            https://github.com/dgkanatsios/InfiniteRunner3D/blob/master/Assets/Scripts/PathSpawnCollider.cs
+
+            */
+
+
+
+            public class Procedural : MonoBehaviour
+            {
+
+                public GameObject chunk;
+
+                public float chunkLength = 250.0f; // this offset needs to be 5 or so x chunks down
+
+                public int startingNumberOfChunks = 3;
+
+                public float xChunksDownOffset = 1000.0f;
+
+                Vector3 chunkPos;
+                Vector3 rotation; // we don't really need this, but our tiles are rotated 90, and we might have to rewrite Controls.cs because the car goes the other way
+                State state;
+                ChunksHolder chunksHolder;
+
+
+
+                private void Start()
+                {
+                    state = FindObjectOfType<State>();
+                    chunksHolder = FindObjectOfType<ChunksHolder>();
+
+                    GenerateStartingChunksStrip();
+                }
+
+
+                private void GenerateStartingChunksStrip()
+                {
+                    chunkPos = transform.position;
+
+                    chunkPos.z = transform.position.z + chunkLength;
+                    InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+                    chunkPos.z = chunkPos.z + chunkLength;
+                    InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+                    chunkPos.z = chunkPos.z + chunkLength;
+                    InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+                }
+
+
+                private void OnTriggerEnter(Collider c)
+                {
+                    if (c.gameObject.tag == "Player")
+                    {
+                        chunkPos = transform.position;
+                        chunkPos.z = transform.position.z + chunkLength * startingNumberOfChunks;
+
+                        InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+                    }
+                }
+
+
+
+                void InstantiateRandomChunkLand(GameObject[] chunkLands, Vector3 pos)
+                {
+                    Instantiate(chunkLands[Random.Range(0, chunkLands.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+                }
+
+
+            }
+
+
+
+
+
+
+
+            /*
+            public GameObject chunk; // later for randomized chunks: public GameObject[] chunks; // and we will need a method to pick random element out of them, well in this case we can implement the for loop code
+
+
+            void OnTriggerEnter(Collider hit)
+            {
+
+                // player entered chunk collider
+
+                if (hit.gameObject.tag == Constants.PlayerTag) // set this to our player
+                {
+
+                    // okay first test this, to check how many times we get "entered collider" output to the log, because we don't want to spawn too much stuff and crash
+
+                    // find whether the next path will be straight, left or right
+
+                    // int randomSpawnPoint = Random.Range(0, PathSpawnPoints.Length);
+
+
+
+                    for (int i = 0; i < PathSpawnPoints.Length; i++)
+                    {
+                        //instantiate the path, on the set rotation
+                        if (i == randomSpawnPoint)
+                            Instantiate(Path, PathSpawnPoints[i].position, PathSpawnPoints[i].rotation);
+                        else
+                        {
+                            //instantiate the border, but rotate it 90 degrees first
+                            Vector3 rotation = PathSpawnPoints[i].rotation.eulerAngles;
+                            rotation.y += 90;
+                            Vector3 position = PathSpawnPoints[i].position;
+                            position.y += positionY;
+                            Instantiate(DangerousBorder, position, Quaternion.Euler(rotation));
+                        }
+                    }
+
+                }
+
+            }
+            */
+
+
 # Let's Start with Chunks and the Player
 
 - let's increase our chunk size
