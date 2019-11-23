@@ -1,3 +1,35 @@
+# Rebuilding Project
+
+We should rebuild the project in a new scene. This should not be too difficult.
+
+The bugs we are looking to fix:
+
+- camera stutter (https://forum.unity.com/threads/follow-camera-stutter.114997/)
+
+- moving car closer in front of view
+
+- adding traffic variety and environment
+
+- moving the turn controls over to the side
+
+- adding the intro screen with our own logo
+
+- adding sounds
+
+- car unlocking screen
+
+- rewarded video ads
+
+- adding different car models
+
+- fixing shading on shadows
+
+
+# Follow Camera Stutter
+
+https://forum.unity.com/threads/follow-camera-stutter.114997/
+
+
 # Spring Camera
 
 The current attempt at implementing the spring camera is completely off. We are not sure where to even start.
