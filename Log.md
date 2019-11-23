@@ -1,3 +1,8 @@
+# After Chunk Code Work on Camera
+
+After we get the below chunk code work on the camera. After we get the camera working, insert the traffic, and spawn some random patterns of traffic. After this add the environments. After that loot, and possibly gas meter.
+
+
 # New Chunk Code to Fill Up the Horizon with More Chunks
 
 New chunk code to fill up the horizon with more chunks, and generate a chunk five or so chunks down, to always have a few chunks ahead of the player.
