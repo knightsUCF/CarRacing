@@ -8,83 +8,80 @@ After we get the below chunk code work on the camera. After we get the camera wo
 New chunk code to fill up the horizon with more chunks, and generate a chunk five or so chunks down, to always have a few chunks ahead of the player.
 
 
-
-    using UnityEngine;
-    using System.Collections;
-
+using UnityEngine;
+using System.Collections;
 
 
 
-    /*
 
-    Attach to chunk object, this will talk to the collider that is attached.
-    When the player enters the collider this spawns another object.
+/*
 
-    Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
+Attach to chunk object, this will talk to the collider that is attached.
+When the player enters the collider this spawns another object.
 
-    https://github.com/dgkanatsios/InfiniteRunner3D/blob/master/Assets/Scripts/PathSpawnCollider.cs
+Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
 
-    */
+https://github.com/dgkanatsios/InfiniteRunner3D/blob/master/Assets/Scripts/PathSpawnCollider.cs
+
+*/
 
 
 
-    public class Procedural : MonoBehaviour
+public class Procedural : MonoBehaviour
+{
+
+    public GameObject chunk;
+    
+    Vector3 chunkPos;
+    Vector3 newChunkPos;
+    ChunksHolder chunksHolder;
+
+    public float chunkLength = 250.0f; // this offset needs to be 5 or so x chunks down
+    public int startingNumberOfChunks = 3;
+
+
+
+    private void Start()
     {
+        chunksHolder = FindObjectOfType<ChunksHolder>();
 
-        public GameObject chunk;
-
-        Vector3 chunkPos;
-        Vector3 newChunkPos;
-        State state;
-        ChunksHolder chunksHolder;
-
-        public float chunkLength = 250.0f; // this offset needs to be 5 or so x chunks down
-        public int startingNumberOfChunks = 3;
-
-
-
-        private void Start()
-        {
-            state = FindObjectOfType<State>();
-            chunksHolder = FindObjectOfType<ChunksHolder>();
-
-            GenerateStartingChunksStrip();
-        }
-
-
-        private void GenerateStartingChunksStrip()
-        {
-            chunkPos = transform.position;
-
-            chunkPos.z = transform.position.z + chunkLength;
-            InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
-            chunkPos.z = chunkPos.z + chunkLength;
-            InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
-            chunkPos.z = chunkPos.z + chunkLength;
-            InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
-        }
-
-
-        private void OnTriggerEnter(Collider c)
-        {
-            if (c.gameObject.tag == "Player")
-            {
-                newChunkPos = transform.position;
-                newChunkPos.z = transform.position.z + chunkLength * startingNumberOfChunks;
-
-                InstantiateRandomChunkLand(chunksHolder.grassLandChunks, newChunkPos);
-            }
-        }
-
-
-
-        void InstantiateRandomChunkLand(GameObject[] chunkLands, Vector3 pos)
-        {
-            Instantiate(chunkLands[Random.Range(0, chunkLands.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
-        }
-
-
+        GenerateStartingChunksStrip();
     }
+
+
+    private void GenerateStartingChunksStrip()
+    {
+        chunkPos = transform.position;
+
+        chunkPos.z = transform.position.z + chunkLength;
+        InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+        chunkPos.z = chunkPos.z + chunkLength;
+        InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+        chunkPos.z = chunkPos.z + chunkLength;
+        InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+    }
+
+
+    private void OnTriggerEnter(Collider c)
+    {
+        if (c.gameObject.tag == "Player")
+        {
+            newChunkPos = transform.position;
+            newChunkPos.z = transform.position.z + chunkLength * startingNumberOfChunks;
+
+            InstantiateRandomChunkLand(chunksHolder.grassLandChunks, newChunkPos);
+        }
+    }
+
+
+
+    void InstantiateRandomChunkLand(GameObject[] chunkLands, Vector3 pos)
+    {
+        Instantiate(chunkLands[Random.Range(0, chunkLands.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+    }
+
+
+}
 
 
 
