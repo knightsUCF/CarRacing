@@ -1,6 +1,22 @@
-# After Chunk Code Work on Camera
+# ToDo Order - No Prototypes! Just make the game and ship!
 
-After we get the below chunk code work on the camera. After we get the camera working, insert the traffic, and spawn some random patterns of traffic. After this add the environments. After that loot, and possibly gas meter.
+
+After we get the below chunk code working
+
+- camera
+
+- traffic, plus variety of traffic patterns
+
+- environments
+
+- loot, possibly gas meter
+
+- smooth game over state
+
+- physics collisions
+
+- intro with our own logos
+
 
 
 # New Chunk Code to Fill Up the Horizon with More Chunks
