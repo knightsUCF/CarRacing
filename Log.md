@@ -1,3 +1,27 @@
+# Spring Camera
+
+The current attempt at implementing the spring camera is completely off. We are not sure where to even start.
+
+So I guess we have to start from scratch, from the very beginning.
+
+We can do this by starting with a new scene, or by deactivating the current player, duplicating the player game object and starting from scratch.
+
+Before we had the problem where on acceleration the camera was not catching up. This might have been because the camera focal point was focused on the parent game object of the car. 
+
+In any case, we have to backtrack, and get the camera code working. The good news is that we did not experience any stuttering.
+
+
+
+# Next Sequence of ToDos
+
+- spring camera
+
+- scene lighting
+
+- environment (getting started)
+
+
+
 # Final Controls Code
 
             using System.Collections;
