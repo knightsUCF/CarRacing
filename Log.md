@@ -1,3 +1,80 @@
+# Code for Car Turning from the Asset Pack
+
+            // Update is called once per frame
+            void Update () {
+
+                if (GameManager.Instance.GameState == GameState.Playing)
+                {
+                    if (Input.GetMouseButton(0) && !touchDisable)
+                    {
+                        //Create trails
+                        if (leftTrail == null && rightTrail == null)
+                        {
+                            leftTrail = Instantiate(trailPrefab, leftTrailTrans.position, Quaternion.identity);
+                            rightTrail = Instantiate(trailPrefab, rightTrailTrans.position, Quaternion.identity);
+                            leftTrail.transform.SetParent(transform);
+                            rightTrail.transform.SetParent(transform);
+                        }         
+
+                        float x = Camera.main.ScreenToViewportPoint(Input.mousePosition).x;
+
+                        float yAngle = transform.eulerAngles.y;
+                        yAngle = (yAngle > 180) ? yAngle - 360 : yAngle;
+
+                        if (x <= 0.5f) //Touch left
+                        {
+                            hitRightWall = false;
+
+                            if (!hitLeftWall)
+                            {
+                                //Rotating left
+                                if (yAngle > -limitTurningAngle)
+                                {
+                                    transform.eulerAngles -= new Vector3(0, turningSpeed * Time.deltaTime, 0);
+                                }
+                                else
+                                {
+                                    transform.eulerAngles = new Vector3(0, -limitTurningAngle, 0);
+                                }
+
+                                movingDirection = transform.TransformDirection(Vector3.forward);
+                            }                                
+                        }
+                        else //Touch right
+                        {
+                            hitLeftWall = false;
+
+                            if (!hitRightWall)
+                            {
+                                //Rotating right
+                                if (yAngle < limitTurningAngle)
+                                {
+                                    transform.eulerAngles += new Vector3(0, turningSpeed * Time.deltaTime, 0);
+                                }
+                                else
+                                {
+                                    transform.eulerAngles = new Vector3(0, limitTurningAngle, 0);
+                                }
+
+                                movingDirection = transform.TransformDirection(Vector3.forward);
+                            }
+                        }
+                    }
+
+                    transform.position += movingDirection * MovingSpeed * Time.deltaTime;
+
+                    if (Input.GetMouseButtonUp(0) && leftTrail != null && rightTrail != null)
+                    {
+                        leftTrail.transform.SetParent(null);
+                        rightTrail.transform.SetParent(null);
+                        leftTrail = null;
+                        rightTrail = null;
+                    }
+                }
+                }
+
+
+
 # Car Turning
 
 https://answers.unity.com/questions/173817/how-to-rotate-a-car-smoothly.html
