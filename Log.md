@@ -5,7 +5,7 @@ After we get the below chunk code working
 
 - camera
 
-- traffic, plus variety of traffic patterns
+- traffic, plus variety of traffic patterns, different colored cars
 
 - environments
 
