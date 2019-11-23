@@ -1,3 +1,11 @@
+# Let's Start with Chunks and the Player
+
+- let's increase our chunk size
+
+- replace our new chunk code
+
+- generate five or so chunks ahead
+
 # Rebuilding Project
 
 We will be rebuilding the project in the Rebuiling.md log file here.
