@@ -6,7 +6,7 @@ So to go in order:
 
 - add environments (we can come up with a basic MVP environment)
 
-- add traffic variety
+- add traffic variety, plus loot
 
 - add collisions
 
@@ -25,6 +25,8 @@ So to go in order:
 - paid video ads
 
 - fix shading on shadows
+
+- possibly add gas meter
 
 # Rebuilding Project
 
