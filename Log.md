@@ -1,3 +1,333 @@
+# First Draft of Car Turning Done
+
+
+            using System.Collections;
+            using System.Collections.Generic;
+            using UnityEngine;
+
+
+
+            public class Controls : MonoBehaviour
+            {
+
+                public float speed = 1.0f;
+
+                float turnSpeed = 4.0f;
+
+
+                Vector3 pos;
+
+                float acceleration = 30.0f;
+                float maxSpeed = 50.0f;
+
+
+
+
+                bool speedUp = false;
+                bool slowDown = false;
+                bool turnLeft = false;
+                bool turnRight = false;
+
+
+                // Steering
+
+
+                [SerializeField] private float turningSpeed = 40f;
+                [SerializeField] private int limitTurningAngle = 25;
+
+                private bool touchDisable = false;
+                private Vector3 movingDirection = Vector3.forward;
+
+                public float MovingSpeed { private set; get; }
+
+                float yAngle;
+
+                //
+
+
+
+
+
+                // steering angles
+
+                void SetAngles()
+                {
+                    float yAngle = transform.eulerAngles.y;
+                    yAngle = (yAngle > 180) ? yAngle - 360 : yAngle;
+                }
+
+
+
+                private void Update()
+                {
+                    // ProcessManualInput();
+
+                    // SelfDrive();
+
+                    // SetPos();
+
+                    SetAngles();
+                    SetSteering();
+                    SetSteeringSpeed();
+
+                    CapX(); // rails
+
+                    CapLowerBoundSpeed();
+                    CapUpperBoundSpeed();
+
+
+                    MoveForward();
+
+                    if (speedUp) Accelerate();
+                    if (slowDown) Break();
+                    if (turnLeft) TurnLeft();
+                    if (turnRight) TurnRight();
+                }
+
+
+
+                float leftXRail = -13;
+                float rightXRail = -3.5f;
+
+                void CapX()
+                {
+                    if (transform.position.x < leftXRail)
+                    {
+                        pos = transform.position;
+                        pos.x = leftXRail;
+                        transform.position = pos;
+                    }
+
+                    if (transform.position.x > rightXRail)
+                    {
+                        pos = transform.position;
+                        pos.x = rightXRail;
+                        transform.position = pos;
+                    }
+                }
+
+
+                void SteerLeft()
+                {
+                    // steer left 
+
+                    // #TODO, need to check for walls before turning
+
+
+                        //Rotating left
+                        if (yAngle > -limitTurningAngle)
+                        {
+                            transform.eulerAngles -= new Vector3(0, turningSpeed * Time.deltaTime, 0);
+                        }
+                        else
+                        {
+                            transform.eulerAngles = new Vector3(0, -limitTurningAngle, 0);
+                        }
+
+                        movingDirection = transform.TransformDirection(Vector3.forward);
+
+                }
+
+
+                void SteerRight()
+                {
+
+                        //Rotating right
+                        if (yAngle < limitTurningAngle)
+                        {
+                            transform.eulerAngles += new Vector3(0, turningSpeed * Time.deltaTime, 0);
+                        }
+                        else
+                        {
+                            transform.eulerAngles = new Vector3(0, limitTurningAngle, 0);
+                        }
+
+                        movingDirection = transform.TransformDirection(Vector3.forward);
+
+                }
+
+
+                void SetSteering()
+                {
+                    transform.position += movingDirection * MovingSpeed * Time.deltaTime;
+                }
+
+
+
+                void SetSteeringSpeed()
+                {
+                    Debug.Log("speed: " + speed);
+                }
+
+
+                void ProcessManualInput()
+                {
+                    if (Input.GetKey(KeyCode.W)) // mobile controls here, maybe an ifdef
+                    {
+                        MoveForward();
+                    }
+
+                    if (Input.GetKey(KeyCode.A))
+                    {
+                        MoveLeft();
+                    }
+
+                    if (Input.GetKey(KeyCode.D))
+                    {
+                        MoveRight();
+                    }
+
+                    if (Input.GetKey(KeyCode.S))
+                    {
+                        MoveBack();
+                    }
+
+                    if (Input.GetKey(KeyCode.Escape))
+                    {
+                        Application.Quit();
+                    }
+                }
+
+
+                private void MoveForward()
+                {
+                    transform.Translate(Vector3.forward * Time.deltaTime * speed);
+                }
+
+                private void MoveLeft()
+                {
+                    // SteerLeft();
+                    transform.Translate(Vector3.left * Time.deltaTime * speed);
+                }
+
+                private void MoveRight()
+                {
+                    // SteerRight();
+                    transform.Translate(Vector3.right * Time.deltaTime * speed);
+                }
+
+                private void MoveBack()
+                {
+                    transform.Translate(Vector3.back * Time.deltaTime * speed);
+                }
+
+
+                private void SelfDrive()
+                {
+                    transform.Translate(Vector3.forward * Time.deltaTime * speed);
+                }
+
+
+                void SetPos()
+                {
+                    pos = transform.position;
+                    pos.z = transform.position.z  * Time.deltaTime;
+                    transform.position = pos;
+                }
+
+
+                public void OnButtonClick()
+                {
+                    // Debug.Log("Click");
+
+                    // speed = speed + acceleration * Time.deltaTime; // breaking: speed = speed - acceleration * Time.deltaTime;
+                   //  MoveForward();
+                }
+
+
+                public void OnMouseDown()
+                {
+                    // Debug.Log("Pressed mouse");
+                    speedUp = true;
+                }
+
+
+                public void OnMouseRelease()
+                {
+                    // Debug.Log("Released mouse");
+                    speedUp = false;
+                }
+
+
+                public void OnBreakPedalDown()
+                {
+                    slowDown = true;
+                }
+
+
+                public void OnBreakPedalRelease()
+                {
+                    slowDown = false;
+                }
+
+
+                void Accelerate()
+                {
+                    speed = speed + acceleration * Time.deltaTime;
+                }
+
+
+                void Break()
+                {
+                    if (speed <= 0.1) return;
+                    speed = speed - acceleration * Time.deltaTime;
+                }
+
+
+                public void OnLeftDown()
+                {
+                    turnLeft = true;
+                }
+
+
+                public void OnLeftRelease()
+                {
+                    turnLeft = false;
+                }
+
+
+
+
+                public void OnRightDown()
+                {
+                    turnRight = true;
+                }
+
+                public void OnRightRelease()
+                {
+                    turnRight = false;
+                }
+
+
+                void TurnLeft()
+                {
+                    SteerLeft();
+                    transform.Translate(Vector3.left * Time.deltaTime * turnSpeed);
+                }
+
+
+                void TurnRight()
+                {
+                    SteerRight();
+                    transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);
+                }
+
+
+
+                void CapLowerBoundSpeed()
+                {
+                    if (speed <= 0) speed = 0;
+                }
+
+                void CapUpperBoundSpeed()
+                {
+                    if (speed >= maxSpeed) speed = maxSpeed;
+                }
+
+            }
+
+
+
 # Code for Car Turning from the Asset Pack
 
             // Update is called once per frame
