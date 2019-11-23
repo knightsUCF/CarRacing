@@ -9,7 +9,7 @@ After we get the below chunk code working
 
 - environments
 
-- loot, possibly gas meter
+- loot, possibly gas meter, variable reward, speed boost, invicibility, etc
 
 - smooth game over state
 
