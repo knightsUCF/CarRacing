@@ -3,6 +3,7 @@
 New chunk code to fill up the horizon with more chunks, and generate a chunk five or so chunks down, to always have a few chunks ahead of the player.
 
 
+
     using UnityEngine;
     using System.Collections;
 
@@ -28,7 +29,7 @@ New chunk code to fill up the horizon with more chunks, and generate a chunk fiv
         public GameObject chunk;
 
         Vector3 chunkPos;
-        Vector3 rotation; // we don't really need this, but our tiles are rotated 90, and we might have to rewrite Controls.cs because the car goes the other way
+        Vector3 newChunkPos;
         State state;
         ChunksHolder chunksHolder;
 
@@ -63,10 +64,10 @@ New chunk code to fill up the horizon with more chunks, and generate a chunk fiv
         {
             if (c.gameObject.tag == "Player")
             {
-                chunkPos = transform.position;
-                chunkPos.z = transform.position.z + chunkLength * startingNumberOfChunks;
+                newChunkPos = transform.position;
+                newChunkPos.z = transform.position.z + chunkLength * startingNumberOfChunks;
 
-                InstantiateRandomChunkLand(chunksHolder.grassLandChunks, chunkPos);
+                InstantiateRandomChunkLand(chunksHolder.grassLandChunks, newChunkPos);
             }
         }
 
@@ -79,6 +80,7 @@ New chunk code to fill up the horizon with more chunks, and generate a chunk fiv
 
 
     }
+
 
 
 
