@@ -17,6 +17,13 @@ After we get the below chunk code working
 
 - intro with our own logos
 
+- sounds
+
+- unlockable cars
+
+- monetization
+
+- neon lights
 
 
 # New Chunk Code to Fill Up the Horizon with More Chunks
