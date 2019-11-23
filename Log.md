@@ -1,3 +1,8 @@
+# Rebuilding Project
+
+We will be rebuilding the project in the Rebuiling.md log file here.
+
+
 # Rebuilding Project from Scratch in Order
 
 So to go in order:
