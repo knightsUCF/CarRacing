@@ -1,3 +1,55 @@
+# Procedural Code from Both Projects
+
+Here is the procedural code from the first project:
+
+    using UnityEngine;
+    using System.Collections;
+
+    /*
+
+    Attach to chunk object, this will talk to the collider that is attached.
+    When the player enters the collider this spawns another object.
+
+    */
+
+
+
+    public class Procedural : MonoBehaviour
+    {
+
+
+
+        public GameObject chunk; // randomized chunks: public GameObject[] chunks
+
+        public float offset = 250.0f;
+
+        Vector3 pos;
+
+        Vector3 rotation; // we don't really need this, but our tiles are rotated 90, and we might have to rewrite Controls.cs because the car goes the other way
+
+
+
+        private void OnTriggerEnter(Collider c)
+        {
+            if (c.gameObject.tag == Constants.PlayerTag)
+            {
+                Debug.Log("Entered collider area");
+
+                pos = transform.position;
+                pos.x = transform.position.x + offset;
+
+
+                Instantiate(chunk, pos, Quaternion.Euler(new Vector3(0, 90, 0)));
+            }
+        }
+    }
+
+
+And here is the procedural code from the second project:
+
+
+
+
 # Let's Wrap up the Octopus
 
 So let's wrap up this octopus and release this game. We just purchased the below cars asset pack, so that should elevate our style. 
@@ -37,8 +89,81 @@ So what are we going to be working on today?
 Well, let's consolidate our two projects, that makes the most sense. So let's take a look at the differences in the procedural code, and then transfer in over the street view.
 
 
+using UnityEngine;
+using System.Collections;
+
+/*
+
+Attach to chunk object, this will talk to the collider that is attached.
+When the player enters the collider this spawns another object.
+
+Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
 
 
+*/
+
+
+
+    public class Procedural : MonoBehaviour
+    {
+
+
+
+        public GameObject chunk; // randomized chunks: public GameObject[] chunks
+
+        // public GameObject[] chunks; moved to ChunksHolder
+
+
+
+        public float offset = 250.0f;
+
+        Vector3 pos;
+
+        Vector3 rotation; // we don't really need this, but our tiles are rotated 90, and we might have to rewrite Controls.cs because the car goes the other way
+
+        State state;
+        ChunksHolder chunksHolder;
+
+
+        private void Start()
+        {
+            state = FindObjectOfType<State>();
+            chunksHolder = FindObjectOfType<ChunksHolder>();
+        }
+
+
+        private void OnTriggerEnter(Collider c)
+        {
+            if (c.gameObject.tag == "Player")
+            {
+
+                // Debug.Log("Detected player");
+
+                pos = transform.position;
+                // pos.x = transform.position.x + offset; // spawns to the right of us
+                pos.z = transform.position.z + offset; // spawns in front
+
+
+                // Instantiate(chunk, pos, Quaternion.Euler(new Vector3(0, 90, 0)));
+
+                // Instantiate(chunk, pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+
+                InstantiateRandomChunkLand(chunksHolder.grassLandChunks);
+
+                // state.chunkCount += 1;
+            }
+        }
+
+
+
+        void InstantiateRandomChunkLand(GameObject[] chunkLands)
+        {
+            Instantiate(chunkLands[Random.Range(0, chunkLands.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+        }
+    }
+
+
+so how do both of these differ?
 
 
 # Cute Cars Asset Pack
