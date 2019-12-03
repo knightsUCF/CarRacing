@@ -109,6 +109,10 @@ And here is the procedural code from the second project:
 
 So how do both of these differ?
 
+So we are going to go with our second version of the procedural code, since we have accomodated for the different chunklands in the second one. Also we will simply uncheck the old procedural code, and call this procedural code, ProceduralProduction.cs.
+
+
+
 
 # Let's Wrap up the Octopus
 
