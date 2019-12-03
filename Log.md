@@ -48,62 +48,6 @@ Here is the procedural code from the first project:
 And here is the procedural code from the second project:
 
 
-
-
-# Let's Wrap up the Octopus
-
-So let's wrap up this octopus and release this game. We just purchased the below cars asset pack, so that should elevate our style. 
-
-If our gameplay for now is just straight ahead driving, that is fine. Just like Crossy Road, there is not much there, just going straight ahead, and then an obscene amount of ads. 
-
-As for turning, let's just cut that out and use the camera spring follow mode, along with some continuous speed to simply go ahead with turning for now.
-
-So our todo list from before was:
-
-- camera
-
-- traffic, plus variety of traffic patterns, different colored cars
-
-- environments, neon lights
-
-- loot, possibly gas meter, variable reward, speed boost, invicibility, etc
-
-- smooth game over state
-
-- physics collisions
-
-- intro with our own logos
-
-- sounds
-
-- unlockable cars
-
-- monetization
-
-
-
-Well, so first, let's open up the new asset pack, inspect the models. Then we should build the game as fast as possible. Just functioning enough to get that out there.
-
-So what are we going to be working on today?
-
-Well, let's consolidate our two projects, that makes the most sense. So let's take a look at the differences in the procedural code, and then transfer in over the street view.
-
-
-using UnityEngine;
-using System.Collections;
-
-/*
-
-Attach to chunk object, this will talk to the collider that is attached.
-When the player enters the collider this spawns another object.
-
-Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
-
-
-*/
-
-
-
     public class Procedural : MonoBehaviour
     {
 
@@ -163,7 +107,63 @@ Also make sure that the player car object has an is trigger check and a rigid bo
     }
 
 
-so how do both of these differ?
+So how do both of these differ?
+
+
+# Let's Wrap up the Octopus
+
+So let's wrap up this octopus and release this game. We just purchased the below cars asset pack, so that should elevate our style. 
+
+If our gameplay for now is just straight ahead driving, that is fine. Just like Crossy Road, there is not much there, just going straight ahead, and then an obscene amount of ads. 
+
+As for turning, let's just cut that out and use the camera spring follow mode, along with some continuous speed to simply go ahead with turning for now.
+
+So our todo list from before was:
+
+- camera
+
+- traffic, plus variety of traffic patterns, different colored cars
+
+- environments, neon lights
+
+- loot, possibly gas meter, variable reward, speed boost, invicibility, etc
+
+- smooth game over state
+
+- physics collisions
+
+- intro with our own logos
+
+- sounds
+
+- unlockable cars
+
+- monetization
+
+
+
+Well, so first, let's open up the new asset pack, inspect the models. Then we should build the game as fast as possible. Just functioning enough to get that out there.
+
+So what are we going to be working on today?
+
+Well, let's consolidate our two projects, that makes the most sense. So let's take a look at the differences in the procedural code, and then transfer in over the street view.
+
+
+using UnityEngine;
+using System.Collections;
+
+/*
+
+Attach to chunk object, this will talk to the collider that is attached.
+When the player enters the collider this spawns another object.
+
+Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
+
+
+*/
+
+
+
 
 
 # Cute Cars Asset Pack
