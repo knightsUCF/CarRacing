@@ -1,3 +1,46 @@
+# Let's Wrap up the Octopus
+
+So let's wrap up this octopus and release this game. We just purchased the below cars asset pack, so that should elevate our style. 
+
+If our gameplay for now is just straight ahead driving, that is fine. Just like Crossy Road, there is not much there, just going straight ahead, and then an obscene amount of ads. 
+
+As for turning, let's just cut that out and use the camera spring follow mode, along with some continuous speed to simply go ahead with turning for now.
+
+So our todo list from before was:
+
+- camera
+
+- traffic, plus variety of traffic patterns, different colored cars
+
+- environments, neon lights
+
+- loot, possibly gas meter, variable reward, speed boost, invicibility, etc
+
+- smooth game over state
+
+- physics collisions
+
+- intro with our own logos
+
+- sounds
+
+- unlockable cars
+
+- monetization
+
+
+
+Well, so first, let's open up the new asset pack, inspect the models. Then we should build the game as fast as possible. Just functioning enough to get that out there.
+
+So what are we going to be working on today?
+
+Well, let's consolidate our two projects, that makes the most sense. So let's take a look at the differences in the procedural code, and then transfer in over the street view.
+
+
+
+
+
+
 # Cute Cars Asset Pack
 
 https://assetstore.unity.com/packages/3d/twenty-one-voxel-vehicles-67841
