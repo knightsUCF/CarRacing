@@ -16,6 +16,8 @@ To add a car:
 
 7. Set y to 1 on child car object
 
+8. After done duplicate object, and change y to 0 on the new child car, and also set the engine to the right lane on the parent engine object 
+
 # Beginning of Refactoring the Controls Code
 
 
