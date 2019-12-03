@@ -1,3 +1,20 @@
+# Adding Cars
+
+To add a car:
+
+1. Create a parent prefab, and call this "Car Name Left Lane"
+
+2. Add car engine script to the parent prefab, and set to left (when duplicating car at the end of the process set to right
+
+3. Drag car model under the parent prefab
+
+4. Add rigid body with no gravity and is kinematic (will take off is kinematic when a collision occurs)
+
+5. Add box collider no is trigger to the child car object
+
+6. Set the rotation on the left lane cars to y -180 on the child car object
+
+
 # Beginning of Refactoring the Controls Code
 
 
