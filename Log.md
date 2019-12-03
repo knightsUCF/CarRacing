@@ -14,6 +14,7 @@ To add a car:
 
 6. Set the rotation on the left lane cars to y -180 on the child car object
 
+7. Set y to 1 on child car object
 
 # Beginning of Refactoring the Controls Code
 
