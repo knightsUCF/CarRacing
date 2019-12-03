@@ -1,3 +1,58 @@
+# New Refactored Procedural Code
+
+    using UnityEngine;
+    using System.Collections;
+
+
+
+    /*
+    https://github.com/dgkanatsios/InfiniteRunner3D/blob/master/Assets/Scripts/PathSpawnCollider.cs
+
+    Attach to chunk object, this will talk to the collider that is attached.
+    When the player enters the collider this spawns another object.
+
+    Also make sure that the player car object has an is trigger check and a rigid body, and is tagged as "Player" (not the parent game object, but the object at the hierarchy level of the rigid body and collider)
+
+
+    */
+
+
+
+    public class Procedural : MonoBehaviour
+    {
+
+        public GameObject chunk;
+        public float offset = 250.0f;
+        Vector3 pos;
+        ChunksHolder chunksHolder;
+
+
+        private void Start()
+        {
+            chunksHolder = FindObjectOfType<ChunksHolder>();
+        }
+
+
+        private void OnTriggerEnter(Collider c)
+        {
+            if (c.gameObject.tag == "Player")
+            {
+                pos = transform.position;
+                pos.z = transform.position.z + offset;
+                InstantiateRandomChunkLand(chunksHolder.grassLandChunks);
+            }
+        }
+
+
+        void InstantiateRandomChunkLand(GameObject[] chunkLands)
+        {
+            Instantiate(chunkLands[Random.Range(0, chunkLands.Length)], pos, Quaternion.Euler(new Vector3(0, 0, 0)));
+        }
+
+
+    }
+
+
 # Procedural Code from Both Projects
 
 Here is the procedural code from the first project:
