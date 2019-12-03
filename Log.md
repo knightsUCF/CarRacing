@@ -1,3 +1,101 @@
+# Beginning of Refactoring the Controls Code
+
+
+Using the "///" from Tricks of the Game Programming Gurus is nice, because we are making the code modular, and much easier to glance over at a later time when we have forgotten the implementation details.
+
+
+
+            using System.Collections;
+            using System.Collections.Generic;
+            using UnityEngine;
+
+
+
+
+            public class Controls2 : MonoBehaviour
+            {
+
+                // S E T T I N G S ///////////////////////////////////////////////////////
+
+                public float speed = 0.0f;
+                public float maxSpeed = 50.0f;
+                public float acceleration = 30.0f;
+
+
+                // G L O B A L S /////////////////////////////////////////////////////////
+
+                Vector3 pos;
+
+
+                // M O V E M E N T //////////////////////////////////////////////////////
+
+                void Move()
+                {
+                    if ((Input.GetKey(KeyCode.S)) && (speed < maxSpeed)) speed = speed - acceleration * Time.deltaTime;
+                    else if ((Input.GetKey(KeyCode.W)) && (speed > -maxSpeed)) speed = speed + acceleration * Time.deltaTime;
+                }
+
+                void SetMaxSpeed()
+                {
+
+                }
+
+                void Turn()
+                {
+
+                }
+
+                void Break()
+                {
+
+                }
+
+                void SetPos()
+                {
+                    pos = transform.position;
+                    pos.x = transform.position.x + maxSpeed * Time.deltaTime;
+                    transform.position = pos;
+                }
+
+
+                // M A I N  M O V E M E N T  C O N T R O L L E R ////////////////////////
+
+                void RunPCMovementRoutines()
+                {
+                    Move();
+                    SetMaxSpeed();
+                    Turn();
+                    Break();
+                    SetPos(); // applies all the speed variables to actually move the car transform position
+                }
+
+
+
+                // C L O S E ////////////////////////////////////////////////////////////
+
+                void CheckForClose()
+                {
+                    if (Input.GetKey("escape")) Application.Quit();
+                }
+
+
+
+                // M A I N //////////////////////////////////////////////////////////////
+
+                void Update()
+                {
+                    RunPCMovementRoutines();
+                    CheckForClose();
+                }
+
+
+
+                /////////////////////////////////////////////////////////////////////////
+
+            }
+
+
+
 # Refactoring Controls Code
 
 We are going to refactor the controls code. Here is the code before we do any refactoring:
