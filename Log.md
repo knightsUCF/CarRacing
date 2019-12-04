@@ -1,3 +1,48 @@
+# Organizing Todos
+
+So there is actually not that much in the todo list. We should just be organized and do thigns in orders.
+
+So come up with the priority order for the 3 different aspects.
+
+First is "Main Traffic Gameplay"
+
+In order of importance:
+
+- getting different cars spawning in both directions smooth on the entire board, including the different random traffic patterns
+
+- add smooth game over state, including rolling car collisions
+
+- add loot and possibly gas meter
+
+- set slower turn speed on slower speeds
+
+- cars stopping (decelerating in front of the train)
+
+2) Environments
+
+- randomization of mini chunks, we have a different array set of chunks for grassland, versus desert
+
+- for now let's just have two environments, well we could also do snow, since that is relatively easy, 3 environments feels like a "full" game
+
+- just get the environments going, they don't have to be perfect
+
+
+3) MONETIZATION & POLISH
+
+- intro screen, smooth game over screen
+
+- car store, saving cars to iOS and Android profiles
+
+- sounds
+
+- video ads
+
+- camera spring follow
+
+
+Alright that is enough for now. If we complete the above simple items, then we will almost have a game ready. This will take us a long way to completion...
+
+
 # What's Next?
 
 Well, we can split the work into three phases:
@@ -55,6 +100,10 @@ Of course there is more, but this is enough to take out a big chunk of the work.
 - camera spring follow
 
 - sounds
+
+- video ads
+
+
 
 # Adding Cars
 
