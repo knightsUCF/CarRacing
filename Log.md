@@ -40,6 +40,7 @@ So come up with the priority order for the 3 different aspects.
 
 Alright that is enough for now. If we complete the above simple items, then we will almost have a game ready. This will take us a long way to completion...
 
+Once we finish the above todo list, then reorganize the priorities into the next todo list. We should be able to finish this within a week...
 
 # What's Next?
 
