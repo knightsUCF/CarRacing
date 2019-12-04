@@ -23,7 +23,11 @@ So as far as the main gameplay goes we want to:
 
 - possibly lights on the cars (this will go into the polish section, but nightmode would add a lot)
 
-- 
+- rolling over on collision
+
+- different traffic patterns
+
+- set slower turn speed on slower speed
 
 
 # Adding Cars
