@@ -11,6 +11,20 @@ Well, we can split the work into three phases:
 
 Of course there is more, but this is enough to take out a big chunk of the work.
 
+So as far as the main gameplay goes we want to:
+
+- random pickups (variable reward), perhaps gas meter
+
+- smooth game over state
+
+- different cars, including the other asset packs
+
+- cars stopping by in front of the train
+
+- possibly lights on the cars (this will go into the polish section, but nightmode would add a lot)
+
+- 
+
 
 # Adding Cars
 
