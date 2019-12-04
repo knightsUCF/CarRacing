@@ -37,7 +37,6 @@ Of course there is more, but this is enough to take out a big chunk of the work.
 
 - randomization of "mini chunks" on the big chunks
 
-- 
 
 3) MONETIZATION & POLISH
 
@@ -52,6 +51,10 @@ Of course there is more, but this is enough to take out a big chunk of the work.
 - perhaps offer faster car speeds, or for now just keep things simple
 
 - two main ways of monetization, ads and $.99 unlockable cars like Crossy Road, study Crossy Road GDC
+
+- camera spring follow
+
+- sounds
 
 # Adding Cars
 
