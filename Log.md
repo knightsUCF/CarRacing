@@ -1,3 +1,17 @@
+# What's Next?
+
+Well, we can split the work into three phases:
+
+1) Main traffic gameplay
+
+2) Environments
+
+3) Monetization & Polish
+
+
+Of course there is more, but this is enough to take out a big chunk of the work.
+
+
 # Adding Cars
 
 To add a car:
