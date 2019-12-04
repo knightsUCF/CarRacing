@@ -11,7 +11,7 @@ Well, we can split the work into three phases:
 
 Of course there is more, but this is enough to take out a big chunk of the work.
 
-So as far as the main gameplay goes we want to:
+1) MAIN GAMEPLAY
 
 - random pickups (variable reward), perhaps gas meter
 
@@ -29,6 +29,29 @@ So as far as the main gameplay goes we want to:
 
 - set slower turn speed on slower speed
 
+2) ENVIRONMENTS
+
+- at least have two or three environments, including desert
+
+- perhaps birds
+
+- randomization of "mini chunks" on the big chunks
+
+- 
+
+3) MONETIZATION & POLISH
+
+- smooth game over state
+
+- intro screens
+
+- car store
+
+- saving unlocked cars to both iOS and Android profiles
+
+- perhaps offer faster car speeds, or for now just keep things simple
+
+- two main ways of monetization, ads and $.99 unlockable cars like Crossy Road, study Crossy Road GDC
 
 # Adding Cars
 
