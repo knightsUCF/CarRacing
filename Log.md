@@ -16,6 +16,8 @@ So come up with the priority order for the 3 different aspects.
 
 - cars stopping (decelerating in front of the train)
 
+- garbage collection
+
 2) Environments
 
 - randomization of mini chunks, we have a different array set of chunks for grassland, versus desert
