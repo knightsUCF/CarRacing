@@ -4,9 +4,7 @@ So there is actually not that much in the todo list. We should just be organized
 
 So come up with the priority order for the 3 different aspects.
 
-First is "Main Traffic Gameplay"
-
-In order of importance:
+1) Gameplay
 
 - getting different cars spawning in both directions smooth on the entire board, including the different random traffic patterns
 
